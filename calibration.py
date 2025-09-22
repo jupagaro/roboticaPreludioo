@@ -152,12 +152,13 @@ class RobotCalibrator:
         
         print("\nResultados:")
         print("¿Hacia dónde se desvió el robot?")
-        print("1. Izquierda (motor derecho más rápido)")
-        print("2. Derecha (motor izquierdo más rápido)")  
+        print("1. Izquierda (motor derecho más potente o problema de conexión)")
+        print("2. Derecha (motor izquierdo más potente o problema de conexión)")  
         print("3. Recto (motores balanceados)")
+        print("4. No avanzó / movimiento errático (verificar conexiones)")
         
         try:
-            choice = input("Selecciona [1-3]: ").strip()
+            choice = input("Selecciona [1-4]: ").strip()
             
             balance_result = {
                 'timestamp': time.time(),
@@ -169,18 +170,23 @@ class RobotCalibrator:
             
             if choice == '1':
                 balance_result['deviation'] = 'left'
-                balance_result['correction_needed'] = 'slow_down_right_motor'
-                print("Recomendación: Reducir velocidad del motor derecho ~5%")
+                balance_result['correction_needed'] = 'reduce_right_motor_or_check_wiring'
+                print("Recomendación: Reducir velocidad del motor derecho ~5% o verificar conexiones")
                 
             elif choice == '2':
                 balance_result['deviation'] = 'right'
-                balance_result['correction_needed'] = 'slow_down_left_motor'
-                print("Recomendación: Reducir velocidad del motor izquierdo ~5%")
+                balance_result['correction_needed'] = 'reduce_left_motor_or_check_wiring'
+                print("Recomendación: Reducir velocidad del motor izquierdo ~5% o verificar conexiones")
                 
             elif choice == '3':
                 balance_result['deviation'] = 'none'
                 balance_result['correction_needed'] = 'none'
                 print("Motores bien balanceados")
+                
+            elif choice == '4':
+                balance_result['deviation'] = 'no_movement'
+                balance_result['correction_needed'] = 'check_motor_wiring'
+                print("Verificar conexiones de motores y direcciones de giro")
                 
             else:
                 print("Opción inválida")
