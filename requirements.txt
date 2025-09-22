@@ -1,0 +1,32 @@
+# Robot de Rescate 2025 - Dependencias para Raspberry Pi
+# Para instalar: pip install -r requirements.txt
+
+# Control de GPIO en Raspberry Pi
+RPi.GPIO==0.7.1
+
+# Comunicación I2C para MPU6050
+smbus2==0.4.2
+
+# Manipulación de datos matemáticos
+numpy>=1.21.0,<2.0.0
+
+# Sistema de archivos y fechas (incluidos en Python estándar)
+# json - incluido
+# os - incluido
+# time - incluido
+# threading - incluido
+# datetime - incluido
+# math - incluido
+
+# Terminal input handling (incluido en Python estándar)
+# select - incluido  
+# sys - incluido
+# termios - incluido
+# tty - incluido
+
+# Opcional: Para debugging y desarrollo
+# Descomenta si necesitas estas herramientas
+
+# pytest>=6.0.0          # Para tests unitarios
+# matplotlib>=3.5.0      # Para gráficos (requiere X11)
+# scipy>=1.7.0           # Para análisis matemático avanzado
