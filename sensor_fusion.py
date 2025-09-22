@@ -295,7 +295,7 @@ class SensorFusion:
                 return {'status': 'avoiding_right', 'distance': distance_to_target}
         
         elif abs(angle_diff) > 15:
-            # Girar hacia objetivo
+            # Girar hacia objetivo usando giro diferencial
             turn_speed = min(speed, abs(angle_diff) * 2)
             if angle_diff > 0:
                 self.motors.spin_left(turn_speed)
@@ -332,7 +332,7 @@ class SensorFusion:
             return 'slow_forward'
         
         else:
-            # Obstáculo bloqueando - decidir escape
+            # Obstáculo bloqueando - decidir escape usando giros diferenciales
             if left_min > right_min and left_min > threshold:
                 self.motors.spin_left(base_speed // 2)
                 return 'escape_left'

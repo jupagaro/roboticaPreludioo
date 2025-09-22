@@ -65,8 +65,8 @@ class RobotController:
         print("=" * 40)
         print("Controles:")
         print("  W/S: Adelante/Atrás")
-        print("  A/D: Girar izquierda/derecha") 
-        print("  Q/E: Spin izquierda/derecha")
+        print("  A/D: Giro diferencial izquierda/derecha (en el lugar)") 
+        print("  Q/E: Curva suave izquierda/derecha (ambas ruedas adelante)")
         print("  1/2/3: Velocidad lenta/media/rápida")
         print("  SPACE: Parar")
         print("  M: Mostrar estado")
@@ -107,13 +107,13 @@ class RobotController:
             self.sensor_fusion.motors.move_forward(speed)
         elif key == 's':    # Atrás
             self.sensor_fusion.motors.move_backward(speed)
-        elif key == 'a':    # Girar izquierda
+        elif key == 'a':    # Girar izquierda (giro diferencial)
             self.sensor_fusion.motors.spin_left(speed)
-        elif key == 'd':    # Girar derecha
+        elif key == 'd':    # Girar derecha (giro diferencial)
             self.sensor_fusion.motors.spin_right(speed)
-        elif key == 'q':    # Curva izquierda
+        elif key == 'q':    # Curva suave izquierda (ambas ruedas adelante)
             self.sensor_fusion.motors.turn_left(speed)
-        elif key == 'e':    # Curva derecha
+        elif key == 'e':    # Curva suave derecha (ambas ruedas adelante)
             self.sensor_fusion.motors.turn_right(speed)
         elif key == ' ':    # Parar
             self.sensor_fusion.motors.stop()
