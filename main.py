@@ -14,6 +14,7 @@ import RPi.GPIO as GPIO
 # Importar módulos principales
 from robot_controller import RobotController
 from calibration import calibration_wizard
+from movement_recorder import movement_recorder_menu
 from utils import SessionManager, SimpleVisualizer
 from config import validate_config, create_data_directories
 
@@ -39,10 +40,11 @@ def show_main_menu():
     print("2. 🏆 Modo Competencia (Misión Autónoma)")
     print("3. 🎮 Solo Control Manual (Práctica)")
     print("4. 🔧 Calibración de Robot")
-    print("5. 📊 Análisis de Sesiones")
-    print("6. 🗂️  Gestión de Datos")
-    print("7. ⚙️  Configuración del Sistema")
-    print("8. ℹ️  Información del Sistema")
+    print("5. 📝 Movement Recorder (Entrenamiento)")
+    print("6. 📊 Análisis de Sesiones")
+    print("7. 🗂️  Gestión de Datos")
+    print("8. ⚙️  Configuración del Sistema")
+    print("9. ℹ️  Información del Sistema")
     print("0. 🚪 Salir")
     print("="*60)
 
@@ -415,7 +417,7 @@ def main():
     """Función principal"""
     # Argumentos de línea de comandos
     parser = argparse.ArgumentParser(description='Robot de Rescate 2025')
-    parser.add_argument('--mode', choices=['experimental', 'competition', 'manual', 'calibration'], 
+    parser.add_argument('--mode', choices=['experimental', 'competition', 'manual', 'calibration', 'movement'],
                        help='Modo directo de ejecución')
     parser.add_argument('--session', help='Nombre de sesión personalizado')
     parser.add_argument('--no-banner', action='store_true', help='No mostrar banner')
@@ -445,6 +447,8 @@ def main():
                 manual_control_mode()
             elif args.mode == 'calibration':
                 calibration_wizard()
+            elif args.mode == 'movement':
+                movement_recorder_menu()
             return 0
         except Exception as e:
             print(f"Error en modo {args.mode}: {e}")
@@ -454,8 +458,8 @@ def main():
     try:
         while True:
             show_main_menu()
-            choice = input("Elegir opción [0-8]: ").strip()
-            
+            choice = input("Elegir opción [0-9]: ").strip()
+
             if choice == '1':
                 experimental_mode()
             elif choice == '2':
@@ -465,12 +469,14 @@ def main():
             elif choice == '4':
                 calibration_wizard()
             elif choice == '5':
-                session_analysis()
+                movement_recorder_menu()
             elif choice == '6':
-                data_management()
+                session_analysis()
             elif choice == '7':
-                system_configuration()
+                data_management()
             elif choice == '8':
+                system_configuration()
+            elif choice == '9':
                 system_info()
             elif choice == '0':
                 print("¡Hasta luego!")

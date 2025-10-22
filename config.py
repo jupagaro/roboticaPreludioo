@@ -23,10 +23,10 @@ MOTOR_PINS = {
 
 # Sensores HC-SR04 - NUEVA CONFIGURACIÓN
 ULTRASONIC_PINS = {
-    'frontal_izq': {'trig': 4, 'echo': 17},   # GPIO 4,17 - Frontal Izquierdo
-    'frontal_der': {'trig': 27, 'echo': 22},  # GPIO 27,22 - Frontal Derecho
-    'trasero_izq': {'trig': 5, 'echo': 6},    # GPIO 5,6 - Trasero Izquierdo (135°)
-    'trasero_der': {'trig': 23, 'echo': 24}   # GPIO 23,24 - Trasero Derecho (225°)
+    'frontal_izq': {'trig': 5, 'echo': 6},   # GPIO 5,6 - Frontal Izquierdo
+    'frontal_der': {'trig': 23, 'echo': 24},  # GPIO 23,24 - Frontal Derecho
+    'trasero_izq': {'trig': 4, 'echo': 17},    # GPIO 4,17 - Trasero Izquierdo (135°)
+    'trasero_der': {'trig': 27, 'echo': 22}   # GPIO 27,22 - Trasero Derecho (225°)
 }
 
 # MPU6050 IMU
@@ -41,19 +41,19 @@ IMU_CONFIG = {
 
 # Dimensiones del robot (en cm)
 ROBOT_DIMENSIONS = {
-    'length': 30.0,         # Largo total (frente tiene 30cm)
-    'width': 15.0,          # Ancho total
-    'height': 10.0,         # Altura aproximada
-    'wheel_diameter': 4.0,   # Diámetro de ruedas
-    'wheel_base': 15.0       # Distancia entre ruedas
+    'length': 35.0,         # Largo total (frente tiene 30cm)
+    'width': 27.0,          # Ancho total
+    'height': 7.0,          # Altura aproximada
+    'wheel_diameter': 3.2,   # Diámetro de ruedas
+    'wheel_base': 25.4       # Distancia entre ruedas
 }
 
 # Posiciones de sensores respecto al centro del robot (en cm)
 SENSOR_POSITIONS = {
-    'frontal_izq': {'x': 15.0, 'y': 7.5, 'angle': 0},     # Esquina frontal izquierda
-    'frontal_der': {'x': 15.0, 'y': -7.5, 'angle': 0},    # Esquina frontal derecha
-    'trasero_izq': {'x': -15.0, 'y': 7.5, 'angle': 135},  # Esquina trasera izquierda (135°)
-    'trasero_der': {'x': -15.0, 'y': -7.5, 'angle': 225}  # Esquina trasera derecha (225°)
+    'frontal_izq': {'x': -8.5, 'y': 7.5, 'angle': 0},     # Esquina frontal izquierda
+    'frontal_der': {'x': 8.5, 'y': 7.5, 'angle': 0},    # Esquina frontal derecha
+    'trasero_izq': {'x': -9.5, 'y': -8.0, 'angle': 135},  # Esquina trasera izquierda (135°)
+    'trasero_der': {'x': 9.5, 'y': -8.0, 'angle': 225}  # Esquina trasera derecha (225°)
 }
 
 # ============================================================================
@@ -62,7 +62,7 @@ SENSOR_POSITIONS = {
 
 # Parámetros de calibración
 CALIBRATION = {
-    'speed_factor': 0.3,        # Factor PWM -> velocidad lineal (ajustar experimentalmente)
+    'speed_factor': 0.1085,     # Factor PWM -> velocidad lineal (calibrado experimentalmente)
     'gyro_alpha': 0.98,         # Peso del giroscopio vs odometría (filtro complementario)
     'sensor_timeout': 0.1       # Timeout para sensores HC-SR04 (segundos)
 }
@@ -105,9 +105,9 @@ FIELD_DIMENSIONS = {
 
 # Posición inicial del robot
 INITIAL_POSITION = {
-    'x': 15.0,                  # 15cm desde borde izquierdo
+    'x': 65.0,                  # 65cm desde borde izquierdo
     'y': 15.0,                  # 15cm desde borde inferior
-    'heading': 0.0              # Mirando hacia la derecha (0°)
+    'heading': 90.0             # Mirando hacia arriba (90°)
 }
 
 # Zonas de competencia
@@ -189,7 +189,8 @@ DATA_PATHS = {
     'base_dir': 'data',
     'sessions': 'data/sessions',
     'calibration': 'data/calibration',
-    'maps': 'data/maps'
+    'maps': 'data/maps',
+    'movements': 'data/movements'
 }
 
 # Configuración de logging
@@ -318,4 +319,4 @@ if __name__ == "__main__":
     print(f"  - Dimensiones robot: {ROBOT_DIMENSIONS['length']}x{ROBOT_DIMENSIONS['width']} cm")
     print(f"  - Campo: {FIELD_DIMENSIONS['width']}x{FIELD_DIMENSIONS['height']} cm")
     print(f"  - Bloques totales: {sum(len(blocks) for blocks in INITIAL_BLOCKS.values())}")
-    print(f"  - Zonas de puntuación: Hospital, Refugio")
+    print("  - Zonas de puntuación: Hospital, Refugio")
