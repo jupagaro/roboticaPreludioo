@@ -43,14 +43,18 @@ class UltrasonicSensor:
     def read_distance(self):
         """
         Leer distancia del sensor HC-SR04
-        
+
         Returns:
             float: Distancia en cm, -1 si error
         """
         if not self.is_initialized:
             return -1
-        
+
         try:
+            # Estabilizar trigger en LOW antes de pulso
+            GPIO.output(self.trig_pin, GPIO.LOW)
+            time.sleep(0.01)  # 10ms settling time
+
             # Enviar pulso de trigger (10µs)
             GPIO.output(self.trig_pin, GPIO.HIGH)
             time.sleep(0.00001)  # 10µs
@@ -142,9 +146,9 @@ class UltrasonicArray:
             if sensor.is_initialized:
                 distance = sensor.read_distance()
                 readings[sensor_name] = distance
-                
+
                 # Pausa entre sensores para evitar ecos cruzados
-                time.sleep(0.02)  # 20ms
+                time.sleep(0.06)  # 60ms - increased for sensor stability
         
         # Actualizar lecturas thread-safe
         with self.lock:
