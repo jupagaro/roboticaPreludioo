@@ -613,6 +613,248 @@ class MovementRecorder:
 
         return False
 
+    def play_with_corrections(self, heading_threshold=10.0):
+        """
+        Reproducir secuencia CON correcciones automáticas de heading (Nivel 1)
+        Corrige deriva de orientación después de cada paso
+
+        Args:
+            heading_threshold: Error de heading (grados) que dispara corrección
+        """
+        if not self.current_sequence['steps']:
+            print("Error: No hay secuencia cargada")
+            return False
+
+        if not self.enable_sensors or self.sensor_fusion is None:
+            print("❌ Error: Sensor fusion no está habilitado")
+            print("   Esta función requiere sensores para detectar y corregir drift")
+            return False
+
+        # Verificar que la secuencia tenga datos de sensor fusion
+        has_reference = self.current_sequence.get('recording_mode') == 'sensor_fusion_enabled'
+
+        if not has_reference:
+            print("⚠️  Advertencia: Esta secuencia no tiene datos de referencia")
+            print("   Las correcciones usarán heading relativo (no hay objetivo absoluto)")
+            use_relative = True
+        else:
+            use_relative = False
+
+        print("\n" + "=" * 70)
+        print(f"REPRODUCCIÓN CON CORRECCIÓN AUTOMÁTICA: {self.current_sequence['name']}")
+        print("=" * 70)
+        print(f"Total de pasos: {len(self.current_sequence['steps'])}")
+        print(f"Duración estimada: {self.current_sequence['total_duration']:.1f}s")
+        print(f"\n🎯 Nivel 1: Corrección de heading automática")
+        print(f"   Umbral de corrección: {heading_threshold}°")
+        print(f"   Modo: {'Relativo' if use_relative else 'Absoluto (con referencia)'}")
+        print("=" * 70)
+        print("\nPresiona Ctrl+C para detener en cualquier momento\n")
+
+        input("Presiona Enter para comenzar...")
+
+        # Configurar logging
+        session_name = f"corrected_{self.current_sequence['name']}_{datetime.now().strftime('%Y%m%d_%H%M%S')}"
+        self.data_logger = DataLogger(session_name)
+
+        # Activar sensor fusion
+        self.sensor_fusion.enable_logging = True
+        self.sensor_fusion.logger = self.data_logger
+
+        print("\nIniciando sensor fusion...")
+        self.sensor_fusion.start_sensor_loop(update_rate=10)
+        time.sleep(0.5)
+
+        playback_start_time = time.time()
+        playback_data = {
+            'sequence_name': self.current_sequence['name'],
+            'playback_timestamp': datetime.now().isoformat(),
+            'correction_mode': 'heading_level1',
+            'heading_threshold': heading_threshold,
+            'steps_executed': [],
+            'corrections_made': []
+        }
+
+        total_corrections = 0
+
+        try:
+            for i, step in enumerate(self.current_sequence['steps'], 1):
+                print(f"\n[Paso {i}/{len(self.current_sequence['steps'])}] "
+                      f"{step['action']} @ velocidad {step['speed']} "
+                      f"por {step['duration']:.1f}s")
+
+                # Capturar estado antes del paso
+                step_start_time = time.time() - playback_start_time
+                start_pos = self.sensor_fusion.get_position()
+
+                # Ejecutar paso normal
+                self._execute_step(step)
+
+                # Capturar estado después del paso
+                step_end_time = time.time() - playback_start_time
+                end_pos = self.sensor_fusion.get_position()
+
+                # Calcular distancia recorrida
+                dx = end_pos['x'] - start_pos['x']
+                dy = end_pos['y'] - start_pos['y']
+                distance = (dx**2 + dy**2)**0.5
+
+                print(f"  Posición: ({start_pos['x']:.1f}, {start_pos['y']:.1f}, {start_pos['heading']:.1f}°) → "
+                      f"({end_pos['x']:.1f}, {end_pos['y']:.1f}, {end_pos['heading']:.1f}°)")
+
+                # CORRECCIÓN DE HEADING
+                correction_made = False
+                heading_error = 0
+
+                if has_reference and 'sensor_fusion' in step:
+                    # Modo absoluto: comparar con heading esperado
+                    expected_heading = step['sensor_fusion']['end_position']['heading']
+                    heading_error = expected_heading - end_pos['heading']
+
+                    # Normalizar a -180 a 180
+                    while heading_error > 180:
+                        heading_error -= 360
+                    while heading_error < -180:
+                        heading_error += 360
+
+                    print(f"  Heading esperado: {expected_heading:.1f}°")
+                    print(f"  Error de heading: {heading_error:.1f}°")
+
+                    if abs(heading_error) > heading_threshold:
+                        print(f"  🔧 CORRIGIENDO heading ({heading_error:.1f}°)...")
+
+                        # Calcular tiempo de giro (aproximado)
+                        correction_duration = abs(heading_error) / 60.0  # ~60°/s a velocidad 100
+
+                        if heading_error > 0:
+                            # Necesita girar a la izquierda (sentido antihorario)
+                            self.motors.spin_left(100)
+                        else:
+                            # Necesita girar a la derecha (sentido horario)
+                            self.motors.spin_right(100)
+
+                        time.sleep(correction_duration)
+                        self.motors.stop()
+                        time.sleep(0.1)
+
+                        # Verificar corrección
+                        corrected_pos = self.sensor_fusion.get_position()
+                        final_error = expected_heading - corrected_pos['heading']
+                        while final_error > 180:
+                            final_error -= 360
+                        while final_error < -180:
+                            final_error += 360
+
+                        print(f"  ✅ Corrección aplicada. Nuevo heading: {corrected_pos['heading']:.1f}° "
+                              f"(error residual: {final_error:.1f}°)")
+
+                        correction_made = True
+                        total_corrections += 1
+
+                        playback_data['corrections_made'].append({
+                            'step': i,
+                            'type': 'heading',
+                            'error_before': heading_error,
+                            'error_after': final_error,
+                            'duration': correction_duration
+                        })
+
+                # Registrar datos del paso
+                step_data = {
+                    'step_number': i,
+                    'action': step['action'],
+                    'speed': step['speed'],
+                    'duration': step['duration'],
+                    'start_time': step_start_time,
+                    'end_time': step_end_time,
+                    'actual_execution': {
+                        'start_position': start_pos,
+                        'end_position': end_pos,
+                        'distance_traveled': distance
+                    },
+                    'correction_applied': correction_made,
+                    'heading_error': heading_error if has_reference else None
+                }
+
+                playback_data['steps_executed'].append(step_data)
+
+        except KeyboardInterrupt:
+            print("\n\n⚠ Reproducción interrumpida por el usuario")
+            self.motors.stop()
+            playback_data['interrupted'] = True
+
+        except Exception as e:
+            print(f"\n\n❌ Error durante reproducción: {e}")
+            import traceback
+            traceback.print_exc()
+            self.motors.stop()
+            playback_data['error'] = str(e)
+
+        finally:
+            # Detener todo
+            self.motors.stop()
+            print("\n\nFinalizando sensor fusion...")
+            self.sensor_fusion.stop()
+
+            # Guardar sesión
+            if self.data_logger:
+                session_file = self.data_logger.save_session()
+                print(f"✓ Sesión de sensor fusion guardada: {session_file}")
+                playback_data['sensor_fusion_session'] = session_file
+
+            # Guardar datos de playback
+            playback_file = os.path.join(
+                DATA_PATHS['sessions'],
+                f"corrected_{self.current_sequence['name']}_{datetime.now().strftime('%Y%m%d_%H%M%S')}.json"
+            )
+
+            try:
+                with open(playback_file, 'w') as f:
+                    json.dump(playback_data, f, indent=2)
+                print(f"✓ Datos de playback guardados: {playback_file}")
+            except Exception as e:
+                print(f"⚠ Error guardando datos: {e}")
+
+        # Resumen final
+        if playback_data['steps_executed']:
+            print(f"\n" + "=" * 70)
+            print("RESUMEN DE REPRODUCCIÓN CON CORRECCIONES")
+            print("=" * 70)
+
+            first_step = playback_data['steps_executed'][0]
+            last_step = playback_data['steps_executed'][-1]
+
+            start_pos = first_step['actual_execution']['start_position']
+            end_pos = last_step['actual_execution']['end_position']
+
+            total_distance = sum(s['actual_execution']['distance_traveled']
+                               for s in playback_data['steps_executed'])
+
+            print(f"Pasos ejecutados: {len(playback_data['steps_executed'])}")
+            print(f"Correcciones aplicadas: {total_corrections}")
+            print(f"Posición final: ({end_pos['x']:.1f}, {end_pos['y']:.1f}, {end_pos['heading']:.1f}°)")
+            print(f"Distancia total: {total_distance:.1f} cm")
+
+            if has_reference:
+                # Mostrar error final vs esperado
+                last_step_original = self.current_sequence['steps'][-1]
+                if 'sensor_fusion' in last_step_original:
+                    expected_final = last_step_original['sensor_fusion']['end_position']
+                    final_error_x = end_pos['x'] - expected_final['x']
+                    final_error_y = end_pos['y'] - expected_final['y']
+                    final_error_mag = (final_error_x**2 + final_error_y**2)**0.5
+                    final_heading_error = end_pos['heading'] - expected_final['heading']
+
+                    print(f"\n📊 Precisión vs grabación original:")
+                    print(f"   Error de posición: {final_error_mag:.1f} cm")
+                    print(f"   Error de heading: {final_heading_error:.1f}°")
+
+            print("=" * 70)
+            print("\n✅ Reproducción completada")
+            return True
+
+        return False
+
     def _execute_step(self, step):
         """Ejecutar un solo paso de movimiento"""
         action = step['action']
@@ -853,6 +1095,7 @@ def movement_recorder_menu():
                 print("\n--- CON SENSOR FUSION ---")
                 print("3. 🎯 Grabar con sensores (enriquecida)")
                 print("4. 📊 Reproducir con sensores (análisis)")
+                print("c. 🔧 Reproducir CON correcciones (Nivel 1)")
 
             # Gestión de archivos
             print("\n--- GESTIÓN DE ARCHIVOS ---")
@@ -883,6 +1126,12 @@ def movement_recorder_menu():
 
             elif choice == '4' and recorder.enable_sensors:
                 recorder.play_with_sensors()
+
+            elif choice == 'c' and recorder.enable_sensors:
+                # Opción de ajustar umbral
+                threshold_input = input("Umbral de corrección en grados [Enter=10]: ").strip()
+                threshold = float(threshold_input) if threshold_input else 10.0
+                recorder.play_with_corrections(heading_threshold=threshold)
 
             elif choice == '5':
                 recorder.save_sequence()
