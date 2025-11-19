@@ -373,15 +373,19 @@ class SensorFusion:
         
         self.logger.log_robot_state(robot_data)
     
+    def get_position(self):
+        """Obtener posición actual del robot (thread-safe)"""
+        return self.position.copy()
+
     def get_system_status(self):
         """Obtener estado completo del sistema"""
         motor_status = self.motors.get_status()
         ultrasonic_status = self.ultrasonics.get_array_status()
         imu_status = self.imu.get_sensor_status()
-        
+
         with self.data_lock:
             sensor_age = time.time() - self.sensor_data['last_sensor_update']
-        
+
         return {
             'position': self.position.copy(),
             'velocity': self.velocity.copy(),
