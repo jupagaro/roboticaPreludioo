@@ -805,9 +805,15 @@ def movement_recorder_menu():
         print("Verifica las conexiones de hardware")
         return
 
-    # Mostrar modo activo
-    mode = "CON SENSOR FUSION" if enable_sensors else "SOLO MOTORES"
-    print(f"\n✓ Movement Recorder inicializado en modo: {mode}")
+    # Mostrar modo activo REAL (después de posible fallback)
+    mode = "CON SENSOR FUSION" if recorder.enable_sensors else "SOLO MOTORES"
+
+    # Advertir si hubo fallback
+    if enable_sensors and not recorder.enable_sensors:
+        print(f"\n⚠️  ADVERTENCIA: Sensor fusion no se pudo inicializar")
+        print(f"    Sistema operando en modo: {mode}")
+    else:
+        print(f"\n✓ Movement Recorder inicializado en modo: {mode}")
 
     try:
         while True:
@@ -821,7 +827,7 @@ def movement_recorder_menu():
             print("2. ▶️  Reproducir secuencia actual (simple)")
 
             # Opciones avanzadas con sensores
-            if enable_sensors:
+            if recorder.enable_sensors:
                 print("\n--- CON SENSOR FUSION ---")
                 print("3. 🎯 Grabar con sensores (enriquecida)")
                 print("4. 📊 Reproducir con sensores (análisis)")
@@ -835,7 +841,7 @@ def movement_recorder_menu():
             print("9. ℹ️  Ver detalles de secuencia actual")
 
             # Análisis
-            if enable_sensors:
+            if recorder.enable_sensors:
                 print("\n--- ANÁLISIS ---")
                 print("a. 📈 Analizar última reproducción (trajectory_analyzer)")
 
@@ -850,10 +856,10 @@ def movement_recorder_menu():
             elif choice == '2':
                 recorder.replay_sequence()
 
-            elif choice == '3' and enable_sensors:
+            elif choice == '3' and recorder.enable_sensors:
                 recorder.record_with_sensors()
 
-            elif choice == '4' and enable_sensors:
+            elif choice == '4' and recorder.enable_sensors:
                 recorder.play_with_sensors()
 
             elif choice == '5':
@@ -887,7 +893,7 @@ def movement_recorder_menu():
             elif choice == '9':
                 recorder.print_sequence_details()
 
-            elif choice == 'a' and enable_sensors:
+            elif choice == 'a' and recorder.enable_sensors:
                 # Importar y ejecutar trajectory analyzer
                 try:
                     from trajectory_analyzer import interactive_analyzer
