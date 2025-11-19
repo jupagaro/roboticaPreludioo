@@ -1,0 +1,292 @@
+{
+  "name": "1",
+  "created_at": "2025-11-19T09:27:45.949962",
+  "steps": [
+    {
+      "action": "forward",
+      "speed": 255,
+      "duration": 2.0
+    },
+    {
+      "action": "spin_right",
+      "speed": 255,
+      "duration": 2.5
+    },
+    {
+      "action": "backward",
+      "speed": 255,
+      "duration": 1.5
+    },
+    {
+      "action": "spin_left",
+      "speed": 255,
+      "duration": 2.0
+    },
+    {
+      "action": "forward",
+      "speed": 255,
+      "duration": 1.0
+    },
+    {
+      "action": "spin_right",
+      "speed": 255,
+      "duration": 1.0
+    },
+    {
+      "action": "spin_left",
+      "speed": 255,
+      "duration": 0.5
+    },
+    {
+      "action": "forward",
+      "speed": 255,
+      "duration": 3.0
+    },
+    {
+      "action": "backward",
+      "speed": 255,
+      "duration": 2.0
+    },
+    {
+      "action": "spin_left",
+      "speed": 255,
+      "duration": 0.5
+    },
+    {
+      "action": "forward",
+      "speed": 255,
+      "duration": 4.0
+    },
+    {
+      "action": "spin_right",
+      "speed": 255,
+      "duration": 3.0
+    },
+    {
+      "action": "spin_right",
+      "speed": 255,
+      "duration": 6.0
+    },
+    {
+      "action": "forward",
+      "speed": 255,
+      "duration": 4.0
+    },
+    {
+      "action": "forward",
+      "speed": 255,
+      "duration": 6.0
+    },
+    {
+      "action": "backward",
+      "speed": 255,
+      "duration": 4.0
+    },
+    {
+      "action": "spin_right",
+      "speed": 255,
+      "duration": 4.0
+    },
+    {
+      "action": "spin_right",
+      "speed": 255,
+      "duration": 1.5
+    },
+    {
+      "action": "spin_left",
+      "speed": 255,
+      "duration": 5.0
+    },
+    {
+      "action": "spin_right",
+      "speed": 255,
+      "duration": 4.5
+    },
+    {
+      "action": "forward",
+      "speed": 255,
+      "duration": 5.0
+    },
+    {
+      "action": "forward",
+      "speed": 255,
+      "duration": 3.0
+    },
+    {
+      "action": "spin_right",
+      "speed": 255,
+      "duration": 5.0
+    },
+    {
+      "action": "spin_left",
+      "speed": 255,
+      "duration": 1.0
+    },
+    {
+      "action": "forward",
+      "speed": 255,
+      "duration": 4.0
+    },
+    {
+      "action": "spin_right",
+      "speed": 255,
+      "duration": 5.0
+    },
+    {
+      "action": "forward",
+      "speed": 255,
+      "duration": 10.0
+    },
+    {
+      "action": "forward",
+      "speed": 255,
+      "duration": 2.0
+    },
+    {
+      "action": "forward",
+      "speed": 255,
+      "duration": 1.0
+    },
+    {
+      "action": "backward",
+      "speed": 255,
+      "duration": 4.0
+    },
+    {
+      "action": "spin_right",
+      "speed": 255,
+      "duration": 3.0
+    },
+    {
+      "action": "forward",
+      "speed": 255,
+      "duration": 3.0
+    },
+    {
+      "action": "spin_right",
+      "speed": 255,
+      "duration": 2.0
+    },
+    {
+      "action": "spin_left",
+      "speed": 255,
+      "duration": 0.3
+    },
+    {
+      "action": "spin_right",
+      "speed": 255,
+      "duration": 0.1
+    },
+    {
+      "action": "forward",
+      "speed": 255,
+      "duration": 1.0
+    },
+    {
+      "action": "forward",
+      "speed": 255,
+      "duration": 0.5
+    },
+    {
+      "action": "spin_right",
+      "speed": 255,
+      "duration": 0.4
+    },
+    {
+      "action": "forward",
+      "speed": 255,
+      "duration": 3.0
+    },
+    {
+      "action": "spin_right",
+      "speed": 255,
+      "duration": 2.0
+    },
+    {
+      "action": "spin_left",
+      "speed": 255,
+      "duration": 0.5
+    },
+    {
+      "action": "forward",
+      "speed": 255,
+      "duration": 3.0
+    },
+    {
+      "action": "spin_right",
+      "speed": 255,
+      "duration": 2.0
+    },
+    {
+      "action": "forward",
+      "speed": 255,
+      "duration": 2.0
+    },
+    {
+      "action": "spin_right",
+      "speed": 255,
+      "duration": 0.1
+    },
+    {
+      "action": "forward",
+      "speed": 255,
+      "duration": 4.0
+    },
+    {
+      "action": "forward",
+      "speed": 255,
+      "duration": 3.0
+    },
+    {
+      "action": "forward",
+      "speed": 255,
+      "duration": 1.0
+    },
+    {
+      "action": "spin_right",
+      "speed": 255,
+      "duration": 2.0
+    },
+    {
+      "action": "spin_right",
+      "speed": 255,
+      "duration": 1.0
+    },
+    {
+      "action": "forward",
+      "speed": 255,
+      "duration": 5.0
+    },
+    {
+      "action": "spin_right",
+      "speed": 255,
+      "duration": 1.5
+    },
+    {
+      "action": "forward",
+      "speed": 255,
+      "duration": 7.0
+    },
+    {
+      "action": "spin_left",
+      "speed": 255,
+      "duration": 2.0
+    },
+    {
+      "action": "forward",
+      "speed": 255,
+      "duration": 3.0
+    },
+    {
+      "action": "spin_left",
+      "speed": 255,
+      "duration": 2.0
+    },
+    {
+      "action": "forward",
+      "speed": 255,
+      "duration": 2.0
+    }
+  ],
+  "total_duration": 200.0
+}
