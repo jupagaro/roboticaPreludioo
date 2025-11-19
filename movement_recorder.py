@@ -40,23 +40,31 @@ class MovementRecorder:
         else:
             print("Inicializando Movement Recorder (solo motores)...")
 
-        self.motors = MotorController()
         self.enable_sensors = enable_sensors
         self.sensor_fusion = None
         self.data_logger = None
+        self.motors = None
 
-        if not self.motors.is_initialized:
-            raise Exception("Error: No se pudieron inicializar los motores")
-
-        # Inicializar sensor fusion si está habilitado
+        # Inicializar según modo
         if enable_sensors:
             try:
-                self.sensor_fusion = SensorFusion(motors=self.motors)
+                # Sensor fusion crea su propio MotorController
+                self.sensor_fusion = SensorFusion(session_name=None, enable_logging=False)
+                # Usar los motores del sensor fusion
+                self.motors = self.sensor_fusion.motors
                 print("✓ Sensor fusion inicializado")
             except Exception as e:
                 print(f"⚠ Advertencia: No se pudo inicializar sensor fusion: {e}")
                 print("  Continuando en modo solo-motores")
                 self.enable_sensors = False
+                # Fallback: crear motores directamente
+                self.motors = MotorController()
+        else:
+            # Modo simple: solo motores
+            self.motors = MotorController()
+
+        if not self.motors.is_initialized:
+            raise Exception("Error: No se pudieron inicializar los motores")
 
         # Secuencia actual en memoria
         self.current_sequence = {
@@ -246,13 +254,17 @@ class MovementRecorder:
             'total_duration': 0
         }
 
-        # Inicializar data logger para esta sesión
+        # Configurar logging para esta sesión
         session_name = f"recording_{sequence_name}_{datetime.now().strftime('%Y%m%d_%H%M%S')}"
         self.data_logger = DataLogger(session_name)
 
+        # Activar logging en sensor fusion
+        self.sensor_fusion.enable_logging = True
+        self.sensor_fusion.logger = self.data_logger
+
         # Iniciar sensor fusion
         print("\nIniciando sensor fusion...")
-        self.sensor_fusion.start(enable_logging=True, data_logger=self.data_logger)
+        self.sensor_fusion.start_sensor_loop(update_rate=10)
         time.sleep(0.5)  # Esperar estabilización
 
         print(f"\nGrabando secuencia enriquecida: '{sequence_name}'")
@@ -448,13 +460,17 @@ class MovementRecorder:
 
         input("Presiona Enter para comenzar...")
 
-        # Inicializar data logger para esta sesión de playback
+        # Configurar logging para esta sesión de playback
         session_name = f"playback_{self.current_sequence['name']}_{datetime.now().strftime('%Y%m%d_%H%M%S')}"
         self.data_logger = DataLogger(session_name)
 
+        # Activar logging en sensor fusion
+        self.sensor_fusion.enable_logging = True
+        self.sensor_fusion.logger = self.data_logger
+
         # Iniciar sensor fusion
         print("\nIniciando sensor fusion...")
-        self.sensor_fusion.start(enable_logging=True, data_logger=self.data_logger)
+        self.sensor_fusion.start_sensor_loop(update_rate=10)
         time.sleep(0.5)  # Esperar estabilización
 
         playback_start_time = time.time()
@@ -769,16 +785,22 @@ class MovementRecorder:
 
     def cleanup(self):
         """Limpiar recursos"""
-        self.motors.stop()
-        self.motors.cleanup()
+        # Detener motores primero
+        if self.motors:
+            self.motors.stop()
 
-        # Limpiar sensor fusion si está activo
+        # Si hay sensor fusion, usar su cleanup (que limpia los motores también)
         if self.sensor_fusion is not None:
             try:
-                self.sensor_fusion.stop()
                 self.sensor_fusion.cleanup()
+                print("Recursos del Movement Recorder liberados")
+                return
             except Exception as e:
                 print(f"⚠ Error limpiando sensor fusion: {e}")
+
+        # Si no hay sensor fusion, limpiar motores directamente
+        if self.motors:
+            self.motors.cleanup()
 
         print("Recursos del Movement Recorder liberados")
 
