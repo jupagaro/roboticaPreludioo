@@ -168,13 +168,45 @@ class SmartReplay:
             return True
         else:
             print(f"\n❌ PRE-FLIGHT FAILED")
-            print(f"\n⚠️  Robot is NOT at the same starting position as recording!")
-            print(f"\nTo fix:")
-            print(f"  1. Move robot to reference position manually")
-            print(f"  2. Or reset sensor fusion position:")
-            print(f"     sensor_fusion.position = {{'x': {ref_pos['x']}, 'y': {ref_pos['y']}, 'heading': {ref_pos['heading']}}}")
+            print(f"\n⚠️  Robot position doesn't match recording start")
+            print(f"\nThis usually happens because:")
+            print(f"  - Recording was started AFTER sensor fusion initialized")
+            print(f"  - Robot was moved before hitting 'record'")
+            print(f"  - Sensor fusion accumulated drift before recording")
+            print(f"\nSOLUTION: Auto-reset sensor fusion to recording's coordinate system")
+            print(f"This will align the robot's position to match the recording.")
             print("="*70)
-            return False
+
+            # Offer auto-reset
+            reset_choice = input("\nReset sensor fusion to recording start position? [Y/n]: ").strip().lower()
+
+            if reset_choice != 'n':
+                # Reset sensor fusion position
+                print(f"\n🔄 Resetting sensor fusion...")
+                self.sensor_fusion.position = {
+                    'x': ref_pos['x'],
+                    'y': ref_pos['y'],
+                    'heading': ref_pos['heading']
+                }
+
+                # Verify reset
+                time.sleep(0.2)
+                new_pos = self.sensor_fusion.get_position()
+
+                print(f"✅ Sensor fusion reset to recording start:")
+                print(f"  X: {new_pos['x']:.1f} cm")
+                print(f"  Y: {new_pos['y']:.1f} cm")
+                print(f"  Heading: {new_pos['heading']:.1f}°")
+                print(f"\n✅ PRE-FLIGHT PASSED (with auto-reset) - Ready to replay!")
+                print("="*70)
+                return True
+            else:
+                print(f"\n❌ Auto-reset declined")
+                print(f"\nManual options:")
+                print(f"  1. Move robot to reference position physically")
+                print(f"  2. Re-run and accept auto-reset")
+                print("="*70)
+                return False
 
     # ========================================================================
     # STEP EXECUTION WITH CORRECTIONS
@@ -503,11 +535,8 @@ class SmartReplay:
 
         # Pre-flight check
         if not self.validate_starting_position():
-            user_override = input("\nContinue anyway? [y/N]: ").strip().lower()
-            if user_override != 'y':
-                print("Replay cancelled.")
-                return False
-            print("\n⚠️  Proceeding without valid starting position...")
+            print("\n❌ Replay cancelled - Pre-flight validation failed")
+            return False
 
         input("\nPress Enter to start replay...")
 
