@@ -6,12 +6,6 @@ Practical examples of using sensor fusion for autonomous competition runs
 This demonstrates how to use sensor fusion (NOT AI, but sensor data fusion)
 for intelligent navigation during the rescue robot competition.
 
-WHAT IS SENSOR FUSION?
-- Combines data from multiple sensors (IMU + motors + ultrasonics)
-- Uses math (complementary filter) to estimate position & obstacles
-- NOT machine learning - it's deterministic sensor combination
-- Already implemented in sensor_fusion.py
-
 HOW IT WORKS:
 1. IMU (gyroscope) → Fast, accurate heading (short-term)
 2. Motor odometry → Position estimate from wheel speeds
@@ -444,7 +438,5 @@ def main():
 
 if __name__ == "__main__":
     print("\n🤖 AUTONOMOUS NAVIGATION WITH SENSOR FUSION")
-    print("This demonstrates the sensor fusion system already in your codebase")
-    print("NOT AI - just smart sensor combination!\n")
 
     main()

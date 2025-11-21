@@ -181,8 +181,11 @@ class SmartReplay:
             reset_choice = input("\nReset sensor fusion to recording start position? [Y/n]: ").strip().lower()
 
             if reset_choice != 'n':
-                # Reset sensor fusion position
-                print(f"\n🔄 Resetting sensor fusion...")
+                # Reset sensor fusion position AND heading
+                print(f"\n🔄 Resetting sensor fusion coordinate system...")
+                print(f"   Setting position: ({ref_pos['x']:.1f}, {ref_pos['y']:.1f})")
+                print(f"   Setting heading: {ref_pos['heading']:.1f}°")
+
                 self.sensor_fusion.position = {
                     'x': ref_pos['x'],
                     'y': ref_pos['y'],
@@ -193,10 +196,11 @@ class SmartReplay:
                 time.sleep(0.2)
                 new_pos = self.sensor_fusion.get_position()
 
-                print(f"✅ Sensor fusion reset to recording start:")
-                print(f"  X: {new_pos['x']:.1f} cm")
-                print(f"  Y: {new_pos['y']:.1f} cm")
+                print(f"\n✅ Sensor fusion coordinate system aligned to recording:")
+                print(f"  Position: ({new_pos['x']:.1f}, {new_pos['y']:.1f})")
                 print(f"  Heading: {new_pos['heading']:.1f}°")
+                print(f"\n  Note: Robot's physical orientation hasn't changed -")
+                print(f"  we've just set the coordinate system to match the recording.")
                 print(f"\n✅ PRE-FLIGHT PASSED (with auto-reset) - Ready to replay!")
                 print("="*70)
                 return True
@@ -257,19 +261,42 @@ class SmartReplay:
         if step['action'] in ['forward', 'backward']:  # Only for linear movements
             movement_ratio = actual_distance / expected_distance if expected_distance > 0 else 1.0
 
-            if movement_ratio < THRESHOLDS['stuck_detection']:
-                print(f"  🚨 CRASH DETECTED! Moved only {movement_ratio*100:.0f}% of expected")
-                crashed = True
+            # Primary check: Did we move significantly less than expected?
+            movement_insufficient = movement_ratio < THRESHOLDS['stuck_detection']
 
-                # Try recovery
-                recovery_success = self._handle_crash_recovery(step)
+            if movement_insufficient:
+                # Secondary check: Are ultrasonic sensors detecting an obstacle?
+                nav_data = self.sensor_fusion.get_navigation_data()
 
-                if recovery_success:
-                    # Re-capture position after recovery
-                    end_pos = self.sensor_fusion.get_position()
+                # Check relevant sensors based on movement direction
+                if step['action'] == 'forward':
+                    obstacle_detected = nav_data['front_min'] < 10  # Wall within 10cm
+                    sensor_direction = "front"
+                else:  # backward
+                    obstacle_detected = nav_data['back_min'] < 10
+                    sensor_direction = "back"
+
+                # CRASH confirmed only if BOTH conditions true
+                if obstacle_detected:
+                    print(f"  🚨 CRASH DETECTED!")
+                    print(f"     Movement: {movement_ratio*100:.0f}% of expected")
+                    print(f"     {sensor_direction.capitalize()} sensor: {nav_data[sensor_direction + '_min']:.1f} cm (obstacle confirmed)")
+                    crashed = True
+
+                    # Try recovery
+                    recovery_success = self._handle_crash_recovery(step)
+
+                    if recovery_success:
+                        # Re-capture position after recovery
+                        end_pos = self.sensor_fusion.get_position()
+                    else:
+                        # Recovery failed, stop execution
+                        raise Exception("Robot stuck - unable to recover")
                 else:
-                    # Recovery failed, stop execution
-                    raise Exception("Robot stuck - unable to recover")
+                    # Movement slow but no obstacle = likely wheel slip or piece detection
+                    print(f"  ⚠️  Low movement ({movement_ratio*100:.0f}% of expected)")
+                    print(f"     But no obstacle detected - likely wheel slip or detected game piece")
+                    print(f"     Continuing without crash recovery...")
 
         # === HEADING CORRECTION ===
         heading_error = expected_pos['heading'] - end_pos['heading']
