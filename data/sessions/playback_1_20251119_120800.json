@@ -1,8 +1,0 @@
-{
-  "sequence_name": "1",
-  "playback_timestamp": "2025-11-19T12:08:00.329510",
-  "original_recording_mode": "simple",
-  "steps_executed": [],
-  "error": "'SensorFusion' object has no attribute 'get_position'",
-  "sensor_fusion_session": "data/sessions/playback_1_20251119_120759.json"
-}
