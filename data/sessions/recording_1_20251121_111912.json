@@ -1,0 +1,7266 @@
+{
+  "session_info": {
+    "name": "recording_1_20251121_111912",
+    "start_time": 1763741952.0858922,
+    "end_time": 1763741980.8674564,
+    "duration": 28.781564712524414,
+    "created_at": "2025-11-21T11:19:12.085892",
+    "total_entries": 59
+  },
+  "statistics": {
+    "session_name": "recording_1_20251121_111912",
+    "duration": 28.781614542007446,
+    "total_log_entries": 59,
+    "total_obstacles_detected": 177,
+    "total_mission_events": 0,
+    "trajectory_stats": {
+      "distance_traveled": 30.913538146018983,
+      "x_range": [
+        -13.340623551933167,
+        0.0
+      ],
+      "y_range": [
+        -27.878913959607758,
+        0.0
+      ],
+      "total_positions": 59
+    },
+    "sensor_stats": {
+      "total_sensor_readings": 59,
+      "readings_per_sensor": {
+        "frontal_izq": 59,
+        "frontal_der": 59,
+        "trasero_izq": 59,
+        "trasero_der": 59
+      }
+    }
+  },
+  "trajectory": [
+    {
+      "timestamp": 1763741952.472457,
+      "x": 0.0,
+      "y": 0.0,
+      "heading": -87.44095482527756
+    },
+    {
+      "timestamp": 1763741952.9567373,
+      "x": 0.0,
+      "y": 0.0,
+      "heading": -88.29235431467305
+    },
+    {
+      "timestamp": 1763741953.440937,
+      "x": 0.0,
+      "y": 0.0,
+      "heading": -89.09652325528269
+    },
+    {
+      "timestamp": 1763741953.9251978,
+      "x": 0.0,
+      "y": 0.0,
+      "heading": -89.84640777587892
+    },
+    {
+      "timestamp": 1763741954.409362,
+      "x": 0.0,
+      "y": 0.0,
+      "heading": -90.59255503108484
+    },
+    {
+      "timestamp": 1763741954.893475,
+      "x": 0.0,
+      "y": 0.0,
+      "heading": -91.30964729440122
+    },
+    {
+      "timestamp": 1763741955.3781025,
+      "x": 0.0,
+      "y": 0.0,
+      "heading": -92.12464124555807
+    },
+    {
+      "timestamp": 1763741955.86232,
+      "x": 0.0,
+      "y": 0.0,
+      "heading": -92.95126914708669
+    },
+    {
+      "timestamp": 1763741956.3464162,
+      "x": 0.0,
+      "y": 0.0,
+      "heading": -93.76251465331507
+    },
+    {
+      "timestamp": 1763741956.830442,
+      "x": 0.0,
+      "y": 0.0,
+      "heading": -94.56274350766917
+    },
+    {
+      "timestamp": 1763741957.3146777,
+      "x": 0.0,
+      "y": 0.0,
+      "heading": -95.41764348383168
+    },
+    {
+      "timestamp": 1763741957.799308,
+      "x": 0.0,
+      "y": 0.0,
+      "heading": -96.21162922782753
+    },
+    {
+      "timestamp": 1763741958.283504,
+      "x": 0.0,
+      "y": 0.0,
+      "heading": -97.0374865117328
+    },
+    {
+      "timestamp": 1763741958.7676318,
+      "x": 0.0,
+      "y": 0.0,
+      "heading": -97.9031016792778
+    },
+    {
+      "timestamp": 1763741959.253358,
+      "x": 0.0,
+      "y": 0.0,
+      "heading": -98.71700162308818
+    },
+    {
+      "timestamp": 1763741959.7376285,
+      "x": 0.0,
+      "y": 0.0,
+      "heading": -99.50678718177419
+    },
+    {
+      "timestamp": 1763741960.2233894,
+      "x": 0.0,
+      "y": 0.0,
+      "heading": -100.30990572023029
+    },
+    {
+      "timestamp": 1763741960.7075574,
+      "x": 0.0,
+      "y": 0.0,
+      "heading": -101.07777672298083
+    },
+    {
+      "timestamp": 1763741961.19166,
+      "x": 0.0,
+      "y": 0.0,
+      "heading": -101.81295022163684
+    },
+    {
+      "timestamp": 1763741961.675834,
+      "x": 0.0,
+      "y": 0.0,
+      "heading": -102.63512135425599
+    },
+    {
+      "timestamp": 1763741962.161615,
+      "x": 0.0,
+      "y": 0.0,
+      "heading": -103.5327865437151
+    },
+    {
+      "timestamp": 1763741962.6473682,
+      "x": 0.0,
+      "y": 0.0,
+      "heading": -104.36855547631971
+    },
+    {
+      "timestamp": 1763741963.1319199,
+      "x": 0.0,
+      "y": 0.0,
+      "heading": -105.19139141333923
+    },
+    {
+      "timestamp": 1763741963.6176505,
+      "x": 0.0,
+      "y": 0.0,
+      "heading": -106.05621698586997
+    },
+    {
+      "timestamp": 1763741964.103384,
+      "x": 0.0,
+      "y": 0.0,
+      "heading": -106.83750264073147
+    },
+    {
+      "timestamp": 1763741964.5890987,
+      "x": 0.0,
+      "y": 0.0,
+      "heading": -107.70955070859604
+    },
+    {
+      "timestamp": 1763741965.0732496,
+      "x": 0.0,
+      "y": 0.0,
+      "heading": -108.57157334546098
+    },
+    {
+      "timestamp": 1763741965.5590758,
+      "x": 0.0,
+      "y": 0.0,
+      "heading": -109.42926238453117
+    },
+    {
+      "timestamp": 1763741966.0448728,
+      "x": 0.0,
+      "y": 0.0,
+      "heading": -110.27241721779338
+    },
+    {
+      "timestamp": 1763741966.528988,
+      "x": 0.0,
+      "y": 0.0,
+      "heading": -111.0909092121998
+    },
+    {
+      "timestamp": 1763741967.0147488,
+      "x": 0.0,
+      "y": 0.0,
+      "heading": -111.86856632392826
+    },
+    {
+      "timestamp": 1763741967.4989238,
+      "x": 0.0,
+      "y": 0.0,
+      "heading": -112.65093663120999
+    },
+    {
+      "timestamp": 1763741967.9852686,
+      "x": -2.169700109778643,
+      "y": -4.809658400377072,
+      "heading": -114.28076130655887
+    },
+    {
+      "timestamp": 1763741968.4634466,
+      "x": -4.291274032295425,
+      "y": -9.544141344893333,
+      "heading": -114.13767648784261
+    },
+    {
+      "timestamp": 1763741968.9368367,
+      "x": -6.460360186311879,
+      "y": -14.200622394343743,
+      "heading": -114.97708732623182
+    },
+    {
+      "timestamp": 1763741969.4073365,
+      "x": -8.705080405442777,
+      "y": -18.78553931147889,
+      "heading": -116.08581460901802
+    },
+    {
+      "timestamp": 1763741969.8777776,
+      "x": -10.979850031740721,
+      "y": -23.354830171795182,
+      "heading": -116.4658968974252
+    },
+    {
+      "timestamp": 1763741970.3481119,
+      "x": -13.340623551933167,
+      "y": -27.878913959607758,
+      "heading": -117.5566139674005
+    },
+    {
+      "timestamp": 1763741970.8229153,
+      "x": -13.340623551933167,
+      "y": -27.878913959607758,
+      "heading": -118.4373477302435
+    },
+    {
+      "timestamp": 1763741971.2954173,
+      "x": -13.340623551933167,
+      "y": -27.878913959607758,
+      "heading": -119.18686360788712
+    },
+    {
+      "timestamp": 1763741971.767894,
+      "x": -13.340623551933167,
+      "y": -27.878913959607758,
+      "heading": -119.94325000377104
+    },
+    {
+      "timestamp": 1763741972.240329,
+      "x": -13.340623551933167,
+      "y": -27.878913959607758,
+      "heading": -120.73137067631004
+    },
+    {
+      "timestamp": 1763741972.723464,
+      "x": -13.340623551933167,
+      "y": -27.878913959607758,
+      "heading": -121.61684737070829
+    },
+    {
+      "timestamp": 1763741973.2064862,
+      "x": -13.340623551933167,
+      "y": -27.878913959607758,
+      "heading": -122.46967891114362
+    },
+    {
+      "timestamp": 1763741973.6894395,
+      "x": -13.340623551933167,
+      "y": -27.878913959607758,
+      "heading": -123.29343743116804
+    },
+    {
+      "timestamp": 1763741974.1770618,
+      "x": -13.340623551933167,
+      "y": -27.878913959607758,
+      "heading": -124.13605504909548
+    },
+    {
+      "timestamp": 1763741974.6662505,
+      "x": -13.340623551933167,
+      "y": -27.878913959607758,
+      "heading": -124.9264829710604
+    },
+    {
+      "timestamp": 1763741975.1554155,
+      "x": -13.340623551933167,
+      "y": -27.878913959607758,
+      "heading": -125.78281577947489
+    },
+    {
+      "timestamp": 1763741975.6388006,
+      "x": -13.340623551933167,
+      "y": -27.878913959607758,
+      "heading": -126.66520443501366
+    },
+    {
+      "timestamp": 1763741976.1217337,
+      "x": -13.340623551933167,
+      "y": -27.878913959607758,
+      "heading": -127.55756808699546
+    },
+    {
+      "timestamp": 1763741976.6046407,
+      "x": -13.340623551933167,
+      "y": -27.878913959607758,
+      "heading": -128.33789345912353
+    },
+    {
+      "timestamp": 1763741977.0875316,
+      "x": -13.340623551933167,
+      "y": -27.878913959607758,
+      "heading": -129.17596112451483
+    },
+    {
+      "timestamp": 1763741977.5600872,
+      "x": -13.340623551933167,
+      "y": -27.878913959607758,
+      "heading": -129.98189458792447
+    },
+    {
+      "timestamp": 1763741978.043175,
+      "x": -13.340623551933167,
+      "y": -27.878913959607758,
+      "heading": -130.82039052879537
+    },
+    {
+      "timestamp": 1763741978.5155723,
+      "x": -13.340623551933167,
+      "y": -27.878913959607758,
+      "heading": -131.5660710133123
+    },
+    {
+      "timestamp": 1763741978.9879892,
+      "x": -13.340623551933167,
+      "y": -27.878913959607758,
+      "heading": -132.36478614428572
+    },
+    {
+      "timestamp": 1763741979.4603493,
+      "x": -13.340623551933167,
+      "y": -27.878913959607758,
+      "heading": -133.2058264538714
+    },
+    {
+      "timestamp": 1763741979.9433172,
+      "x": -13.340623551933167,
+      "y": -27.878913959607758,
+      "heading": -134.01151253700257
+    },
+    {
+      "timestamp": 1763741980.426212,
+      "x": -13.340623551933167,
+      "y": -27.878913959607758,
+      "heading": -134.80988956542416
+    }
+  ],
+  "obstacles_detected": [
+    {
+      "x": 21.2,
+      "y": 7.5,
+      "distance": 29.7,
+      "sensor": "frontal_izq",
+      "confidence": "medium",
+      "detection_time": 1763741952.472457
+    },
+    {
+      "x": 258.8,
+      "y": 7.5,
+      "distance": 250.3,
+      "sensor": "frontal_der",
+      "confidence": "low",
+      "detection_time": 1763741952.472457
+    },
+    {
+      "x": 7.378679656440357,
+      "y": -10.121320343559642,
+      "distance": 3.0,
+      "sensor": "trasero_der",
+      "confidence": "high",
+      "detection_time": 1763741952.472457
+    },
+    {
+      "x": 8.443542457614743,
+      "y": -20.943891490514776,
+      "distance": 29.8,
+      "sensor": "frontal_izq",
+      "confidence": "medium",
+      "detection_time": 1763741952.9567373
+    },
+    {
+      "x": 19.025335523259663,
+      "y": -257.7075408447091,
+      "distance": 249.8,
+      "sensor": "frontal_der",
+      "confidence": "low",
+      "detection_time": 1763741952.9567373
+    },
+    {
+      "x": -9.781776707180981,
+      "y": -7.823227174265915,
+      "distance": 3.0,
+      "sensor": "trasero_der",
+      "confidence": "high",
+      "detection_time": 1763741952.9567373
+    },
+    {
+      "x": 8.131401258748566,
+      "y": -21.06704330391957,
+      "distance": 29.8,
+      "sensor": "frontal_izq",
+      "confidence": "medium",
+      "detection_time": 1763741953.440937
+    },
+    {
+      "x": 15.223712596559986,
+      "y": -258.96134571548964,
+      "distance": 250.8,
+      "sensor": "frontal_der",
+      "confidence": "low",
+      "detection_time": 1763741953.440937
+    },
+    {
+      "x": -10.042516337840869,
+      "y": -7.539870058880879,
+      "distance": 3.2,
+      "sensor": "trasero_der",
+      "confidence": "high",
+      "detection_time": 1763741953.440937
+    },
+    {
+      "x": 7.8349257776898344,
+      "y": -21.179092002682538,
+      "distance": 29.8,
+      "sensor": "frontal_izq",
+      "confidence": "medium",
+      "detection_time": 1763741953.9251978
+    },
+    {
+      "x": 11.573516310874734,
+      "y": -258.24961514047203,
+      "distance": 249.9,
+      "sensor": "frontal_der",
+      "confidence": "low",
+      "detection_time": 1763741953.9251978
+    },
+    {
+      "x": -10.075531938029062,
+      "y": -7.467768281134694,
+      "distance": 3.1,
+      "sensor": "trasero_der",
+      "confidence": "high",
+      "detection_time": 1763741953.9251978
+    },
+    {
+      "x": 7.556803612427086,
+      "y": -21.179818676353413,
+      "distance": 29.7,
+      "sensor": "frontal_izq",
+      "confidence": "medium",
+      "detection_time": 1763741954.409362
+    },
+    {
+      "x": 8.19373479747513,
+      "y": -258.7789649683077,
+      "distance": 250.3,
+      "sensor": "frontal_der",
+      "confidence": "low",
+      "detection_time": 1763741954.409362
+    },
+    {
+      "x": -10.172404025211371,
+      "y": -7.335264363526962,
+      "distance": 3.1,
+      "sensor": "trasero_der",
+      "confidence": "high",
+      "detection_time": 1763741954.409362
+    },
+    {
+      "x": 7.2793174659810616,
+      "y": -21.376424799986154,
+      "distance": 29.8,
+      "sensor": "frontal_izq",
+      "confidence": "medium",
+      "detection_time": 1763741954.893475
+    },
+    {
+      "x": 4.82312763199346,
+      "y": -258.8637236845779,
+      "distance": 250.3,
+      "sensor": "frontal_der",
+      "confidence": "low",
+      "detection_time": 1763741954.893475
+    },
+    {
+      "x": -10.337039518728183,
+      "y": -7.130735508267081,
+      "distance": 3.2,
+      "sensor": "trasero_der",
+      "confidence": "high",
+      "detection_time": 1763741954.893475
+    },
+    {
+      "x": 7.011215107124667,
+      "y": -21.46585341237629,
+      "distance": 29.8,
+      "sensor": "frontal_izq",
+      "confidence": "medium",
+      "detection_time": 1763741955.3781025
+    },
+    {
+      "x": 1.5441395695963989,
+      "y": -260.603368422186,
+      "distance": 252.0,
+      "sensor": "frontal_der",
+      "confidence": "low",
+      "detection_time": 1763741955.3781025
+    },
+    {
+      "x": -10.287321047767847,
+      "y": -7.1454226347693215,
+      "distance": 3.0,
+      "sensor": "trasero_der",
+      "confidence": "high",
+      "detection_time": 1763741955.3781025
+    },
+    {
+      "x": 6.701471435843095,
+      "y": -21.66333955313859,
+      "distance": 29.9,
+      "sensor": "frontal_izq",
+      "confidence": "medium",
+      "detection_time": 1763741955.86232
+    },
+    {
+      "x": -2.0997744570089374,
+      "y": -258.90013701662986,
+      "distance": 250.3,
+      "sensor": "frontal_der",
+      "confidence": "low",
+      "detection_time": 1763741955.86232
+    },
+    {
+      "x": -10.455956323450117,
+      "y": -6.925090923379175,
+      "distance": 3.1,
+      "sensor": "trasero_der",
+      "confidence": "high",
+      "detection_time": 1763741955.86232
+    },
+    {
+      "x": 6.39338829545181,
+      "y": -21.657898930957725,
+      "distance": 29.8,
+      "sensor": "frontal_izq",
+      "confidence": "medium",
+      "detection_time": 1763741956.3464162
+    },
+    {
+      "x": -5.834676636013851,
+      "y": -258.8428993589609,
+      "distance": 250.3,
+      "sensor": "frontal_der",
+      "confidence": "low",
+      "detection_time": 1763741956.3464162
+    },
+    {
+      "x": -10.621751826861043,
+      "y": -6.699265857478956,
+      "distance": 3.2,
+      "sensor": "trasero_der",
+      "confidence": "high",
+      "detection_time": 1763741956.3464162
+    },
+    {
+      "x": 6.079543451709718,
+      "y": -21.846032853101118,
+      "distance": 29.9,
+      "sensor": "frontal_izq",
+      "confidence": "medium",
+      "detection_time": 1763741956.830442
+    },
+    {
+      "x": -9.472652962218245,
+      "y": -258.335206361536,
+      "distance": 249.9,
+      "sensor": "frontal_der",
+      "confidence": "low",
+      "detection_time": 1763741956.830442
+    },
+    {
+      "x": -10.715538249361263,
+      "y": -6.548207000934296,
+      "distance": 3.2,
+      "sensor": "trasero_der",
+      "confidence": "high",
+      "detection_time": 1763741956.830442
+    },
+    {
+      "x": 5.781800077781217,
+      "y": -21.82912705218807,
+      "distance": 29.8,
+      "sensor": "frontal_izq",
+      "confidence": "medium",
+      "detection_time": 1763741957.3146777
+    },
+    {
+      "x": -13.111503876084488,
+      "y": -258.57644607757186,
+      "distance": 250.3,
+      "sensor": "frontal_der",
+      "confidence": "low",
+      "detection_time": 1763741957.3146777
+    },
+    {
+      "x": -10.676223553103808,
+      "y": -6.5501366102908545,
+      "distance": 3.0,
+      "sensor": "trasero_der",
+      "confidence": "high",
+      "detection_time": 1763741957.3146777
+    },
+    {
+      "x": 5.464901597905952,
+      "y": -21.813409878448738,
+      "distance": 29.7,
+      "sensor": "frontal_izq",
+      "confidence": "medium",
+      "detection_time": 1763741957.799308
+    },
+    {
+      "x": -17.05304706776492,
+      "y": -259.248015586821,
+      "distance": 251.2,
+      "sensor": "frontal_der",
+      "confidence": "low",
+      "detection_time": 1763741957.799308
+    },
+    {
+      "x": -10.836483594565403,
+      "y": -6.313044450950746,
+      "distance": 3.1,
+      "sensor": "trasero_der",
+      "confidence": "high",
+      "detection_time": 1763741957.799308
+    },
+    {
+      "x": 5.053902484157144,
+      "y": -22.881172821353154,
+      "distance": 30.7,
+      "sensor": "frontal_izq",
+      "confidence": "medium",
+      "detection_time": 1763741958.283504
+    },
+    {
+      "x": -20.64386698954802,
+      "y": -258.9868157951633,
+      "distance": 251.2,
+      "sensor": "frontal_der",
+      "confidence": "low",
+      "detection_time": 1763741958.283504
+    },
+    {
+      "x": -10.797635254210022,
+      "y": -6.318167766110514,
+      "distance": 2.9,
+      "sensor": "trasero_der",
+      "confidence": "high",
+      "detection_time": 1763741958.283504
+    },
+    {
+      "x": 4.723581315663417,
+      "y": -22.95164001883777,
+      "distance": 30.7,
+      "sensor": "frontal_izq",
+      "confidence": "medium",
+      "detection_time": 1763741958.7676318
+    },
+    {
+      "x": -24.31335142624161,
+      "y": -258.1661305098406,
+      "distance": 250.7,
+      "sensor": "frontal_der",
+      "confidence": "low",
+      "detection_time": 1763741958.7676318
+    },
+    {
+      "x": -10.949094652382806,
+      "y": -6.083039146880719,
+      "distance": 3.0,
+      "sensor": "trasero_der",
+      "confidence": "high",
+      "detection_time": 1763741958.7676318
+    },
+    {
+      "x": 0.7188546303078969,
+      "y": -49.36773488849255,
+      "distance": 57.3,
+      "sensor": "frontal_izq",
+      "confidence": "low",
+      "detection_time": 1763741959.253358
+    },
+    {
+      "x": -28.10076108608697,
+      "y": -256.97695855150647,
+      "distance": 249.9,
+      "sensor": "frontal_der",
+      "confidence": "low",
+      "detection_time": 1763741959.253358
+    },
+    {
+      "x": -11.039743183034723,
+      "y": -5.916934123510202,
+      "distance": 3.0,
+      "sensor": "trasero_der",
+      "confidence": "high",
+      "detection_time": 1763741959.253358
+    },
+    {
+      "x": 4.0791762528478746,
+      "y": -22.882533100559513,
+      "distance": 30.5,
+      "sensor": "frontal_izq",
+      "confidence": "medium",
+      "detection_time": 1763741959.7376285
+    },
+    {
+      "x": -31.94524131009484,
+      "y": -257.8368506587834,
+      "distance": 251.2,
+      "sensor": "frontal_der",
+      "confidence": "low",
+      "detection_time": 1763741959.7376285
+    },
+    {
+      "x": -11.122677960101061,
+      "y": -5.7595202895035555,
+      "distance": 3.0,
+      "sensor": "trasero_der",
+      "confidence": "high",
+      "detection_time": 1763741959.7376285
+    },
+    {
+      "x": -0.679545731702925,
+      "y": -49.46714280811582,
+      "distance": 57.4,
+      "sensor": "frontal_izq",
+      "confidence": "low",
+      "detection_time": 1763741960.2233894
+    },
+    {
+      "x": -35.347561432023106,
+      "y": -256.48438529627754,
+      "distance": 250.3,
+      "sensor": "frontal_der",
+      "confidence": "low",
+      "detection_time": 1763741960.2233894
+    },
+    {
+      "x": -11.20101005259723,
+      "y": -5.605658995241942,
+      "distance": 3.0,
+      "sensor": "trasero_der",
+      "confidence": "high",
+      "detection_time": 1763741960.2233894
+    },
+    {
+      "x": 3.4415149256647632,
+      "y": -22.987082786130706,
+      "distance": 30.5,
+      "sensor": "frontal_izq",
+      "confidence": "medium",
+      "detection_time": 1763741960.7075574
+    },
+    {
+      "x": -38.957026213952304,
+      "y": -256.0621215810051,
+      "distance": 250.4,
+      "sensor": "frontal_der",
+      "confidence": "low",
+      "detection_time": 1763741960.7075574
+    },
+    {
+      "x": -11.335395733012454,
+      "y": -5.36588394497758,
+      "distance": 3.1,
+      "sensor": "trasero_der",
+      "confidence": "high",
+      "detection_time": 1763741960.7075574
+    },
+    {
+      "x": 3.0370743558204794,
+      "y": -23.521823470071737,
+      "distance": 31.0,
+      "sensor": "frontal_izq",
+      "confidence": "medium",
+      "detection_time": 1763741961.19166
+    },
+    {
+      "x": -42.36592397933705,
+      "y": -255.41890784626153,
+      "distance": 250.3,
+      "sensor": "frontal_der",
+      "confidence": "low",
+      "detection_time": 1763741961.19166
+    },
+    {
+      "x": -11.40628853641557,
+      "y": -5.213491033750791,
+      "distance": 3.1,
+      "sensor": "trasero_der",
+      "confidence": "high",
+      "detection_time": 1763741961.19166
+    },
+    {
+      "x": 2.837378099363801,
+      "y": -23.06944484640345,
+      "distance": 30.5,
+      "sensor": "frontal_izq",
+      "confidence": "medium",
+      "detection_time": 1763741961.675834
+    },
+    {
+      "x": -45.53731850718106,
+      "y": -254.36488087622385,
+      "distance": 249.8,
+      "sensor": "frontal_der",
+      "confidence": "low",
+      "detection_time": 1763741961.675834
+    },
+    {
+      "x": -11.472243086436274,
+      "y": -5.066709533877013,
+      "distance": 3.1,
+      "sensor": "trasero_der",
+      "confidence": "high",
+      "detection_time": 1763741961.675834
+    },
+    {
+      "x": -3.3562098926261523,
+      "y": -49.2587642471534,
+      "distance": 57.3,
+      "sensor": "frontal_izq",
+      "confidence": "low",
+      "detection_time": 1763741962.161615
+    },
+    {
+      "x": -49.66376872321696,
+      "y": -255.83199580233668,
+      "distance": 252.0,
+      "sensor": "frontal_der",
+      "confidence": "low",
+      "detection_time": 1763741962.161615
+    },
+    {
+      "x": -11.543764703139004,
+      "y": -4.901571524881299,
+      "distance": 3.1,
+      "sensor": "trasero_der",
+      "confidence": "high",
+      "detection_time": 1763741962.161615
+    },
+    {
+      "x": -4.150914151869788,
+      "y": -49.297362117093115,
+      "distance": 57.4,
+      "sensor": "frontal_izq",
+      "confidence": "low",
+      "detection_time": 1763741962.6473682
+    },
+    {
+      "x": -53.26788103516187,
+      "y": -253.36973546582837,
+      "distance": 250.3,
+      "sensor": "frontal_der",
+      "confidence": "low",
+      "detection_time": 1763741962.6473682
+    },
+    {
+      "x": -11.566937723967865,
+      "y": -4.8054126419247485,
+      "distance": 3.0,
+      "sensor": "trasero_der",
+      "confidence": "high",
+      "detection_time": 1763741962.6473682
+    },
+    {
+      "x": 1.7810982278947591,
+      "y": -23.269888033735576,
+      "distance": 30.6,
+      "sensor": "frontal_izq",
+      "confidence": "medium",
+      "detection_time": 1763741963.1319199
+    },
+    {
+      "x": -57.007598578881854,
+      "y": -252.7595373161398,
+      "distance": 250.5,
+      "sensor": "frontal_der",
+      "confidence": "low",
+      "detection_time": 1763741963.1319199
+    },
+    {
+      "x": -11.635800831891803,
+      "y": -4.63618139958599,
+      "distance": 3.0,
+      "sensor": "trasero_der",
+      "confidence": "high",
+      "detection_time": 1763741963.1319199
+    },
+    {
+      "x": -5.576041505663605,
+      "y": -49.156563764436555,
+      "distance": 57.4,
+      "sensor": "frontal_izq",
+      "confidence": "low",
+      "detection_time": 1763741963.6176505
+    },
+    {
+      "x": -60.579115666165144,
+      "y": -251.7217923524012,
+      "distance": 250.3,
+      "sensor": "frontal_der",
+      "confidence": "low",
+      "detection_time": 1763741963.6176505
+    },
+    {
+      "x": -11.750890201806405,
+      "y": -4.3818359622486245,
+      "distance": 3.1,
+      "sensor": "trasero_der",
+      "confidence": "high",
+      "detection_time": 1763741963.6176505
+    },
+    {
+      "x": -6.317349961015617,
+      "y": -49.06680231551732,
+      "distance": 57.4,
+      "sensor": "frontal_izq",
+      "confidence": "low",
+      "detection_time": 1763741964.103384
+    },
+    {
+      "x": -64.62049523855936,
+      "y": -251.64365995415682,
+      "distance": 251.2,
+      "sensor": "frontal_der",
+      "confidence": "low",
+      "detection_time": 1763741964.103384
+    },
+    {
+      "x": -11.86408390127962,
+      "y": -4.116465484369673,
+      "distance": 3.2,
+      "sensor": "trasero_der",
+      "confidence": "high",
+      "detection_time": 1763741964.103384
+    },
+    {
+      "x": -6.985817172955432,
+      "y": -48.97609986948778,
+      "distance": 57.4,
+      "sensor": "frontal_izq",
+      "confidence": "low",
+      "detection_time": 1763741964.5890987
+    },
+    {
+      "x": -67.66924008451814,
+      "y": -249.4948575549882,
+      "distance": 249.9,
+      "sensor": "frontal_der",
+      "confidence": "low",
+      "detection_time": 1763741964.5890987
+    },
+    {
+      "x": -11.87191394222,
+      "y": -4.042470319431851,
+      "distance": 3.1,
+      "sensor": "trasero_der",
+      "confidence": "high",
+      "detection_time": 1763741964.5890987
+    },
+    {
+      "x": 0.6652943565584852,
+      "y": -22.57204872002388,
+      "distance": 29.8,
+      "sensor": "frontal_izq",
+      "confidence": "medium",
+      "detection_time": 1763741965.0732496
+    },
+    {
+      "x": -71.85404437416909,
+      "y": -249.67446066242925,
+      "distance": 251.2,
+      "sensor": "frontal_der",
+      "confidence": "low",
+      "detection_time": 1763741965.0732496
+    },
+    {
+      "x": -11.932063361524834,
+      "y": -3.8613172456458167,
+      "distance": 3.1,
+      "sensor": "trasero_der",
+      "confidence": "high",
+      "detection_time": 1763741965.0732496
+    },
+    {
+      "x": -8.432816357714938,
+      "y": -48.64748306209742,
+      "distance": 57.3,
+      "sensor": "frontal_izq",
+      "confidence": "low",
+      "detection_time": 1763741965.5590758
+    },
+    {
+      "x": -75.47476042659869,
+      "y": -248.18602003043512,
+      "distance": 250.8,
+      "sensor": "frontal_der",
+      "confidence": "low",
+      "detection_time": 1763741965.5590758
+    },
+    {
+      "x": -11.988804780538624,
+      "y": -3.6813675270338497,
+      "distance": 3.1,
+      "sensor": "trasero_der",
+      "confidence": "high",
+      "detection_time": 1763741965.5590758
+    },
+    {
+      "x": -9.160072725916036,
+      "y": -48.515802246854875,
+      "distance": 57.3,
+      "sensor": "frontal_izq",
+      "confidence": "low",
+      "detection_time": 1763741966.0448728
+    },
+    {
+      "x": -79.14812118996784,
+      "y": -246.93413071525404,
+      "distance": 250.7,
+      "sensor": "frontal_der",
+      "confidence": "low",
+      "detection_time": 1763741966.0448728
+    },
+    {
+      "x": -12.042567709353824,
+      "y": -3.5014953806329223,
+      "distance": 3.1,
+      "sensor": "trasero_der",
+      "confidence": "high",
+      "detection_time": 1763741966.0448728
+    },
+    {
+      "x": -0.34469253859090543,
+      "y": -22.579220249021883,
+      "distance": 29.8,
+      "sensor": "frontal_izq",
+      "confidence": "medium",
+      "detection_time": 1763741966.528988
+    },
+    {
+      "x": -82.49607310687563,
+      "y": -244.99226094296333,
+      "distance": 249.9,
+      "sensor": "frontal_der",
+      "confidence": "low",
+      "detection_time": 1763741966.528988
+    },
+    {
+      "x": -12.092789334026882,
+      "y": -3.3239062949804676,
+      "distance": 3.1,
+      "sensor": "trasero_der",
+      "confidence": "high",
+      "detection_time": 1763741966.528988
+    },
+    {
+      "x": -10.59902539653708,
+      "y": -48.3230862077699,
+      "distance": 57.4,
+      "sensor": "frontal_izq",
+      "confidence": "low",
+      "detection_time": 1763741967.0147488
+    },
+    {
+      "x": -85.98734423731585,
+      "y": -243.78881563971171,
+      "distance": 249.9,
+      "sensor": "frontal_der",
+      "confidence": "low",
+      "detection_time": 1763741967.0147488
+    },
+    {
+      "x": -12.098508440725206,
+      "y": -3.2422418908869175,
+      "distance": 3.0,
+      "sensor": "trasero_der",
+      "confidence": "high",
+      "detection_time": 1763741967.0147488
+    },
+    {
+      "x": -0.9362427784177161,
+      "y": -22.46805397580887,
+      "distance": 29.7,
+      "sensor": "frontal_izq",
+      "confidence": "medium",
+      "detection_time": 1763741967.4989238
+    },
+    {
+      "x": -89.43718092019401,
+      "y": -242.97053456962328,
+      "distance": 250.3,
+      "sensor": "frontal_der",
+      "confidence": "low",
+      "detection_time": 1763741967.4989238
+    },
+    {
+      "x": -12.180682799080984,
+      "y": -2.985778538863479,
+      "distance": 3.1,
+      "sensor": "trasero_der",
+      "confidence": "high",
+      "detection_time": 1763741967.4989238
+    },
+    {
+      "x": -1.589550165285436,
+      "y": -23.283756790347237,
+      "distance": 30.6,
+      "sensor": "frontal_izq",
+      "confidence": "medium",
+      "detection_time": 1763741967.9852686
+    },
+    {
+      "x": -92.74648738333636,
+      "y": -241.7266619097956,
+      "distance": 250.3,
+      "sensor": "frontal_der",
+      "confidence": "low",
+      "detection_time": 1763741967.9852686
+    },
+    {
+      "x": -12.448465557342901,
+      "y": -2.264248218830438,
+      "distance": 3.7,
+      "sensor": "trasero_der",
+      "confidence": "high",
+      "detection_time": 1763741967.9852686
+    },
+    {
+      "x": -9.643188627671238,
+      "y": -39.615361516000625,
+      "distance": 43.3,
+      "sensor": "frontal_izq",
+      "confidence": "medium",
+      "detection_time": 1763741968.4634466
+    },
+    {
+      "x": -7.463784607213297,
+      "y": -34.784192080386546,
+      "distance": 21.0,
+      "sensor": "frontal_der",
+      "confidence": "medium",
+      "detection_time": 1763741968.4634466
+    },
+    {
+      "x": -16.16344275240673,
+      "y": -2.790565500639379,
+      "distance": 7.9,
+      "sensor": "trasero_der",
+      "confidence": "high",
+      "detection_time": 1763741968.4634466
+    },
+    {
+      "x": -1.9861630238034849,
+      "y": -22.740597810116462,
+      "distance": 19.6,
+      "sensor": "frontal_izq",
+      "confidence": "medium",
+      "detection_time": 1763741968.9368367
+    },
+    {
+      "x": -14.867477945177367,
+      "y": -51.48641012941596,
+      "distance": 34.1,
+      "sensor": "frontal_der",
+      "confidence": "medium",
+      "detection_time": 1763741968.9368367
+    },
+    {
+      "x": -28.724437066660464,
+      "y": 19.81905717563094,
+      "distance": 37.2,
+      "sensor": "trasero_der",
+      "confidence": "medium",
+      "detection_time": 1763741968.9368367
+    },
+    {
+      "x": -4.897756630118474,
+      "y": -28.60785218102278,
+      "distance": 20.9,
+      "sensor": "frontal_izq",
+      "confidence": "medium",
+      "detection_time": 1763741969.4073365
+    },
+    {
+      "x": -8.993637832165792,
+      "y": -37.40067636775115,
+      "distance": 13.6,
+      "sensor": "frontal_der",
+      "confidence": "medium",
+      "detection_time": 1763741969.4073365
+    },
+    {
+      "x": -23.16769881051578,
+      "y": -4.495168121946904,
+      "distance": 15.9,
+      "sensor": "trasero_der",
+      "confidence": "medium",
+      "detection_time": 1763741969.4073365
+    },
+    {
+      "x": -5.222961362972734,
+      "y": -28.729625341580775,
+      "distance": 15.9,
+      "sensor": "frontal_izq",
+      "confidence": "medium",
+      "detection_time": 1763741969.8777776
+    },
+    {
+      "x": -10.587506580521847,
+      "y": -39.68689026531384,
+      "distance": 11.1,
+      "sensor": "frontal_der",
+      "confidence": "medium",
+      "detection_time": 1763741969.8777776
+    },
+    {
+      "x": -27.036742257182503,
+      "y": -3.4609908232872044,
+      "distance": 21.5,
+      "sensor": "trasero_der",
+      "confidence": "medium",
+      "detection_time": 1763741969.8777776
+    },
+    {
+      "x": -6.048511879308587,
+      "y": -30.278117254270327,
+      "distance": 12.5,
+      "sensor": "frontal_izq",
+      "confidence": "medium",
+      "detection_time": 1763741970.3481119
+    },
+    {
+      "x": -12.911753787074122,
+      "y": -44.064193944739266,
+      "distance": 10.9,
+      "sensor": "frontal_der",
+      "confidence": "medium",
+      "detection_time": 1763741970.3481119
+    },
+    {
+      "x": -29.781615312962384,
+      "y": -6.202370922319965,
+      "distance": 23.3,
+      "sensor": "trasero_der",
+      "confidence": "medium",
+      "detection_time": 1763741970.3481119
+    },
+    {
+      "x": -30.65543433205477,
+      "y": -77.27210506575705,
+      "distance": 60.3,
+      "sensor": "frontal_izq",
+      "confidence": "low",
+      "detection_time": 1763741970.8229153
+    },
+    {
+      "x": -27.278272976672252,
+      "y": -70.80025979723347,
+      "distance": 36.0,
+      "sensor": "frontal_der",
+      "confidence": "medium",
+      "detection_time": 1763741970.8229153
+    },
+    {
+      "x": -32.59186181524087,
+      "y": -7.891227039126875,
+      "distance": 25.9,
+      "sensor": "trasero_der",
+      "confidence": "medium",
+      "detection_time": 1763741970.8229153
+    },
+    {
+      "x": -7.221783390438794,
+      "y": -32.32973355582636,
+      "distance": 9.5,
+      "sensor": "frontal_izq",
+      "confidence": "high",
+      "detection_time": 1763741971.2954173
+    },
+    {
+      "x": -32.698349579832055,
+      "y": -79.37433553307199,
+      "distance": 46.0,
+      "sensor": "frontal_der",
+      "confidence": "medium",
+      "detection_time": 1763741971.2954173
+    },
+    {
+      "x": -32.481899265180985,
+      "y": -6.926719732492952,
+      "distance": 26.6,
+      "sensor": "trasero_der",
+      "confidence": "medium",
+      "detection_time": 1763741971.2954173
+    },
+    {
+      "x": -7.378060655873955,
+      "y": -32.58400096311131,
+      "distance": 9.7,
+      "sensor": "frontal_izq",
+      "confidence": "high",
+      "detection_time": 1763741971.767894
+    },
+    {
+      "x": -33.17524866069617,
+      "y": -78.76749467075382,
+      "distance": 45.6,
+      "sensor": "frontal_der",
+      "confidence": "medium",
+      "detection_time": 1763741971.767894
+    },
+    {
+      "x": -32.17893268918867,
+      "y": -6.774338158496164,
+      "distance": 26.5,
+      "sensor": "trasero_der",
+      "confidence": "medium",
+      "detection_time": 1763741971.767894
+    },
+    {
+      "x": -7.440692306393681,
+      "y": -32.662303061270606,
+      "distance": 9.7,
+      "sensor": "frontal_izq",
+      "confidence": "high",
+      "detection_time": 1763741972.240329
+    },
+    {
+      "x": -34.29453077595391,
+      "y": -79.28109068440348,
+      "distance": 46.5,
+      "sensor": "frontal_der",
+      "confidence": "medium",
+      "detection_time": 1763741972.240329
+    },
+    {
+      "x": -31.872711047475292,
+      "y": -6.6240586087097775,
+      "distance": 26.4,
+      "sensor": "trasero_der",
+      "confidence": "medium",
+      "detection_time": 1763741972.240329
+    },
+    {
+      "x": -7.507045335858064,
+      "y": -32.74300330880088,
+      "distance": 9.7,
+      "sensor": "frontal_izq",
+      "confidence": "high",
+      "detection_time": 1763741972.723464
+    },
+    {
+      "x": -128.2595658794057,
+      "y": -235.86001092357475,
+      "distance": 229.0,
+      "sensor": "frontal_der",
+      "confidence": "low",
+      "detection_time": 1763741972.723464
+    },
+    {
+      "x": -31.60324699887693,
+      "y": -6.274247895749948,
+      "distance": 26.5,
+      "sensor": "trasero_der",
+      "confidence": "medium",
+      "detection_time": 1763741972.723464
+    },
+    {
+      "x": -7.582910968583616,
+      "y": -32.832573799315995,
+      "distance": 9.7,
+      "sensor": "frontal_izq",
+      "confidence": "high",
+      "detection_time": 1763741973.2064862
+    },
+    {
+      "x": -130.5687532549778,
+      "y": -232.61155817231304,
+      "distance": 227.3,
+      "sensor": "frontal_der",
+      "confidence": "low",
+      "detection_time": 1763741973.2064862
+    },
+    {
+      "x": -31.290336625612145,
+      "y": -5.897315304507359,
+      "distance": 26.6,
+      "sensor": "trasero_der",
+      "confidence": "medium",
+      "detection_time": 1763741973.2064862
+    },
+    {
+      "x": -7.6035945693967175,
+      "y": -32.833356254512076,
+      "distance": 9.6,
+      "sensor": "frontal_izq",
+      "confidence": "high",
+      "detection_time": 1763741973.6894395
+    },
+    {
+      "x": -133.81778376738305,
+      "y": -231.1815058427926,
+      "distance": 227.7,
+      "sensor": "frontal_der",
+      "confidence": "low",
+      "detection_time": 1763741973.6894395
+    },
+    {
+      "x": -30.939474792049342,
+      "y": -5.730201899446545,
+      "distance": 26.5,
+      "sensor": "trasero_der",
+      "confidence": "medium",
+      "detection_time": 1763741973.6894395
+    },
+    {
+      "x": -7.730309249986782,
+      "y": -32.99891136521021,
+      "distance": 9.7,
+      "sensor": "frontal_izq",
+      "confidence": "high",
+      "detection_time": 1763741974.1770618
+    },
+    {
+      "x": -137.00263713896723,
+      "y": -229.84635290856357,
+      "distance": 228.2,
+      "sensor": "frontal_der",
+      "confidence": "low",
+      "detection_time": 1763741974.1770618
+    },
+    {
+      "x": -30.61922825070301,
+      "y": -5.4794757845258175,
+      "distance": 26.5,
+      "sensor": "trasero_der",
+      "confidence": "medium",
+      "detection_time": 1763741974.1770618
+    },
+    {
+      "x": -7.91844221134463,
+      "y": -33.24640401640092,
+      "distance": 9.9,
+      "sensor": "frontal_izq",
+      "confidence": "high",
+      "detection_time": 1763741974.6662505
+    },
+    {
+      "x": -139.11764197402073,
+      "y": -226.76438762938045,
+      "distance": 226.7,
+      "sensor": "frontal_der",
+      "confidence": "low",
+      "detection_time": 1763741974.6662505
+    },
+    {
+      "x": -30.306803143442252,
+      "y": -5.129592454780973,
+      "distance": 26.6,
+      "sensor": "trasero_der",
+      "confidence": "medium",
+      "detection_time": 1763741974.6662505
+    },
+    {
+      "x": -7.8212459368258145,
+      "y": -33.07472676819236,
+      "distance": 9.6,
+      "sensor": "frontal_izq",
+      "confidence": "high",
+      "detection_time": 1763741975.1554155
+    },
+    {
+      "x": -142.36459716594385,
+      "y": -225.7482502218267,
+      "distance": 227.6,
+      "sensor": "frontal_der",
+      "confidence": "low",
+      "detection_time": 1763741975.1554155
+    },
+    {
+      "x": -29.97386762448796,
+      "y": -4.996164943842839,
+      "distance": 26.5,
+      "sensor": "trasero_der",
+      "confidence": "medium",
+      "detection_time": 1763741975.1554155
+    },
+    {
+      "x": -8.016458085396625,
+      "y": -33.318882901149586,
+      "distance": 9.8,
+      "sensor": "frontal_izq",
+      "confidence": "high",
+      "detection_time": 1763741975.6388006
+    },
+    {
+      "x": -144.54726895022162,
+      "y": -222.74324164255694,
+      "distance": 226.3,
+      "sensor": "frontal_der",
+      "confidence": "low",
+      "detection_time": 1763741975.6388006
+    },
+    {
+      "x": -29.64603875953933,
+      "y": -4.651423484550417,
+      "distance": 26.6,
+      "sensor": "trasero_der",
+      "confidence": "medium",
+      "detection_time": 1763741975.6388006
+    },
+    {
+      "x": -8.041151053546567,
+      "y": -33.32001598390799,
+      "distance": 9.7,
+      "sensor": "frontal_izq",
+      "confidence": "high",
+      "detection_time": 1763741976.1217337
+    },
+    {
+      "x": -148.18946798592452,
+      "y": -221.5819060759331,
+      "distance": 227.4,
+      "sensor": "frontal_der",
+      "confidence": "low",
+      "detection_time": 1763741976.1217337
+    },
+    {
+      "x": -29.27190658803791,
+      "y": -4.502018705549947,
+      "distance": 26.5,
+      "sensor": "trasero_der",
+      "confidence": "medium",
+      "detection_time": 1763741976.1217337
+    },
+    {
+      "x": -8.126533806965508,
+      "y": -33.40189034299227,
+      "distance": 9.7,
+      "sensor": "frontal_izq",
+      "confidence": "high",
+      "detection_time": 1763741976.6046407
+    },
+    {
+      "x": -150.9460307216359,
+      "y": -219.14117348212915,
+      "distance": 227.0,
+      "sensor": "frontal_der",
+      "confidence": "low",
+      "detection_time": 1763741976.6046407
+    },
+    {
+      "x": -28.905901361544732,
+      "y": -4.256739258592546,
+      "distance": 26.5,
+      "sensor": "trasero_der",
+      "confidence": "medium",
+      "detection_time": 1763741976.6046407
+    },
+    {
+      "x": -8.20223381845338,
+      "y": -33.47238792011473,
+      "distance": 9.7,
+      "sensor": "frontal_izq",
+      "confidence": "high",
+      "detection_time": 1763741977.0875316
+    },
+    {
+      "x": -153.5380365509147,
+      "y": -217.24941163121713,
+      "distance": 227.0,
+      "sensor": "frontal_der",
+      "confidence": "low",
+      "detection_time": 1763741977.0875316
+    },
+    {
+      "x": -28.59435292997044,
+      "y": -3.9476244222068075,
+      "distance": 26.6,
+      "sensor": "trasero_der",
+      "confidence": "medium",
+      "detection_time": 1763741977.0875316
+    },
+    {
+      "x": -8.284596539283942,
+      "y": -33.546946320785786,
+      "distance": 9.7,
+      "sensor": "frontal_izq",
+      "confidence": "high",
+      "detection_time": 1763741977.5600872
+    },
+    {
+      "x": -42.8388115343089,
+      "y": -75.95091106557811,
+      "distance": 47.4,
+      "sensor": "frontal_der",
+      "confidence": "medium",
+      "detection_time": 1763741977.5600872
+    },
+    {
+      "x": -28.232542369045433,
+      "y": -3.826559296494061,
+      "distance": 26.5,
+      "sensor": "trasero_der",
+      "confidence": "medium",
+      "detection_time": 1763741977.5600872
+    },
+    {
+      "x": -8.300567172454056,
+      "y": -33.54087754935928,
+      "distance": 9.6,
+      "sensor": "frontal_izq",
+      "confidence": "high",
+      "detection_time": 1763741978.043175
+    },
+    {
+      "x": -159.62003437215049,
+      "y": -213.99216972095886,
+      "distance": 228.1,
+      "sensor": "frontal_der",
+      "confidence": "low",
+      "detection_time": 1763741978.043175
+    },
+    {
+      "x": -27.89275525850718,
+      "y": -3.6194730408604165,
+      "distance": 26.5,
+      "sensor": "trasero_der",
+      "confidence": "medium",
+      "detection_time": 1763741978.043175
+    },
+    {
+      "x": -8.383964007865252,
+      "y": -33.61402739913103,
+      "distance": 9.6,
+      "sensor": "frontal_izq",
+      "confidence": "high",
+      "detection_time": 1763741978.5155723
+    },
+    {
+      "x": -43.225639057999715,
+      "y": -73.94946689966005,
+      "distance": 45.9,
+      "sensor": "frontal_der",
+      "confidence": "medium",
+      "detection_time": 1763741978.5155723
+    },
+    {
+      "x": -27.54347282705107,
+      "y": -3.309380969955793,
+      "distance": 26.6,
+      "sensor": "trasero_der",
+      "confidence": "medium",
+      "detection_time": 1763741978.5155723
+    },
+    {
+      "x": -8.459021763100196,
+      "y": -33.67804872052363,
+      "distance": 9.6,
+      "sensor": "frontal_izq",
+      "confidence": "high",
+      "detection_time": 1763741978.9879892
+    },
+    {
+      "x": -44.41981503950254,
+      "y": -74.23000732836223,
+      "distance": 46.8,
+      "sensor": "frontal_der",
+      "confidence": "medium",
+      "detection_time": 1763741978.9879892
+    },
+    {
+      "x": -27.22251689320183,
+      "y": -3.126622830846479,
+      "distance": 26.6,
+      "sensor": "trasero_der",
+      "confidence": "medium",
+      "detection_time": 1763741978.9879892
+    },
+    {
+      "x": -8.60771944684615,
+      "y": -33.819420565281256,
+      "distance": 9.7,
+      "sensor": "frontal_izq",
+      "confidence": "high",
+      "detection_time": 1763741979.4603493
+    },
+    {
+      "x": -44.793378918213705,
+      "y": -73.49671947312311,
+      "distance": 46.4,
+      "sensor": "frontal_der",
+      "confidence": "medium",
+      "detection_time": 1763741979.4603493
+    },
+    {
+      "x": -26.876127153278475,
+      "y": -2.9355176167020467,
+      "distance": 26.6,
+      "sensor": "trasero_der",
+      "confidence": "medium",
+      "detection_time": 1763741979.4603493
+    },
+    {
+      "x": -8.695426443784585,
+      "y": -33.888252011876745,
+      "distance": 9.7,
+      "sensor": "frontal_izq",
+      "confidence": "high",
+      "detection_time": 1763741979.9433172
+    },
+    {
+      "x": -169.37602954601243,
+      "y": -204.96085001256282,
+      "distance": 227.4,
+      "sensor": "frontal_der",
+      "confidence": "low",
+      "detection_time": 1763741979.9433172
+    },
+    {
+      "x": -26.508539892563576,
+      "y": -2.7395253809753797,
+      "distance": 26.6,
+      "sensor": "trasero_der",
+      "confidence": "medium",
+      "detection_time": 1763741979.9433172
+    },
+    {
+      "x": -8.780385473328401,
+      "y": -33.952975917346016,
+      "distance": 9.7,
+      "sensor": "frontal_izq",
+      "confidence": "high",
+      "detection_time": 1763741980.426212
+    },
+    {
+      "x": -171.15582193825838,
+      "y": -202.03006428105928,
+      "distance": 226.4,
+      "sensor": "frontal_der",
+      "confidence": "low",
+      "detection_time": 1763741980.426212
+    },
+    {
+      "x": -26.152017588941305,
+      "y": -2.656836453498517,
+      "distance": 26.5,
+      "sensor": "trasero_der",
+      "confidence": "medium",
+      "detection_time": 1763741980.426212
+    }
+  ],
+  "sensor_readings": [
+    {
+      "timestamp": 1763741952.472457,
+      "readings": {
+        "frontal_izq": 29.7,
+        "frontal_der": 250.3,
+        "trasero_izq": -1,
+        "trasero_der": 3.0
+      }
+    },
+    {
+      "timestamp": 1763741952.9567373,
+      "readings": {
+        "frontal_izq": 29.8,
+        "frontal_der": 249.8,
+        "trasero_izq": -1,
+        "trasero_der": 3.0
+      }
+    },
+    {
+      "timestamp": 1763741953.440937,
+      "readings": {
+        "frontal_izq": 29.8,
+        "frontal_der": 250.8,
+        "trasero_izq": -1,
+        "trasero_der": 3.2
+      }
+    },
+    {
+      "timestamp": 1763741953.9251978,
+      "readings": {
+        "frontal_izq": 29.8,
+        "frontal_der": 249.9,
+        "trasero_izq": -1,
+        "trasero_der": 3.1
+      }
+    },
+    {
+      "timestamp": 1763741954.409362,
+      "readings": {
+        "frontal_izq": 29.7,
+        "frontal_der": 250.3,
+        "trasero_izq": -1,
+        "trasero_der": 3.1
+      }
+    },
+    {
+      "timestamp": 1763741954.893475,
+      "readings": {
+        "frontal_izq": 29.8,
+        "frontal_der": 250.3,
+        "trasero_izq": -1,
+        "trasero_der": 3.2
+      }
+    },
+    {
+      "timestamp": 1763741955.3781025,
+      "readings": {
+        "frontal_izq": 29.8,
+        "frontal_der": 252.0,
+        "trasero_izq": -1,
+        "trasero_der": 3.0
+      }
+    },
+    {
+      "timestamp": 1763741955.86232,
+      "readings": {
+        "frontal_izq": 29.9,
+        "frontal_der": 250.3,
+        "trasero_izq": -1,
+        "trasero_der": 3.1
+      }
+    },
+    {
+      "timestamp": 1763741956.3464162,
+      "readings": {
+        "frontal_izq": 29.8,
+        "frontal_der": 250.3,
+        "trasero_izq": -1,
+        "trasero_der": 3.2
+      }
+    },
+    {
+      "timestamp": 1763741956.830442,
+      "readings": {
+        "frontal_izq": 29.9,
+        "frontal_der": 249.9,
+        "trasero_izq": -1,
+        "trasero_der": 3.2
+      }
+    },
+    {
+      "timestamp": 1763741957.3146777,
+      "readings": {
+        "frontal_izq": 29.8,
+        "frontal_der": 250.3,
+        "trasero_izq": -1,
+        "trasero_der": 3.0
+      }
+    },
+    {
+      "timestamp": 1763741957.799308,
+      "readings": {
+        "frontal_izq": 29.7,
+        "frontal_der": 251.2,
+        "trasero_izq": -1,
+        "trasero_der": 3.1
+      }
+    },
+    {
+      "timestamp": 1763741958.283504,
+      "readings": {
+        "frontal_izq": 30.7,
+        "frontal_der": 251.2,
+        "trasero_izq": -1,
+        "trasero_der": 2.9
+      }
+    },
+    {
+      "timestamp": 1763741958.7676318,
+      "readings": {
+        "frontal_izq": 30.7,
+        "frontal_der": 250.7,
+        "trasero_izq": -1,
+        "trasero_der": 3.0
+      }
+    },
+    {
+      "timestamp": 1763741959.253358,
+      "readings": {
+        "frontal_izq": 57.3,
+        "frontal_der": 249.9,
+        "trasero_izq": -1,
+        "trasero_der": 3.0
+      }
+    },
+    {
+      "timestamp": 1763741959.7376285,
+      "readings": {
+        "frontal_izq": 30.5,
+        "frontal_der": 251.2,
+        "trasero_izq": -1,
+        "trasero_der": 3.0
+      }
+    },
+    {
+      "timestamp": 1763741960.2233894,
+      "readings": {
+        "frontal_izq": 57.4,
+        "frontal_der": 250.3,
+        "trasero_izq": -1,
+        "trasero_der": 3.0
+      }
+    },
+    {
+      "timestamp": 1763741960.7075574,
+      "readings": {
+        "frontal_izq": 30.5,
+        "frontal_der": 250.4,
+        "trasero_izq": -1,
+        "trasero_der": 3.1
+      }
+    },
+    {
+      "timestamp": 1763741961.19166,
+      "readings": {
+        "frontal_izq": 31.0,
+        "frontal_der": 250.3,
+        "trasero_izq": -1,
+        "trasero_der": 3.1
+      }
+    },
+    {
+      "timestamp": 1763741961.675834,
+      "readings": {
+        "frontal_izq": 30.5,
+        "frontal_der": 249.8,
+        "trasero_izq": -1,
+        "trasero_der": 3.1
+      }
+    },
+    {
+      "timestamp": 1763741962.161615,
+      "readings": {
+        "frontal_izq": 57.3,
+        "frontal_der": 252.0,
+        "trasero_izq": -1,
+        "trasero_der": 3.1
+      }
+    },
+    {
+      "timestamp": 1763741962.6473682,
+      "readings": {
+        "frontal_izq": 57.4,
+        "frontal_der": 250.3,
+        "trasero_izq": -1,
+        "trasero_der": 3.0
+      }
+    },
+    {
+      "timestamp": 1763741963.1319199,
+      "readings": {
+        "frontal_izq": 30.6,
+        "frontal_der": 250.5,
+        "trasero_izq": -1,
+        "trasero_der": 3.0
+      }
+    },
+    {
+      "timestamp": 1763741963.6176505,
+      "readings": {
+        "frontal_izq": 57.4,
+        "frontal_der": 250.3,
+        "trasero_izq": -1,
+        "trasero_der": 3.1
+      }
+    },
+    {
+      "timestamp": 1763741964.103384,
+      "readings": {
+        "frontal_izq": 57.4,
+        "frontal_der": 251.2,
+        "trasero_izq": -1,
+        "trasero_der": 3.2
+      }
+    },
+    {
+      "timestamp": 1763741964.5890987,
+      "readings": {
+        "frontal_izq": 57.4,
+        "frontal_der": 249.9,
+        "trasero_izq": -1,
+        "trasero_der": 3.1
+      }
+    },
+    {
+      "timestamp": 1763741965.0732496,
+      "readings": {
+        "frontal_izq": 29.8,
+        "frontal_der": 251.2,
+        "trasero_izq": -1,
+        "trasero_der": 3.1
+      }
+    },
+    {
+      "timestamp": 1763741965.5590758,
+      "readings": {
+        "frontal_izq": 57.3,
+        "frontal_der": 250.8,
+        "trasero_izq": -1,
+        "trasero_der": 3.1
+      }
+    },
+    {
+      "timestamp": 1763741966.0448728,
+      "readings": {
+        "frontal_izq": 57.3,
+        "frontal_der": 250.7,
+        "trasero_izq": -1,
+        "trasero_der": 3.1
+      }
+    },
+    {
+      "timestamp": 1763741966.528988,
+      "readings": {
+        "frontal_izq": 29.8,
+        "frontal_der": 249.9,
+        "trasero_izq": -1,
+        "trasero_der": 3.1
+      }
+    },
+    {
+      "timestamp": 1763741967.0147488,
+      "readings": {
+        "frontal_izq": 57.4,
+        "frontal_der": 249.9,
+        "trasero_izq": -1,
+        "trasero_der": 3.0
+      }
+    },
+    {
+      "timestamp": 1763741967.4989238,
+      "readings": {
+        "frontal_izq": 29.7,
+        "frontal_der": 250.3,
+        "trasero_izq": -1,
+        "trasero_der": 3.1
+      }
+    },
+    {
+      "timestamp": 1763741967.9852686,
+      "readings": {
+        "frontal_izq": 30.6,
+        "frontal_der": 250.3,
+        "trasero_izq": -1,
+        "trasero_der": 3.7
+      }
+    },
+    {
+      "timestamp": 1763741968.4634466,
+      "readings": {
+        "frontal_izq": 43.3,
+        "frontal_der": 21.0,
+        "trasero_izq": -1,
+        "trasero_der": 7.9
+      }
+    },
+    {
+      "timestamp": 1763741968.9368367,
+      "readings": {
+        "frontal_izq": 19.6,
+        "frontal_der": 34.1,
+        "trasero_izq": -1,
+        "trasero_der": 37.2
+      }
+    },
+    {
+      "timestamp": 1763741969.4073365,
+      "readings": {
+        "frontal_izq": 20.9,
+        "frontal_der": 13.6,
+        "trasero_izq": -1,
+        "trasero_der": 15.9
+      }
+    },
+    {
+      "timestamp": 1763741969.8777776,
+      "readings": {
+        "frontal_izq": 15.9,
+        "frontal_der": 11.1,
+        "trasero_izq": -1,
+        "trasero_der": 21.5
+      }
+    },
+    {
+      "timestamp": 1763741970.3481119,
+      "readings": {
+        "frontal_izq": 12.5,
+        "frontal_der": 10.9,
+        "trasero_izq": -1,
+        "trasero_der": 23.3
+      }
+    },
+    {
+      "timestamp": 1763741970.8229153,
+      "readings": {
+        "frontal_izq": 60.3,
+        "frontal_der": 36.0,
+        "trasero_izq": -1,
+        "trasero_der": 25.9
+      }
+    },
+    {
+      "timestamp": 1763741971.2954173,
+      "readings": {
+        "frontal_izq": 9.5,
+        "frontal_der": 46.0,
+        "trasero_izq": -1,
+        "trasero_der": 26.6
+      }
+    },
+    {
+      "timestamp": 1763741971.767894,
+      "readings": {
+        "frontal_izq": 9.7,
+        "frontal_der": 45.6,
+        "trasero_izq": -1,
+        "trasero_der": 26.5
+      }
+    },
+    {
+      "timestamp": 1763741972.240329,
+      "readings": {
+        "frontal_izq": 9.7,
+        "frontal_der": 46.5,
+        "trasero_izq": -1,
+        "trasero_der": 26.4
+      }
+    },
+    {
+      "timestamp": 1763741972.723464,
+      "readings": {
+        "frontal_izq": 9.7,
+        "frontal_der": 229.0,
+        "trasero_izq": -1,
+        "trasero_der": 26.5
+      }
+    },
+    {
+      "timestamp": 1763741973.2064862,
+      "readings": {
+        "frontal_izq": 9.7,
+        "frontal_der": 227.3,
+        "trasero_izq": -1,
+        "trasero_der": 26.6
+      }
+    },
+    {
+      "timestamp": 1763741973.6894395,
+      "readings": {
+        "frontal_izq": 9.6,
+        "frontal_der": 227.7,
+        "trasero_izq": -1,
+        "trasero_der": 26.5
+      }
+    },
+    {
+      "timestamp": 1763741974.1770618,
+      "readings": {
+        "frontal_izq": 9.7,
+        "frontal_der": 228.2,
+        "trasero_izq": -1,
+        "trasero_der": 26.5
+      }
+    },
+    {
+      "timestamp": 1763741974.6662505,
+      "readings": {
+        "frontal_izq": 9.9,
+        "frontal_der": 226.7,
+        "trasero_izq": -1,
+        "trasero_der": 26.6
+      }
+    },
+    {
+      "timestamp": 1763741975.1554155,
+      "readings": {
+        "frontal_izq": 9.6,
+        "frontal_der": 227.6,
+        "trasero_izq": -1,
+        "trasero_der": 26.5
+      }
+    },
+    {
+      "timestamp": 1763741975.6388006,
+      "readings": {
+        "frontal_izq": 9.8,
+        "frontal_der": 226.3,
+        "trasero_izq": -1,
+        "trasero_der": 26.6
+      }
+    },
+    {
+      "timestamp": 1763741976.1217337,
+      "readings": {
+        "frontal_izq": 9.7,
+        "frontal_der": 227.4,
+        "trasero_izq": -1,
+        "trasero_der": 26.5
+      }
+    },
+    {
+      "timestamp": 1763741976.6046407,
+      "readings": {
+        "frontal_izq": 9.7,
+        "frontal_der": 227.0,
+        "trasero_izq": -1,
+        "trasero_der": 26.5
+      }
+    },
+    {
+      "timestamp": 1763741977.0875316,
+      "readings": {
+        "frontal_izq": 9.7,
+        "frontal_der": 227.0,
+        "trasero_izq": -1,
+        "trasero_der": 26.6
+      }
+    },
+    {
+      "timestamp": 1763741977.5600872,
+      "readings": {
+        "frontal_izq": 9.7,
+        "frontal_der": 47.4,
+        "trasero_izq": -1,
+        "trasero_der": 26.5
+      }
+    },
+    {
+      "timestamp": 1763741978.043175,
+      "readings": {
+        "frontal_izq": 9.6,
+        "frontal_der": 228.1,
+        "trasero_izq": -1,
+        "trasero_der": 26.5
+      }
+    },
+    {
+      "timestamp": 1763741978.5155723,
+      "readings": {
+        "frontal_izq": 9.6,
+        "frontal_der": 45.9,
+        "trasero_izq": -1,
+        "trasero_der": 26.6
+      }
+    },
+    {
+      "timestamp": 1763741978.9879892,
+      "readings": {
+        "frontal_izq": 9.6,
+        "frontal_der": 46.8,
+        "trasero_izq": -1,
+        "trasero_der": 26.6
+      }
+    },
+    {
+      "timestamp": 1763741979.4603493,
+      "readings": {
+        "frontal_izq": 9.7,
+        "frontal_der": 46.4,
+        "trasero_izq": -1,
+        "trasero_der": 26.6
+      }
+    },
+    {
+      "timestamp": 1763741979.9433172,
+      "readings": {
+        "frontal_izq": 9.7,
+        "frontal_der": 227.4,
+        "trasero_izq": -1,
+        "trasero_der": 26.6
+      }
+    },
+    {
+      "timestamp": 1763741980.426212,
+      "readings": {
+        "frontal_izq": 9.7,
+        "frontal_der": 226.4,
+        "trasero_izq": -1,
+        "trasero_der": 26.5
+      }
+    }
+  ],
+  "mission_events": [],
+  "full_log": [
+    {
+      "timestamp": 1763741952.472457,
+      "time_str": "11:19:12.472",
+      "session_time": 0.3865647315979004,
+      "position": {
+        "x": 0.0,
+        "y": 0.0,
+        "heading": -87.44095482527756
+      },
+      "velocity": {
+        "linear": 0.0,
+        "angular": -1.6532824427480919
+      },
+      "sensors": {
+        "frontal_izq": 29.7,
+        "frontal_der": 250.3,
+        "trasero_izq": -1,
+        "trasero_der": 3.0
+      },
+      "imu": {
+        "gyro": {
+          "x": -1.4961832061068703,
+          "y": -1.3511450381679388,
+          "z": -1.6793893129770991
+        },
+        "accel": {
+          "x": 0.04052734375,
+          "y": -0.02587890625,
+          "z": 0.89599609375
+        },
+        "heading_rate": -1.6870229007633588,
+        "temperature": 27.353529411764708
+      },
+      "obstacles": [
+        {
+          "x": 21.2,
+          "y": 7.5,
+          "distance": 29.7,
+          "sensor": "frontal_izq",
+          "confidence": "medium"
+        },
+        {
+          "x": 258.8,
+          "y": 7.5,
+          "distance": 250.3,
+          "sensor": "frontal_der",
+          "confidence": "low"
+        },
+        {
+          "x": 7.378679656440357,
+          "y": -10.121320343559642,
+          "distance": 3.0,
+          "sensor": "trasero_der",
+          "confidence": "high"
+        }
+      ],
+      "motors": {
+        "left_speed": 0,
+        "right_speed": 0,
+        "status": {
+          "initialized": true,
+          "left_speed": 0,
+          "right_speed": 0,
+          "moving": false,
+          "direction": "stopped"
+        }
+      },
+      "navigation": {
+        "front_min": 29.7,
+        "back_min": 3.0,
+        "left_min": Infinity,
+        "right_min": 3.0,
+        "obstacles_nearby": 1,
+        "potential_blocks": [
+          {
+            "sensor": "frontal_izq",
+            "distance": 29.7,
+            "confidence": "medium"
+          }
+        ]
+      }
+    },
+    {
+      "timestamp": 1763741952.9567373,
+      "time_str": "11:19:12.956",
+      "session_time": 0.8708450794219971,
+      "position": {
+        "x": 0.0,
+        "y": 0.0,
+        "heading": -88.29235431467305
+      },
+      "velocity": {
+        "linear": 0.0,
+        "angular": -1.7580152671755727
+      },
+      "sensors": {
+        "frontal_izq": 29.8,
+        "frontal_der": 249.8,
+        "trasero_izq": -1,
+        "trasero_der": 3.0
+      },
+      "imu": {
+        "gyro": {
+          "x": -1.465648854961832,
+          "y": -1.4961832061068703,
+          "z": -1.5725190839694656
+        },
+        "accel": {
+          "x": 0.0439453125,
+          "y": -0.025390625,
+          "z": 0.900146484375
+        },
+        "heading_rate": -1.7938931297709924,
+        "temperature": 27.306470588235296
+      },
+      "obstacles": [
+        {
+          "x": 8.443542457614743,
+          "y": -20.943891490514776,
+          "distance": 29.8,
+          "sensor": "frontal_izq",
+          "confidence": "medium"
+        },
+        {
+          "x": 19.025335523259663,
+          "y": -257.7075408447091,
+          "distance": 249.8,
+          "sensor": "frontal_der",
+          "confidence": "low"
+        },
+        {
+          "x": -9.781776707180981,
+          "y": -7.823227174265915,
+          "distance": 3.0,
+          "sensor": "trasero_der",
+          "confidence": "high"
+        }
+      ],
+      "motors": {
+        "left_speed": 0,
+        "right_speed": 0,
+        "status": {
+          "initialized": true,
+          "left_speed": 0,
+          "right_speed": 0,
+          "moving": false,
+          "direction": "stopped"
+        }
+      },
+      "navigation": {
+        "front_min": 29.8,
+        "back_min": 3.0,
+        "left_min": Infinity,
+        "right_min": 3.0,
+        "obstacles_nearby": 1,
+        "potential_blocks": [
+          {
+            "sensor": "frontal_izq",
+            "distance": 29.8,
+            "confidence": "medium"
+          }
+        ]
+      }
+    },
+    {
+      "timestamp": 1763741953.440937,
+      "time_str": "11:19:13.440",
+      "session_time": 1.3550448417663574,
+      "position": {
+        "x": 0.0,
+        "y": 0.0,
+        "heading": -89.09652325528269
+      },
+      "velocity": {
+        "linear": 0.0,
+        "angular": -1.660763358778626
+      },
+      "sensors": {
+        "frontal_izq": 29.8,
+        "frontal_der": 250.8,
+        "trasero_izq": -1,
+        "trasero_der": 3.2
+      },
+      "imu": {
+        "gyro": {
+          "x": -1.4885496183206106,
+          "y": -1.4732824427480915,
+          "z": -1.6870229007633588
+        },
+        "accel": {
+          "x": 0.042724609375,
+          "y": -0.023681640625,
+          "z": 0.90185546875
+        },
+        "heading_rate": -1.6946564885496183,
+        "temperature": 27.353529411764708
+      },
+      "obstacles": [
+        {
+          "x": 8.131401258748566,
+          "y": -21.06704330391957,
+          "distance": 29.8,
+          "sensor": "frontal_izq",
+          "confidence": "medium"
+        },
+        {
+          "x": 15.223712596559986,
+          "y": -258.96134571548964,
+          "distance": 250.8,
+          "sensor": "frontal_der",
+          "confidence": "low"
+        },
+        {
+          "x": -10.042516337840869,
+          "y": -7.539870058880879,
+          "distance": 3.2,
+          "sensor": "trasero_der",
+          "confidence": "high"
+        }
+      ],
+      "motors": {
+        "left_speed": 0,
+        "right_speed": 0,
+        "status": {
+          "initialized": true,
+          "left_speed": 0,
+          "right_speed": 0,
+          "moving": false,
+          "direction": "stopped"
+        }
+      },
+      "navigation": {
+        "front_min": 29.8,
+        "back_min": 3.2,
+        "left_min": Infinity,
+        "right_min": 3.2,
+        "obstacles_nearby": 1,
+        "potential_blocks": [
+          {
+            "sensor": "frontal_izq",
+            "distance": 29.8,
+            "confidence": "medium"
+          }
+        ]
+      }
+    },
+    {
+      "timestamp": 1763741953.9251978,
+      "time_str": "11:19:13.925",
+      "session_time": 1.8393056392669678,
+      "position": {
+        "x": 0.0,
+        "y": 0.0,
+        "heading": -89.84640777587892
+      },
+      "velocity": {
+        "linear": 0.0,
+        "angular": -1.5485496183206107
+      },
+      "sensors": {
+        "frontal_izq": 29.8,
+        "frontal_der": 249.9,
+        "trasero_izq": -1,
+        "trasero_der": 3.1
+      },
+      "imu": {
+        "gyro": {
+          "x": -1.5954198473282444,
+          "y": -1.534351145038168,
+          "z": -1.83206106870229
+        },
+        "accel": {
+          "x": 0.045166015625,
+          "y": -0.0205078125,
+          "z": 0.894775390625
+        },
+        "heading_rate": -1.5801526717557253,
+        "temperature": 27.353529411764708
+      },
+      "obstacles": [
+        {
+          "x": 7.8349257776898344,
+          "y": -21.179092002682538,
+          "distance": 29.8,
+          "sensor": "frontal_izq",
+          "confidence": "medium"
+        },
+        {
+          "x": 11.573516310874734,
+          "y": -258.24961514047203,
+          "distance": 249.9,
+          "sensor": "frontal_der",
+          "confidence": "low"
+        },
+        {
+          "x": -10.075531938029062,
+          "y": -7.467768281134694,
+          "distance": 3.1,
+          "sensor": "trasero_der",
+          "confidence": "high"
+        }
+      ],
+      "motors": {
+        "left_speed": 0,
+        "right_speed": 0,
+        "status": {
+          "initialized": true,
+          "left_speed": 0,
+          "right_speed": 0,
+          "moving": false,
+          "direction": "stopped"
+        }
+      },
+      "navigation": {
+        "front_min": 29.8,
+        "back_min": 3.1,
+        "left_min": Infinity,
+        "right_min": 3.1,
+        "obstacles_nearby": 1,
+        "potential_blocks": [
+          {
+            "sensor": "frontal_izq",
+            "distance": 29.8,
+            "confidence": "medium"
+          }
+        ]
+      }
+    },
+    {
+      "timestamp": 1763741954.409362,
+      "time_str": "11:19:14.409",
+      "session_time": 2.323469877243042,
+      "position": {
+        "x": 0.0,
+        "y": 0.0,
+        "heading": -90.59255503108484
+      },
+      "velocity": {
+        "linear": 0.0,
+        "angular": -1.5410687022900762
+      },
+      "sensors": {
+        "frontal_izq": 29.7,
+        "frontal_der": 250.3,
+        "trasero_izq": -1,
+        "trasero_der": 3.1
+      },
+      "imu": {
+        "gyro": {
+          "x": -1.4961832061068703,
+          "y": -1.5954198473282444,
+          "z": -1.618320610687023
+        },
+        "accel": {
+          "x": 0.052734375,
+          "y": -0.02880859375,
+          "z": 0.891357421875
+        },
+        "heading_rate": -1.5725190839694656,
+        "temperature": 27.353529411764708
+      },
+      "obstacles": [
+        {
+          "x": 7.556803612427086,
+          "y": -21.179818676353413,
+          "distance": 29.7,
+          "sensor": "frontal_izq",
+          "confidence": "medium"
+        },
+        {
+          "x": 8.19373479747513,
+          "y": -258.7789649683077,
+          "distance": 250.3,
+          "sensor": "frontal_der",
+          "confidence": "low"
+        },
+        {
+          "x": -10.172404025211371,
+          "y": -7.335264363526962,
+          "distance": 3.1,
+          "sensor": "trasero_der",
+          "confidence": "high"
+        }
+      ],
+      "motors": {
+        "left_speed": 0,
+        "right_speed": 0,
+        "status": {
+          "initialized": true,
+          "left_speed": 0,
+          "right_speed": 0,
+          "moving": false,
+          "direction": "stopped"
+        }
+      },
+      "navigation": {
+        "front_min": 29.7,
+        "back_min": 3.1,
+        "left_min": Infinity,
+        "right_min": 3.1,
+        "obstacles_nearby": 1,
+        "potential_blocks": [
+          {
+            "sensor": "frontal_izq",
+            "distance": 29.7,
+            "confidence": "medium"
+          }
+        ]
+      }
+    },
+    {
+      "timestamp": 1763741954.893475,
+      "time_str": "11:19:14.893",
+      "session_time": 2.8075828552246094,
+      "position": {
+        "x": 0.0,
+        "y": 0.0,
+        "heading": -91.30964729440122
+      },
+      "velocity": {
+        "linear": 0.0,
+        "angular": -1.4812213740458016
+      },
+      "sensors": {
+        "frontal_izq": 29.8,
+        "frontal_der": 250.3,
+        "trasero_izq": -1,
+        "trasero_der": 3.2
+      },
+      "imu": {
+        "gyro": {
+          "x": -1.5419847328244274,
+          "y": -1.6030534351145038,
+          "z": -1.7099236641221374
+        },
+        "accel": {
+          "x": 0.0322265625,
+          "y": -0.024658203125,
+          "z": 0.9013671875
+        },
+        "heading_rate": -1.5114503816793894,
+        "temperature": 27.353529411764708
+      },
+      "obstacles": [
+        {
+          "x": 7.2793174659810616,
+          "y": -21.376424799986154,
+          "distance": 29.8,
+          "sensor": "frontal_izq",
+          "confidence": "medium"
+        },
+        {
+          "x": 4.82312763199346,
+          "y": -258.8637236845779,
+          "distance": 250.3,
+          "sensor": "frontal_der",
+          "confidence": "low"
+        },
+        {
+          "x": -10.337039518728183,
+          "y": -7.130735508267081,
+          "distance": 3.2,
+          "sensor": "trasero_der",
+          "confidence": "high"
+        }
+      ],
+      "motors": {
+        "left_speed": 0,
+        "right_speed": 0,
+        "status": {
+          "initialized": true,
+          "left_speed": 0,
+          "right_speed": 0,
+          "moving": false,
+          "direction": "stopped"
+        }
+      },
+      "navigation": {
+        "front_min": 29.8,
+        "back_min": 3.2,
+        "left_min": Infinity,
+        "right_min": 3.2,
+        "obstacles_nearby": 1,
+        "potential_blocks": [
+          {
+            "sensor": "frontal_izq",
+            "distance": 29.8,
+            "confidence": "medium"
+          }
+        ]
+      }
+    },
+    {
+      "timestamp": 1763741955.3781025,
+      "time_str": "11:19:15.378",
+      "session_time": 3.292210340499878,
+      "position": {
+        "x": 0.0,
+        "y": 0.0,
+        "heading": -92.12464124555807
+      },
+      "velocity": {
+        "linear": 0.0,
+        "angular": -1.683206106870229
+      },
+      "sensors": {
+        "frontal_izq": 29.8,
+        "frontal_der": 252.0,
+        "trasero_izq": -1,
+        "trasero_der": 3.0
+      },
+      "imu": {
+        "gyro": {
+          "x": -1.4809160305343512,
+          "y": -1.3740458015267176,
+          "z": -1.7786259541984732
+        },
+        "accel": {
+          "x": 0.04736328125,
+          "y": -0.02783203125,
+          "z": 0.891845703125
+        },
+        "heading_rate": -1.717557251908397,
+        "temperature": 27.44764705882353
+      },
+      "obstacles": [
+        {
+          "x": 7.011215107124667,
+          "y": -21.46585341237629,
+          "distance": 29.8,
+          "sensor": "frontal_izq",
+          "confidence": "medium"
+        },
+        {
+          "x": 1.5441395695963989,
+          "y": -260.603368422186,
+          "distance": 252.0,
+          "sensor": "frontal_der",
+          "confidence": "low"
+        },
+        {
+          "x": -10.287321047767847,
+          "y": -7.1454226347693215,
+          "distance": 3.0,
+          "sensor": "trasero_der",
+          "confidence": "high"
+        }
+      ],
+      "motors": {
+        "left_speed": 0,
+        "right_speed": 0,
+        "status": {
+          "initialized": true,
+          "left_speed": 0,
+          "right_speed": 0,
+          "moving": false,
+          "direction": "stopped"
+        }
+      },
+      "navigation": {
+        "front_min": 29.8,
+        "back_min": 3.0,
+        "left_min": Infinity,
+        "right_min": 3.0,
+        "obstacles_nearby": 1,
+        "potential_blocks": [
+          {
+            "sensor": "frontal_izq",
+            "distance": 29.8,
+            "confidence": "medium"
+          }
+        ]
+      }
+    },
+    {
+      "timestamp": 1763741955.86232,
+      "time_str": "11:19:15.862",
+      "session_time": 3.776427745819092,
+      "position": {
+        "x": 0.0,
+        "y": 0.0,
+        "heading": -92.95126914708669
+      },
+      "velocity": {
+        "linear": 0.0,
+        "angular": -1.705648854961832
+      },
+      "sensors": {
+        "frontal_izq": 29.9,
+        "frontal_der": 250.3,
+        "trasero_izq": -1,
+        "trasero_der": 3.1
+      },
+      "imu": {
+        "gyro": {
+          "x": -1.4351145038167938,
+          "y": -1.366412213740458,
+          "z": -1.8244274809160306
+        },
+        "accel": {
+          "x": 0.044677734375,
+          "y": -0.017333984375,
+          "z": 0.89404296875
+        },
+        "heading_rate": -1.7404580152671756,
+        "temperature": 27.353529411764708
+      },
+      "obstacles": [
+        {
+          "x": 6.701471435843095,
+          "y": -21.66333955313859,
+          "distance": 29.9,
+          "sensor": "frontal_izq",
+          "confidence": "medium"
+        },
+        {
+          "x": -2.0997744570089374,
+          "y": -258.90013701662986,
+          "distance": 250.3,
+          "sensor": "frontal_der",
+          "confidence": "low"
+        },
+        {
+          "x": -10.455956323450117,
+          "y": -6.925090923379175,
+          "distance": 3.1,
+          "sensor": "trasero_der",
+          "confidence": "high"
+        }
+      ],
+      "motors": {
+        "left_speed": 0,
+        "right_speed": 0,
+        "status": {
+          "initialized": true,
+          "left_speed": 0,
+          "right_speed": 0,
+          "moving": false,
+          "direction": "stopped"
+        }
+      },
+      "navigation": {
+        "front_min": 29.9,
+        "back_min": 3.1,
+        "left_min": Infinity,
+        "right_min": 3.1,
+        "obstacles_nearby": 1,
+        "potential_blocks": [
+          {
+            "sensor": "frontal_izq",
+            "distance": 29.9,
+            "confidence": "medium"
+          }
+        ]
+      }
+    },
+    {
+      "timestamp": 1763741956.3464162,
+      "time_str": "11:19:16.346",
+      "session_time": 4.260524034500122,
+      "position": {
+        "x": 0.0,
+        "y": 0.0,
+        "heading": -93.76251465331507
+      },
+      "velocity": {
+        "linear": 0.0,
+        "angular": -1.6757251908396946
+      },
+      "sensors": {
+        "frontal_izq": 29.8,
+        "frontal_der": 250.3,
+        "trasero_izq": -1,
+        "trasero_der": 3.2
+      },
+      "imu": {
+        "gyro": {
+          "x": -1.4351145038167938,
+          "y": -1.4274809160305344,
+          "z": -1.6564885496183206
+        },
+        "accel": {
+          "x": 0.058837890625,
+          "y": -0.025634765625,
+          "z": 0.893310546875
+        },
+        "heading_rate": -1.7099236641221374,
+        "temperature": 27.353529411764708
+      },
+      "obstacles": [
+        {
+          "x": 6.39338829545181,
+          "y": -21.657898930957725,
+          "distance": 29.8,
+          "sensor": "frontal_izq",
+          "confidence": "medium"
+        },
+        {
+          "x": -5.834676636013851,
+          "y": -258.8428993589609,
+          "distance": 250.3,
+          "sensor": "frontal_der",
+          "confidence": "low"
+        },
+        {
+          "x": -10.621751826861043,
+          "y": -6.699265857478956,
+          "distance": 3.2,
+          "sensor": "trasero_der",
+          "confidence": "high"
+        }
+      ],
+      "motors": {
+        "left_speed": 0,
+        "right_speed": 0,
+        "status": {
+          "initialized": true,
+          "left_speed": 0,
+          "right_speed": 0,
+          "moving": false,
+          "direction": "stopped"
+        }
+      },
+      "navigation": {
+        "front_min": 29.8,
+        "back_min": 3.2,
+        "left_min": Infinity,
+        "right_min": 3.2,
+        "obstacles_nearby": 1,
+        "potential_blocks": [
+          {
+            "sensor": "frontal_izq",
+            "distance": 29.8,
+            "confidence": "medium"
+          }
+        ]
+      }
+    },
+    {
+      "timestamp": 1763741956.830442,
+      "time_str": "11:19:16.830",
+      "session_time": 4.744549751281738,
+      "position": {
+        "x": 0.0,
+        "y": 0.0,
+        "heading": -94.56274350766917
+      },
+      "velocity": {
+        "linear": 0.0,
+        "angular": -1.6532824427480919
+      },
+      "sensors": {
+        "frontal_izq": 29.9,
+        "frontal_der": 249.9,
+        "trasero_izq": -1,
+        "trasero_der": 3.2
+      },
+      "imu": {
+        "gyro": {
+          "x": -1.6259541984732824,
+          "y": -1.5190839694656488,
+          "z": -1.786259541984733
+        },
+        "accel": {
+          "x": 0.042724609375,
+          "y": -0.04638671875,
+          "z": 0.88037109375
+        },
+        "heading_rate": -1.6870229007633588,
+        "temperature": 27.25941176470588
+      },
+      "obstacles": [
+        {
+          "x": 6.079543451709718,
+          "y": -21.846032853101118,
+          "distance": 29.9,
+          "sensor": "frontal_izq",
+          "confidence": "medium"
+        },
+        {
+          "x": -9.472652962218245,
+          "y": -258.335206361536,
+          "distance": 249.9,
+          "sensor": "frontal_der",
+          "confidence": "low"
+        },
+        {
+          "x": -10.715538249361263,
+          "y": -6.548207000934296,
+          "distance": 3.2,
+          "sensor": "trasero_der",
+          "confidence": "high"
+        }
+      ],
+      "motors": {
+        "left_speed": 0,
+        "right_speed": 0,
+        "status": {
+          "initialized": true,
+          "left_speed": 0,
+          "right_speed": 0,
+          "moving": false,
+          "direction": "stopped"
+        }
+      },
+      "navigation": {
+        "front_min": 29.9,
+        "back_min": 3.2,
+        "left_min": Infinity,
+        "right_min": 3.2,
+        "obstacles_nearby": 1,
+        "potential_blocks": [
+          {
+            "sensor": "frontal_izq",
+            "distance": 29.9,
+            "confidence": "medium"
+          }
+        ]
+      }
+    },
+    {
+      "timestamp": 1763741957.3146777,
+      "time_str": "11:19:17.314",
+      "session_time": 5.228785514831543,
+      "position": {
+        "x": 0.0,
+        "y": 0.0,
+        "heading": -95.41764348383168
+      },
+      "velocity": {
+        "linear": 0.0,
+        "angular": -1.765496183206107
+      },
+      "sensors": {
+        "frontal_izq": 29.8,
+        "frontal_der": 250.3,
+        "trasero_izq": -1,
+        "trasero_der": 3.0
+      },
+      "imu": {
+        "gyro": {
+          "x": -1.4427480916030535,
+          "y": -1.4427480916030535,
+          "z": -1.5419847328244274
+        },
+        "accel": {
+          "x": 0.04296875,
+          "y": -0.026611328125,
+          "z": 0.890625
+        },
+        "heading_rate": -1.8015267175572518,
+        "temperature": 27.353529411764708
+      },
+      "obstacles": [
+        {
+          "x": 5.781800077781217,
+          "y": -21.82912705218807,
+          "distance": 29.8,
+          "sensor": "frontal_izq",
+          "confidence": "medium"
+        },
+        {
+          "x": -13.111503876084488,
+          "y": -258.57644607757186,
+          "distance": 250.3,
+          "sensor": "frontal_der",
+          "confidence": "low"
+        },
+        {
+          "x": -10.676223553103808,
+          "y": -6.5501366102908545,
+          "distance": 3.0,
+          "sensor": "trasero_der",
+          "confidence": "high"
+        }
+      ],
+      "motors": {
+        "left_speed": 0,
+        "right_speed": 0,
+        "status": {
+          "initialized": true,
+          "left_speed": 0,
+          "right_speed": 0,
+          "moving": false,
+          "direction": "stopped"
+        }
+      },
+      "navigation": {
+        "front_min": 29.8,
+        "back_min": 3.0,
+        "left_min": Infinity,
+        "right_min": 3.0,
+        "obstacles_nearby": 1,
+        "potential_blocks": [
+          {
+            "sensor": "frontal_izq",
+            "distance": 29.8,
+            "confidence": "medium"
+          }
+        ]
+      }
+    },
+    {
+      "timestamp": 1763741957.799308,
+      "time_str": "11:19:17.799",
+      "session_time": 5.713415861129761,
+      "position": {
+        "x": 0.0,
+        "y": 0.0,
+        "heading": -96.21162922782753
+      },
+      "velocity": {
+        "linear": 0.0,
+        "angular": -1.638320610687023
+      },
+      "sensors": {
+        "frontal_izq": 29.7,
+        "frontal_der": 251.2,
+        "trasero_izq": -1,
+        "trasero_der": 3.1
+      },
+      "imu": {
+        "gyro": {
+          "x": -1.5419847328244274,
+          "y": -1.5038167938931297,
+          "z": -1.5267175572519085
+        },
+        "accel": {
+          "x": 0.048095703125,
+          "y": -0.025634765625,
+          "z": 0.894287109375
+        },
+        "heading_rate": -1.6717557251908397,
+        "temperature": 27.25941176470588
+      },
+      "obstacles": [
+        {
+          "x": 5.464901597905952,
+          "y": -21.813409878448738,
+          "distance": 29.7,
+          "sensor": "frontal_izq",
+          "confidence": "medium"
+        },
+        {
+          "x": -17.05304706776492,
+          "y": -259.248015586821,
+          "distance": 251.2,
+          "sensor": "frontal_der",
+          "confidence": "low"
+        },
+        {
+          "x": -10.836483594565403,
+          "y": -6.313044450950746,
+          "distance": 3.1,
+          "sensor": "trasero_der",
+          "confidence": "high"
+        }
+      ],
+      "motors": {
+        "left_speed": 0,
+        "right_speed": 0,
+        "status": {
+          "initialized": true,
+          "left_speed": 0,
+          "right_speed": 0,
+          "moving": false,
+          "direction": "stopped"
+        }
+      },
+      "navigation": {
+        "front_min": 29.7,
+        "back_min": 3.1,
+        "left_min": Infinity,
+        "right_min": 3.1,
+        "obstacles_nearby": 1,
+        "potential_blocks": [
+          {
+            "sensor": "frontal_izq",
+            "distance": 29.7,
+            "confidence": "medium"
+          }
+        ]
+      }
+    },
+    {
+      "timestamp": 1763741958.283504,
+      "time_str": "11:19:18.283",
+      "session_time": 6.1976118087768555,
+      "position": {
+        "x": 0.0,
+        "y": 0.0,
+        "heading": -97.0374865117328
+      },
+      "velocity": {
+        "linear": 0.0,
+        "angular": -1.705648854961832
+      },
+      "sensors": {
+        "frontal_izq": 30.7,
+        "frontal_der": 251.2,
+        "trasero_izq": -1,
+        "trasero_der": 2.9
+      },
+      "imu": {
+        "gyro": {
+          "x": -1.6641221374045803,
+          "y": -1.5190839694656488,
+          "z": -1.6946564885496183
+        },
+        "accel": {
+          "x": 0.045654296875,
+          "y": -0.027587890625,
+          "z": 0.890625
+        },
+        "heading_rate": -1.7404580152671756,
+        "temperature": 27.306470588235296
+      },
+      "obstacles": [
+        {
+          "x": 5.053902484157144,
+          "y": -22.881172821353154,
+          "distance": 30.7,
+          "sensor": "frontal_izq",
+          "confidence": "medium"
+        },
+        {
+          "x": -20.64386698954802,
+          "y": -258.9868157951633,
+          "distance": 251.2,
+          "sensor": "frontal_der",
+          "confidence": "low"
+        },
+        {
+          "x": -10.797635254210022,
+          "y": -6.318167766110514,
+          "distance": 2.9,
+          "sensor": "trasero_der",
+          "confidence": "high"
+        }
+      ],
+      "motors": {
+        "left_speed": 0,
+        "right_speed": 0,
+        "status": {
+          "initialized": true,
+          "left_speed": 0,
+          "right_speed": 0,
+          "moving": false,
+          "direction": "stopped"
+        }
+      },
+      "navigation": {
+        "front_min": 30.7,
+        "back_min": 2.9,
+        "left_min": Infinity,
+        "right_min": 2.9,
+        "obstacles_nearby": 1,
+        "potential_blocks": [
+          {
+            "sensor": "frontal_izq",
+            "distance": 30.7,
+            "confidence": "medium"
+          }
+        ]
+      }
+    },
+    {
+      "timestamp": 1763741958.7676318,
+      "time_str": "11:19:18.767",
+      "session_time": 6.681739568710327,
+      "position": {
+        "x": 0.0,
+        "y": 0.0,
+        "heading": -97.9031016792778
+      },
+      "velocity": {
+        "linear": 0.0,
+        "angular": -1.7879389312977099
+      },
+      "sensors": {
+        "frontal_izq": 30.7,
+        "frontal_der": 250.7,
+        "trasero_izq": -1,
+        "trasero_der": 3.0
+      },
+      "imu": {
+        "gyro": {
+          "x": -1.5267175572519085,
+          "y": -1.4961832061068703,
+          "z": -1.8091603053435115
+        },
+        "accel": {
+          "x": 0.0419921875,
+          "y": -0.030517578125,
+          "z": 0.8974609375
+        },
+        "heading_rate": -1.8244274809160306,
+        "temperature": 27.40058823529412
+      },
+      "obstacles": [
+        {
+          "x": 4.723581315663417,
+          "y": -22.95164001883777,
+          "distance": 30.7,
+          "sensor": "frontal_izq",
+          "confidence": "medium"
+        },
+        {
+          "x": -24.31335142624161,
+          "y": -258.1661305098406,
+          "distance": 250.7,
+          "sensor": "frontal_der",
+          "confidence": "low"
+        },
+        {
+          "x": -10.949094652382806,
+          "y": -6.083039146880719,
+          "distance": 3.0,
+          "sensor": "trasero_der",
+          "confidence": "high"
+        }
+      ],
+      "motors": {
+        "left_speed": 0,
+        "right_speed": 0,
+        "status": {
+          "initialized": true,
+          "left_speed": 0,
+          "right_speed": 0,
+          "moving": false,
+          "direction": "stopped"
+        }
+      },
+      "navigation": {
+        "front_min": 30.7,
+        "back_min": 3.0,
+        "left_min": Infinity,
+        "right_min": 3.0,
+        "obstacles_nearby": 1,
+        "potential_blocks": [
+          {
+            "sensor": "frontal_izq",
+            "distance": 30.7,
+            "confidence": "medium"
+          }
+        ]
+      }
+    },
+    {
+      "timestamp": 1763741959.253358,
+      "time_str": "11:19:19.253",
+      "session_time": 7.167465686798096,
+      "position": {
+        "x": 0.0,
+        "y": 0.0,
+        "heading": -98.71700162308818
+      },
+      "velocity": {
+        "linear": 0.0,
+        "angular": -1.6757251908396946
+      },
+      "sensors": {
+        "frontal_izq": 57.3,
+        "frontal_der": 249.9,
+        "trasero_izq": -1,
+        "trasero_der": 3.0
+      },
+      "imu": {
+        "gyro": {
+          "x": -1.4427480916030535,
+          "y": -1.5419847328244274,
+          "z": -1.633587786259542
+        },
+        "accel": {
+          "x": 0.054443359375,
+          "y": -0.022705078125,
+          "z": 0.896484375
+        },
+        "heading_rate": -1.7099236641221374,
+        "temperature": 27.306470588235296
+      },
+      "obstacles": [
+        {
+          "x": 0.7188546303078969,
+          "y": -49.36773488849255,
+          "distance": 57.3,
+          "sensor": "frontal_izq",
+          "confidence": "low"
+        },
+        {
+          "x": -28.10076108608697,
+          "y": -256.97695855150647,
+          "distance": 249.9,
+          "sensor": "frontal_der",
+          "confidence": "low"
+        },
+        {
+          "x": -11.039743183034723,
+          "y": -5.916934123510202,
+          "distance": 3.0,
+          "sensor": "trasero_der",
+          "confidence": "high"
+        }
+      ],
+      "motors": {
+        "left_speed": 0,
+        "right_speed": 0,
+        "status": {
+          "initialized": true,
+          "left_speed": 0,
+          "right_speed": 0,
+          "moving": false,
+          "direction": "stopped"
+        }
+      },
+      "navigation": {
+        "front_min": 57.3,
+        "back_min": 3.0,
+        "left_min": Infinity,
+        "right_min": 3.0,
+        "obstacles_nearby": 1,
+        "potential_blocks": []
+      }
+    },
+    {
+      "timestamp": 1763741959.7376285,
+      "time_str": "11:19:19.737",
+      "session_time": 7.651736259460449,
+      "position": {
+        "x": 0.0,
+        "y": 0.0,
+        "heading": -99.50678718177419
+      },
+      "velocity": {
+        "linear": 0.0,
+        "angular": -1.6308396946564887
+      },
+      "sensors": {
+        "frontal_izq": 30.5,
+        "frontal_der": 251.2,
+        "trasero_izq": -1,
+        "trasero_der": 3.0
+      },
+      "imu": {
+        "gyro": {
+          "x": -1.633587786259542,
+          "y": -1.4732824427480915,
+          "z": -1.7938931297709924
+        },
+        "accel": {
+          "x": 0.03564453125,
+          "y": -0.0302734375,
+          "z": 0.891357421875
+        },
+        "heading_rate": -1.6641221374045803,
+        "temperature": 27.25941176470588
+      },
+      "obstacles": [
+        {
+          "x": 4.0791762528478746,
+          "y": -22.882533100559513,
+          "distance": 30.5,
+          "sensor": "frontal_izq",
+          "confidence": "medium"
+        },
+        {
+          "x": -31.94524131009484,
+          "y": -257.8368506587834,
+          "distance": 251.2,
+          "sensor": "frontal_der",
+          "confidence": "low"
+        },
+        {
+          "x": -11.122677960101061,
+          "y": -5.7595202895035555,
+          "distance": 3.0,
+          "sensor": "trasero_der",
+          "confidence": "high"
+        }
+      ],
+      "motors": {
+        "left_speed": 0,
+        "right_speed": 0,
+        "status": {
+          "initialized": true,
+          "left_speed": 0,
+          "right_speed": 0,
+          "moving": false,
+          "direction": "stopped"
+        }
+      },
+      "navigation": {
+        "front_min": 30.5,
+        "back_min": 3.0,
+        "left_min": Infinity,
+        "right_min": 3.0,
+        "obstacles_nearby": 1,
+        "potential_blocks": [
+          {
+            "sensor": "frontal_izq",
+            "distance": 30.5,
+            "confidence": "medium"
+          }
+        ]
+      }
+    },
+    {
+      "timestamp": 1763741960.2233894,
+      "time_str": "11:19:20.223",
+      "session_time": 8.137497186660767,
+      "position": {
+        "x": 0.0,
+        "y": 0.0,
+        "heading": -100.30990572023029
+      },
+      "velocity": {
+        "linear": 0.0,
+        "angular": -1.6532824427480919
+      },
+      "sensors": {
+        "frontal_izq": 57.4,
+        "frontal_der": 250.3,
+        "trasero_izq": -1,
+        "trasero_der": 3.0
+      },
+      "imu": {
+        "gyro": {
+          "x": -1.5648854961832062,
+          "y": -1.450381679389313,
+          "z": -1.8702290076335877
+        },
+        "accel": {
+          "x": 0.043701171875,
+          "y": -0.027587890625,
+          "z": 0.897216796875
+        },
+        "heading_rate": -1.6870229007633588,
+        "temperature": 27.40058823529412
+      },
+      "obstacles": [
+        {
+          "x": -0.679545731702925,
+          "y": -49.46714280811582,
+          "distance": 57.4,
+          "sensor": "frontal_izq",
+          "confidence": "low"
+        },
+        {
+          "x": -35.347561432023106,
+          "y": -256.48438529627754,
+          "distance": 250.3,
+          "sensor": "frontal_der",
+          "confidence": "low"
+        },
+        {
+          "x": -11.20101005259723,
+          "y": -5.605658995241942,
+          "distance": 3.0,
+          "sensor": "trasero_der",
+          "confidence": "high"
+        }
+      ],
+      "motors": {
+        "left_speed": 0,
+        "right_speed": 0,
+        "status": {
+          "initialized": true,
+          "left_speed": 0,
+          "right_speed": 0,
+          "moving": false,
+          "direction": "stopped"
+        }
+      },
+      "navigation": {
+        "front_min": 57.4,
+        "back_min": 3.0,
+        "left_min": Infinity,
+        "right_min": 3.0,
+        "obstacles_nearby": 1,
+        "potential_blocks": []
+      }
+    },
+    {
+      "timestamp": 1763741960.7075574,
+      "time_str": "11:19:20.707",
+      "session_time": 8.621665239334106,
+      "position": {
+        "x": 0.0,
+        "y": 0.0,
+        "heading": -101.07777672298083
+      },
+      "velocity": {
+        "linear": 0.0,
+        "angular": -1.5859541984732826
+      },
+      "sensors": {
+        "frontal_izq": 30.5,
+        "frontal_der": 250.4,
+        "trasero_izq": -1,
+        "trasero_der": 3.1
+      },
+      "imu": {
+        "gyro": {
+          "x": -1.7251908396946565,
+          "y": -1.6870229007633588,
+          "z": -1.7938931297709924
+        },
+        "accel": {
+          "x": 0.04931640625,
+          "y": -0.02490234375,
+          "z": 0.905029296875
+        },
+        "heading_rate": -1.618320610687023,
+        "temperature": 27.306470588235296
+      },
+      "obstacles": [
+        {
+          "x": 3.4415149256647632,
+          "y": -22.987082786130706,
+          "distance": 30.5,
+          "sensor": "frontal_izq",
+          "confidence": "medium"
+        },
+        {
+          "x": -38.957026213952304,
+          "y": -256.0621215810051,
+          "distance": 250.4,
+          "sensor": "frontal_der",
+          "confidence": "low"
+        },
+        {
+          "x": -11.335395733012454,
+          "y": -5.36588394497758,
+          "distance": 3.1,
+          "sensor": "trasero_der",
+          "confidence": "high"
+        }
+      ],
+      "motors": {
+        "left_speed": 0,
+        "right_speed": 0,
+        "status": {
+          "initialized": true,
+          "left_speed": 0,
+          "right_speed": 0,
+          "moving": false,
+          "direction": "stopped"
+        }
+      },
+      "navigation": {
+        "front_min": 30.5,
+        "back_min": 3.1,
+        "left_min": Infinity,
+        "right_min": 3.1,
+        "obstacles_nearby": 1,
+        "potential_blocks": [
+          {
+            "sensor": "frontal_izq",
+            "distance": 30.5,
+            "confidence": "medium"
+          }
+        ]
+      }
+    },
+    {
+      "timestamp": 1763741961.19166,
+      "time_str": "11:19:21.191",
+      "session_time": 9.105767726898193,
+      "position": {
+        "x": 0.0,
+        "y": 0.0,
+        "heading": -101.81295022163684
+      },
+      "velocity": {
+        "linear": 0.0,
+        "angular": -1.5186259541984735
+      },
+      "sensors": {
+        "frontal_izq": 31.0,
+        "frontal_der": 250.3,
+        "trasero_izq": -1,
+        "trasero_der": 3.1
+      },
+      "imu": {
+        "gyro": {
+          "x": -1.3511450381679388,
+          "y": -1.6641221374045803,
+          "z": -1.618320610687023
+        },
+        "accel": {
+          "x": 0.0439453125,
+          "y": -0.02392578125,
+          "z": 0.90185546875
+        },
+        "heading_rate": -1.549618320610687,
+        "temperature": 27.306470588235296
+      },
+      "obstacles": [
+        {
+          "x": 3.0370743558204794,
+          "y": -23.521823470071737,
+          "distance": 31.0,
+          "sensor": "frontal_izq",
+          "confidence": "medium"
+        },
+        {
+          "x": -42.36592397933705,
+          "y": -255.41890784626153,
+          "distance": 250.3,
+          "sensor": "frontal_der",
+          "confidence": "low"
+        },
+        {
+          "x": -11.40628853641557,
+          "y": -5.213491033750791,
+          "distance": 3.1,
+          "sensor": "trasero_der",
+          "confidence": "high"
+        }
+      ],
+      "motors": {
+        "left_speed": 0,
+        "right_speed": 0,
+        "status": {
+          "initialized": true,
+          "left_speed": 0,
+          "right_speed": 0,
+          "moving": false,
+          "direction": "stopped"
+        }
+      },
+      "navigation": {
+        "front_min": 31.0,
+        "back_min": 3.1,
+        "left_min": Infinity,
+        "right_min": 3.1,
+        "obstacles_nearby": 1,
+        "potential_blocks": [
+          {
+            "sensor": "frontal_izq",
+            "distance": 31.0,
+            "confidence": "medium"
+          }
+        ]
+      }
+    },
+    {
+      "timestamp": 1763741961.675834,
+      "time_str": "11:19:21.675",
+      "session_time": 9.58994174003601,
+      "position": {
+        "x": 0.0,
+        "y": 0.0,
+        "heading": -102.63512135425599
+      },
+      "velocity": {
+        "linear": 0.0,
+        "angular": -1.6981679389312978
+      },
+      "sensors": {
+        "frontal_izq": 30.5,
+        "frontal_der": 249.8,
+        "trasero_izq": -1,
+        "trasero_der": 3.1
+      },
+      "imu": {
+        "gyro": {
+          "x": -1.5954198473282444,
+          "y": -1.5725190839694656,
+          "z": -1.702290076335878
+        },
+        "accel": {
+          "x": 0.038818359375,
+          "y": -0.02001953125,
+          "z": 0.8876953125
+        },
+        "heading_rate": -1.7328244274809161,
+        "temperature": 27.353529411764708
+      },
+      "obstacles": [
+        {
+          "x": 2.837378099363801,
+          "y": -23.06944484640345,
+          "distance": 30.5,
+          "sensor": "frontal_izq",
+          "confidence": "medium"
+        },
+        {
+          "x": -45.53731850718106,
+          "y": -254.36488087622385,
+          "distance": 249.8,
+          "sensor": "frontal_der",
+          "confidence": "low"
+        },
+        {
+          "x": -11.472243086436274,
+          "y": -5.066709533877013,
+          "distance": 3.1,
+          "sensor": "trasero_der",
+          "confidence": "high"
+        }
+      ],
+      "motors": {
+        "left_speed": 0,
+        "right_speed": 0,
+        "status": {
+          "initialized": true,
+          "left_speed": 0,
+          "right_speed": 0,
+          "moving": false,
+          "direction": "stopped"
+        }
+      },
+      "navigation": {
+        "front_min": 30.5,
+        "back_min": 3.1,
+        "left_min": Infinity,
+        "right_min": 3.1,
+        "obstacles_nearby": 1,
+        "potential_blocks": [
+          {
+            "sensor": "frontal_izq",
+            "distance": 30.5,
+            "confidence": "medium"
+          }
+        ]
+      }
+    },
+    {
+      "timestamp": 1763741962.161615,
+      "time_str": "11:19:22.161",
+      "session_time": 10.075722694396973,
+      "position": {
+        "x": 0.0,
+        "y": 0.0,
+        "heading": -103.5327865437151
+      },
+      "velocity": {
+        "linear": 0.0,
+        "angular": -1.8477862595419847
+      },
+      "sensors": {
+        "frontal_izq": 57.3,
+        "frontal_der": 252.0,
+        "trasero_izq": -1,
+        "trasero_der": 3.1
+      },
+      "imu": {
+        "gyro": {
+          "x": -1.7251908396946565,
+          "y": -1.2748091603053435,
+          "z": -1.6793893129770991
+        },
+        "accel": {
+          "x": 0.045166015625,
+          "y": -0.02587890625,
+          "z": 0.893310546875
+        },
+        "heading_rate": -1.8854961832061068,
+        "temperature": 27.25941176470588
+      },
+      "obstacles": [
+        {
+          "x": -3.3562098926261523,
+          "y": -49.2587642471534,
+          "distance": 57.3,
+          "sensor": "frontal_izq",
+          "confidence": "low"
+        },
+        {
+          "x": -49.66376872321696,
+          "y": -255.83199580233668,
+          "distance": 252.0,
+          "sensor": "frontal_der",
+          "confidence": "low"
+        },
+        {
+          "x": -11.543764703139004,
+          "y": -4.901571524881299,
+          "distance": 3.1,
+          "sensor": "trasero_der",
+          "confidence": "high"
+        }
+      ],
+      "motors": {
+        "left_speed": 0,
+        "right_speed": 0,
+        "status": {
+          "initialized": true,
+          "left_speed": 0,
+          "right_speed": 0,
+          "moving": false,
+          "direction": "stopped"
+        }
+      },
+      "navigation": {
+        "front_min": 57.3,
+        "back_min": 3.1,
+        "left_min": Infinity,
+        "right_min": 3.1,
+        "obstacles_nearby": 1,
+        "potential_blocks": []
+      }
+    },
+    {
+      "timestamp": 1763741962.6473682,
+      "time_str": "11:19:22.647",
+      "session_time": 10.561475992202759,
+      "position": {
+        "x": 0.0,
+        "y": 0.0,
+        "heading": -104.36855547631971
+      },
+      "velocity": {
+        "linear": 0.0,
+        "angular": -1.720610687022901
+      },
+      "sensors": {
+        "frontal_izq": 57.4,
+        "frontal_der": 250.3,
+        "trasero_izq": -1,
+        "trasero_der": 3.0
+      },
+      "imu": {
+        "gyro": {
+          "x": -1.3435114503816794,
+          "y": -1.4274809160305344,
+          "z": -1.6946564885496183
+        },
+        "accel": {
+          "x": 0.044921875,
+          "y": -0.030029296875,
+          "z": 0.8837890625
+        },
+        "heading_rate": -1.7557251908396947,
+        "temperature": 27.306470588235296
+      },
+      "obstacles": [
+        {
+          "x": -4.150914151869788,
+          "y": -49.297362117093115,
+          "distance": 57.4,
+          "sensor": "frontal_izq",
+          "confidence": "low"
+        },
+        {
+          "x": -53.26788103516187,
+          "y": -253.36973546582837,
+          "distance": 250.3,
+          "sensor": "frontal_der",
+          "confidence": "low"
+        },
+        {
+          "x": -11.566937723967865,
+          "y": -4.8054126419247485,
+          "distance": 3.0,
+          "sensor": "trasero_der",
+          "confidence": "high"
+        }
+      ],
+      "motors": {
+        "left_speed": 0,
+        "right_speed": 0,
+        "status": {
+          "initialized": true,
+          "left_speed": 0,
+          "right_speed": 0,
+          "moving": false,
+          "direction": "stopped"
+        }
+      },
+      "navigation": {
+        "front_min": 57.4,
+        "back_min": 3.0,
+        "left_min": Infinity,
+        "right_min": 3.0,
+        "obstacles_nearby": 1,
+        "potential_blocks": []
+      }
+    },
+    {
+      "timestamp": 1763741963.1319199,
+      "time_str": "11:19:23.131",
+      "session_time": 11.046027660369873,
+      "position": {
+        "x": 0.0,
+        "y": 0.0,
+        "heading": -105.19139141333923
+      },
+      "velocity": {
+        "linear": 0.0,
+        "angular": -1.6981679389312978
+      },
+      "sensors": {
+        "frontal_izq": 30.6,
+        "frontal_der": 250.5,
+        "trasero_izq": -1,
+        "trasero_der": 3.0
+      },
+      "imu": {
+        "gyro": {
+          "x": -1.6641221374045803,
+          "y": -1.4351145038167938,
+          "z": -1.748091603053435
+        },
+        "accel": {
+          "x": 0.046142578125,
+          "y": -0.01953125,
+          "z": 0.89453125
+        },
+        "heading_rate": -1.7328244274809161,
+        "temperature": 27.353529411764708
+      },
+      "obstacles": [
+        {
+          "x": 1.7810982278947591,
+          "y": -23.269888033735576,
+          "distance": 30.6,
+          "sensor": "frontal_izq",
+          "confidence": "medium"
+        },
+        {
+          "x": -57.007598578881854,
+          "y": -252.7595373161398,
+          "distance": 250.5,
+          "sensor": "frontal_der",
+          "confidence": "low"
+        },
+        {
+          "x": -11.635800831891803,
+          "y": -4.63618139958599,
+          "distance": 3.0,
+          "sensor": "trasero_der",
+          "confidence": "high"
+        }
+      ],
+      "motors": {
+        "left_speed": 0,
+        "right_speed": 0,
+        "status": {
+          "initialized": true,
+          "left_speed": 0,
+          "right_speed": 0,
+          "moving": false,
+          "direction": "stopped"
+        }
+      },
+      "navigation": {
+        "front_min": 30.6,
+        "back_min": 3.0,
+        "left_min": Infinity,
+        "right_min": 3.0,
+        "obstacles_nearby": 1,
+        "potential_blocks": [
+          {
+            "sensor": "frontal_izq",
+            "distance": 30.6,
+            "confidence": "medium"
+          }
+        ]
+      }
+    },
+    {
+      "timestamp": 1763741963.6176505,
+      "time_str": "11:19:23.617",
+      "session_time": 11.531758308410645,
+      "position": {
+        "x": 0.0,
+        "y": 0.0,
+        "heading": -106.05621698586997
+      },
+      "velocity": {
+        "linear": 0.0,
+        "angular": -1.7804580152671758
+      },
+      "sensors": {
+        "frontal_izq": 57.4,
+        "frontal_der": 250.3,
+        "trasero_izq": -1,
+        "trasero_der": 3.1
+      },
+      "imu": {
+        "gyro": {
+          "x": -1.5419847328244274,
+          "y": -1.534351145038168,
+          "z": -1.6488549618320612
+        },
+        "accel": {
+          "x": 0.04541015625,
+          "y": -0.026123046875,
+          "z": 0.8857421875
+        },
+        "heading_rate": -1.816793893129771,
+        "temperature": 27.306470588235296
+      },
+      "obstacles": [
+        {
+          "x": -5.576041505663605,
+          "y": -49.156563764436555,
+          "distance": 57.4,
+          "sensor": "frontal_izq",
+          "confidence": "low"
+        },
+        {
+          "x": -60.579115666165144,
+          "y": -251.7217923524012,
+          "distance": 250.3,
+          "sensor": "frontal_der",
+          "confidence": "low"
+        },
+        {
+          "x": -11.750890201806405,
+          "y": -4.3818359622486245,
+          "distance": 3.1,
+          "sensor": "trasero_der",
+          "confidence": "high"
+        }
+      ],
+      "motors": {
+        "left_speed": 0,
+        "right_speed": 0,
+        "status": {
+          "initialized": true,
+          "left_speed": 0,
+          "right_speed": 0,
+          "moving": false,
+          "direction": "stopped"
+        }
+      },
+      "navigation": {
+        "front_min": 57.4,
+        "back_min": 3.1,
+        "left_min": Infinity,
+        "right_min": 3.1,
+        "obstacles_nearby": 1,
+        "potential_blocks": []
+      }
+    },
+    {
+      "timestamp": 1763741964.103384,
+      "time_str": "11:19:24.103",
+      "session_time": 12.017491817474365,
+      "position": {
+        "x": 0.0,
+        "y": 0.0,
+        "heading": -106.83750264073147
+      },
+      "velocity": {
+        "linear": 0.0,
+        "angular": -1.6083969465648855
+      },
+      "sensors": {
+        "frontal_izq": 57.4,
+        "frontal_der": 251.2,
+        "trasero_izq": -1,
+        "trasero_der": 3.2
+      },
+      "imu": {
+        "gyro": {
+          "x": -1.5267175572519085,
+          "y": -1.633587786259542,
+          "z": -1.618320610687023
+        },
+        "accel": {
+          "x": 0.048828125,
+          "y": -0.030029296875,
+          "z": 0.89599609375
+        },
+        "heading_rate": -1.6412213740458015,
+        "temperature": 27.353529411764708
+      },
+      "obstacles": [
+        {
+          "x": -6.317349961015617,
+          "y": -49.06680231551732,
+          "distance": 57.4,
+          "sensor": "frontal_izq",
+          "confidence": "low"
+        },
+        {
+          "x": -64.62049523855936,
+          "y": -251.64365995415682,
+          "distance": 251.2,
+          "sensor": "frontal_der",
+          "confidence": "low"
+        },
+        {
+          "x": -11.86408390127962,
+          "y": -4.116465484369673,
+          "distance": 3.2,
+          "sensor": "trasero_der",
+          "confidence": "high"
+        }
+      ],
+      "motors": {
+        "left_speed": 0,
+        "right_speed": 0,
+        "status": {
+          "initialized": true,
+          "left_speed": 0,
+          "right_speed": 0,
+          "moving": false,
+          "direction": "stopped"
+        }
+      },
+      "navigation": {
+        "front_min": 57.4,
+        "back_min": 3.2,
+        "left_min": Infinity,
+        "right_min": 3.2,
+        "obstacles_nearby": 1,
+        "potential_blocks": []
+      }
+    },
+    {
+      "timestamp": 1763741964.5890987,
+      "time_str": "11:19:24.589",
+      "session_time": 12.503206491470337,
+      "position": {
+        "x": 0.0,
+        "y": 0.0,
+        "heading": -107.70955070859604
+      },
+      "velocity": {
+        "linear": 0.0,
+        "angular": -1.795419847328244
+      },
+      "sensors": {
+        "frontal_izq": 57.4,
+        "frontal_der": 249.9,
+        "trasero_izq": -1,
+        "trasero_der": 3.1
+      },
+      "imu": {
+        "gyro": {
+          "x": -1.702290076335878,
+          "y": -1.4961832061068703,
+          "z": -1.618320610687023
+        },
+        "accel": {
+          "x": 0.044677734375,
+          "y": -0.027099609375,
+          "z": 0.89599609375
+        },
+        "heading_rate": -1.83206106870229,
+        "temperature": 27.25941176470588
+      },
+      "obstacles": [
+        {
+          "x": -6.985817172955432,
+          "y": -48.97609986948778,
+          "distance": 57.4,
+          "sensor": "frontal_izq",
+          "confidence": "low"
+        },
+        {
+          "x": -67.66924008451814,
+          "y": -249.4948575549882,
+          "distance": 249.9,
+          "sensor": "frontal_der",
+          "confidence": "low"
+        },
+        {
+          "x": -11.87191394222,
+          "y": -4.042470319431851,
+          "distance": 3.1,
+          "sensor": "trasero_der",
+          "confidence": "high"
+        }
+      ],
+      "motors": {
+        "left_speed": 0,
+        "right_speed": 0,
+        "status": {
+          "initialized": true,
+          "left_speed": 0,
+          "right_speed": 0,
+          "moving": false,
+          "direction": "stopped"
+        }
+      },
+      "navigation": {
+        "front_min": 57.4,
+        "back_min": 3.1,
+        "left_min": Infinity,
+        "right_min": 3.1,
+        "obstacles_nearby": 1,
+        "potential_blocks": []
+      }
+    },
+    {
+      "timestamp": 1763741965.0732496,
+      "time_str": "11:19:25.073",
+      "session_time": 12.987357378005981,
+      "position": {
+        "x": 0.0,
+        "y": 0.0,
+        "heading": -108.57157334546098
+      },
+      "velocity": {
+        "linear": 0.0,
+        "angular": -1.7804580152671758
+      },
+      "sensors": {
+        "frontal_izq": 29.8,
+        "frontal_der": 251.2,
+        "trasero_izq": -1,
+        "trasero_der": 3.1
+      },
+      "imu": {
+        "gyro": {
+          "x": -1.4885496183206106,
+          "y": -1.5954198473282444,
+          "z": -1.6870229007633588
+        },
+        "accel": {
+          "x": 0.03466796875,
+          "y": -0.03125,
+          "z": 0.896484375
+        },
+        "heading_rate": -1.816793893129771,
+        "temperature": 27.353529411764708
+      },
+      "obstacles": [
+        {
+          "x": 0.6652943565584852,
+          "y": -22.57204872002388,
+          "distance": 29.8,
+          "sensor": "frontal_izq",
+          "confidence": "medium"
+        },
+        {
+          "x": -71.85404437416909,
+          "y": -249.67446066242925,
+          "distance": 251.2,
+          "sensor": "frontal_der",
+          "confidence": "low"
+        },
+        {
+          "x": -11.932063361524834,
+          "y": -3.8613172456458167,
+          "distance": 3.1,
+          "sensor": "trasero_der",
+          "confidence": "high"
+        }
+      ],
+      "motors": {
+        "left_speed": 0,
+        "right_speed": 0,
+        "status": {
+          "initialized": true,
+          "left_speed": 0,
+          "right_speed": 0,
+          "moving": false,
+          "direction": "stopped"
+        }
+      },
+      "navigation": {
+        "front_min": 29.8,
+        "back_min": 3.1,
+        "left_min": Infinity,
+        "right_min": 3.1,
+        "obstacles_nearby": 1,
+        "potential_blocks": [
+          {
+            "sensor": "frontal_izq",
+            "distance": 29.8,
+            "confidence": "medium"
+          }
+        ]
+      }
+    },
+    {
+      "timestamp": 1763741965.5590758,
+      "time_str": "11:19:25.559",
+      "session_time": 13.473183631896973,
+      "position": {
+        "x": 0.0,
+        "y": 0.0,
+        "heading": -109.42926238453117
+      },
+      "velocity": {
+        "linear": 0.0,
+        "angular": -1.765496183206107
+      },
+      "sensors": {
+        "frontal_izq": 57.3,
+        "frontal_der": 250.8,
+        "trasero_izq": -1,
+        "trasero_der": 3.1
+      },
+      "imu": {
+        "gyro": {
+          "x": -1.549618320610687,
+          "y": -1.3358778625954197,
+          "z": -1.7251908396946565
+        },
+        "accel": {
+          "x": 0.062255859375,
+          "y": -0.030517578125,
+          "z": 0.8974609375
+        },
+        "heading_rate": -1.8015267175572518,
+        "temperature": 27.306470588235296
+      },
+      "obstacles": [
+        {
+          "x": -8.432816357714938,
+          "y": -48.64748306209742,
+          "distance": 57.3,
+          "sensor": "frontal_izq",
+          "confidence": "low"
+        },
+        {
+          "x": -75.47476042659869,
+          "y": -248.18602003043512,
+          "distance": 250.8,
+          "sensor": "frontal_der",
+          "confidence": "low"
+        },
+        {
+          "x": -11.988804780538624,
+          "y": -3.6813675270338497,
+          "distance": 3.1,
+          "sensor": "trasero_der",
+          "confidence": "high"
+        }
+      ],
+      "motors": {
+        "left_speed": 0,
+        "right_speed": 0,
+        "status": {
+          "initialized": true,
+          "left_speed": 0,
+          "right_speed": 0,
+          "moving": false,
+          "direction": "stopped"
+        }
+      },
+      "navigation": {
+        "front_min": 57.3,
+        "back_min": 3.1,
+        "left_min": Infinity,
+        "right_min": 3.1,
+        "obstacles_nearby": 1,
+        "potential_blocks": []
+      }
+    },
+    {
+      "timestamp": 1763741966.0448728,
+      "time_str": "11:19:26.044",
+      "session_time": 13.958980560302734,
+      "position": {
+        "x": 0.0,
+        "y": 0.0,
+        "heading": -110.27241721779338
+      },
+      "velocity": {
+        "linear": 0.0,
+        "angular": -1.7355725190839695
+      },
+      "sensors": {
+        "frontal_izq": 57.3,
+        "frontal_der": 250.7,
+        "trasero_izq": -1,
+        "trasero_der": 3.1
+      },
+      "imu": {
+        "gyro": {
+          "x": -1.633587786259542,
+          "y": -1.4045801526717556,
+          "z": -1.702290076335878
+        },
+        "accel": {
+          "x": 0.044677734375,
+          "y": -0.02587890625,
+          "z": 0.882568359375
+        },
+        "heading_rate": -1.7709923664122138,
+        "temperature": 27.353529411764708
+      },
+      "obstacles": [
+        {
+          "x": -9.160072725916036,
+          "y": -48.515802246854875,
+          "distance": 57.3,
+          "sensor": "frontal_izq",
+          "confidence": "low"
+        },
+        {
+          "x": -79.14812118996784,
+          "y": -246.93413071525404,
+          "distance": 250.7,
+          "sensor": "frontal_der",
+          "confidence": "low"
+        },
+        {
+          "x": -12.042567709353824,
+          "y": -3.5014953806329223,
+          "distance": 3.1,
+          "sensor": "trasero_der",
+          "confidence": "high"
+        }
+      ],
+      "motors": {
+        "left_speed": 0,
+        "right_speed": 0,
+        "status": {
+          "initialized": true,
+          "left_speed": 0,
+          "right_speed": 0,
+          "moving": false,
+          "direction": "stopped"
+        }
+      },
+      "navigation": {
+        "front_min": 57.3,
+        "back_min": 3.1,
+        "left_min": Infinity,
+        "right_min": 3.1,
+        "obstacles_nearby": 1,
+        "potential_blocks": []
+      }
+    },
+    {
+      "timestamp": 1763741966.528988,
+      "time_str": "11:19:26.528",
+      "session_time": 14.443095684051514,
+      "position": {
+        "x": 0.0,
+        "y": 0.0,
+        "heading": -111.0909092121998
+      },
+      "velocity": {
+        "linear": 0.0,
+        "angular": -1.6906870229007633
+      },
+      "sensors": {
+        "frontal_izq": 29.8,
+        "frontal_der": 249.9,
+        "trasero_izq": -1,
+        "trasero_der": 3.1
+      },
+      "imu": {
+        "gyro": {
+          "x": -1.8549618320610688,
+          "y": -1.366412213740458,
+          "z": -1.549618320610687
+        },
+        "accel": {
+          "x": 0.0615234375,
+          "y": -0.0283203125,
+          "z": 0.880615234375
+        },
+        "heading_rate": -1.7251908396946565,
+        "temperature": 27.25941176470588
+      },
+      "obstacles": [
+        {
+          "x": -0.34469253859090543,
+          "y": -22.579220249021883,
+          "distance": 29.8,
+          "sensor": "frontal_izq",
+          "confidence": "medium"
+        },
+        {
+          "x": -82.49607310687563,
+          "y": -244.99226094296333,
+          "distance": 249.9,
+          "sensor": "frontal_der",
+          "confidence": "low"
+        },
+        {
+          "x": -12.092789334026882,
+          "y": -3.3239062949804676,
+          "distance": 3.1,
+          "sensor": "trasero_der",
+          "confidence": "high"
+        }
+      ],
+      "motors": {
+        "left_speed": 0,
+        "right_speed": 0,
+        "status": {
+          "initialized": true,
+          "left_speed": 0,
+          "right_speed": 0,
+          "moving": false,
+          "direction": "stopped"
+        }
+      },
+      "navigation": {
+        "front_min": 29.8,
+        "back_min": 3.1,
+        "left_min": Infinity,
+        "right_min": 3.1,
+        "obstacles_nearby": 1,
+        "potential_blocks": [
+          {
+            "sensor": "frontal_izq",
+            "distance": 29.8,
+            "confidence": "medium"
+          }
+        ]
+      }
+    },
+    {
+      "timestamp": 1763741967.0147488,
+      "time_str": "11:19:27.014",
+      "session_time": 14.928856611251831,
+      "position": {
+        "x": 0.0,
+        "y": 0.0,
+        "heading": -111.86856632392826
+      },
+      "velocity": {
+        "linear": 0.0,
+        "angular": -1.600916030534351
+      },
+      "sensors": {
+        "frontal_izq": 57.4,
+        "frontal_der": 249.9,
+        "trasero_izq": -1,
+        "trasero_der": 3.0
+      },
+      "imu": {
+        "gyro": {
+          "x": -1.6488549618320612,
+          "y": -1.5801526717557253,
+          "z": -1.6793893129770991
+        },
+        "accel": {
+          "x": 0.042236328125,
+          "y": -0.02880859375,
+          "z": 0.89013671875
+        },
+        "heading_rate": -1.633587786259542,
+        "temperature": 27.353529411764708
+      },
+      "obstacles": [
+        {
+          "x": -10.59902539653708,
+          "y": -48.3230862077699,
+          "distance": 57.4,
+          "sensor": "frontal_izq",
+          "confidence": "low"
+        },
+        {
+          "x": -85.98734423731585,
+          "y": -243.78881563971171,
+          "distance": 249.9,
+          "sensor": "frontal_der",
+          "confidence": "low"
+        },
+        {
+          "x": -12.098508440725206,
+          "y": -3.2422418908869175,
+          "distance": 3.0,
+          "sensor": "trasero_der",
+          "confidence": "high"
+        }
+      ],
+      "motors": {
+        "left_speed": 0,
+        "right_speed": 0,
+        "status": {
+          "initialized": true,
+          "left_speed": 0,
+          "right_speed": 0,
+          "moving": false,
+          "direction": "stopped"
+        }
+      },
+      "navigation": {
+        "front_min": 57.4,
+        "back_min": 3.0,
+        "left_min": Infinity,
+        "right_min": 3.0,
+        "obstacles_nearby": 1,
+        "potential_blocks": []
+      }
+    },
+    {
+      "timestamp": 1763741967.4989238,
+      "time_str": "11:19:27.498",
+      "session_time": 15.413031578063965,
+      "position": {
+        "x": 0.0,
+        "y": 0.0,
+        "heading": -112.65093663120999
+      },
+      "velocity": {
+        "linear": 0.0,
+        "angular": -1.61587786259542
+      },
+      "sensors": {
+        "frontal_izq": 29.7,
+        "frontal_der": 250.3,
+        "trasero_izq": -1,
+        "trasero_der": 3.1
+      },
+      "imu": {
+        "gyro": {
+          "x": -1.4122137404580153,
+          "y": -1.5267175572519085,
+          "z": -1.618320610687023
+        },
+        "accel": {
+          "x": 0.044921875,
+          "y": -0.028076171875,
+          "z": 0.888671875
+        },
+        "heading_rate": -1.6488549618320612,
+        "temperature": 27.306470588235296
+      },
+      "obstacles": [
+        {
+          "x": -0.9362427784177161,
+          "y": -22.46805397580887,
+          "distance": 29.7,
+          "sensor": "frontal_izq",
+          "confidence": "medium"
+        },
+        {
+          "x": -89.43718092019401,
+          "y": -242.97053456962328,
+          "distance": 250.3,
+          "sensor": "frontal_der",
+          "confidence": "low"
+        },
+        {
+          "x": -12.180682799080984,
+          "y": -2.985778538863479,
+          "distance": 3.1,
+          "sensor": "trasero_der",
+          "confidence": "high"
+        }
+      ],
+      "motors": {
+        "left_speed": 0,
+        "right_speed": 0,
+        "status": {
+          "initialized": true,
+          "left_speed": 0,
+          "right_speed": 0,
+          "moving": false,
+          "direction": "stopped"
+        }
+      },
+      "navigation": {
+        "front_min": 29.7,
+        "back_min": 3.1,
+        "left_min": Infinity,
+        "right_min": 3.1,
+        "obstacles_nearby": 1,
+        "potential_blocks": [
+          {
+            "sensor": "frontal_izq",
+            "distance": 29.7,
+            "confidence": "medium"
+          }
+        ]
+      }
+    },
+    {
+      "timestamp": 1763741967.9852686,
+      "time_str": "11:19:27.985",
+      "session_time": 15.899376392364502,
+      "position": {
+        "x": -2.169700109778643,
+        "y": -4.809658400377072,
+        "heading": -114.28076130655887
+      },
+      "velocity": {
+        "linear": 10.85,
+        "angular": -3.3514503816793892
+      },
+      "sensors": {
+        "frontal_izq": 30.6,
+        "frontal_der": 250.3,
+        "trasero_izq": -1,
+        "trasero_der": 3.7
+      },
+      "imu": {
+        "gyro": {
+          "x": -3.0,
+          "y": -1.4045801526717556,
+          "z": -1.8015267175572518
+        },
+        "accel": {
+          "x": -0.0087890625,
+          "y": -0.021240234375,
+          "z": 0.939697265625
+        },
+        "heading_rate": -3.4198473282442747,
+        "temperature": 27.40058823529412
+      },
+      "obstacles": [
+        {
+          "x": -1.589550165285436,
+          "y": -23.283756790347237,
+          "distance": 30.6,
+          "sensor": "frontal_izq",
+          "confidence": "medium"
+        },
+        {
+          "x": -92.74648738333636,
+          "y": -241.7266619097956,
+          "distance": 250.3,
+          "sensor": "frontal_der",
+          "confidence": "low"
+        },
+        {
+          "x": -12.448465557342901,
+          "y": -2.264248218830438,
+          "distance": 3.7,
+          "sensor": "trasero_der",
+          "confidence": "high"
+        }
+      ],
+      "motors": {
+        "left_speed": 255,
+        "right_speed": 255,
+        "status": {
+          "initialized": true,
+          "left_speed": 255,
+          "right_speed": 255,
+          "moving": true,
+          "direction": "forward"
+        }
+      },
+      "navigation": {
+        "front_min": 30.6,
+        "back_min": 3.7,
+        "left_min": Infinity,
+        "right_min": 3.7,
+        "obstacles_nearby": 1,
+        "potential_blocks": [
+          {
+            "sensor": "frontal_izq",
+            "distance": 30.6,
+            "confidence": "medium"
+          }
+        ]
+      }
+    },
+    {
+      "timestamp": 1763741968.4634466,
+      "time_str": "11:19:28.463",
+      "session_time": 16.377554416656494,
+      "position": {
+        "x": -4.291274032295425,
+        "y": -9.544141344893333,
+        "heading": -114.13767648784261
+      },
+      "velocity": {
+        "linear": 10.85,
+        "angular": 0.29923664122137406
+      },
+      "sensors": {
+        "frontal_izq": 43.3,
+        "frontal_der": 21.0,
+        "trasero_izq": -1,
+        "trasero_der": 7.9
+      },
+      "imu": {
+        "gyro": {
+          "x": -1.702290076335878,
+          "y": 1.4351145038167938,
+          "z": -1.3435114503816794
+        },
+        "accel": {
+          "x": 0.04248046875,
+          "y": -0.0458984375,
+          "z": 0.91259765625
+        },
+        "heading_rate": 0.3053435114503817,
+        "temperature": 27.306470588235296
+      },
+      "obstacles": [
+        {
+          "x": -9.643188627671238,
+          "y": -39.615361516000625,
+          "distance": 43.3,
+          "sensor": "frontal_izq",
+          "confidence": "medium"
+        },
+        {
+          "x": -7.463784607213297,
+          "y": -34.784192080386546,
+          "distance": 21.0,
+          "sensor": "frontal_der",
+          "confidence": "medium"
+        },
+        {
+          "x": -16.16344275240673,
+          "y": -2.790565500639379,
+          "distance": 7.9,
+          "sensor": "trasero_der",
+          "confidence": "high"
+        }
+      ],
+      "motors": {
+        "left_speed": 255,
+        "right_speed": 255,
+        "status": {
+          "initialized": true,
+          "left_speed": 255,
+          "right_speed": 255,
+          "moving": true,
+          "direction": "forward"
+        }
+      },
+      "navigation": {
+        "front_min": 21.0,
+        "back_min": 7.9,
+        "left_min": Infinity,
+        "right_min": 7.9,
+        "obstacles_nearby": 1,
+        "potential_blocks": [
+          {
+            "sensor": "frontal_der",
+            "distance": 21.0,
+            "confidence": "high"
+          },
+          {
+            "sensor": "trasero_der",
+            "distance": 7.9,
+            "confidence": "medium"
+          }
+        ]
+      }
+    },
+    {
+      "timestamp": 1763741968.9368367,
+      "time_str": "11:19:28.936",
+      "session_time": 16.85094451904297,
+      "position": {
+        "x": -6.460360186311879,
+        "y": -14.200622394343743,
+        "heading": -114.97708732623182
+      },
+      "velocity": {
+        "linear": 10.85,
+        "angular": -1.7729770992366412
+      },
+      "sensors": {
+        "frontal_izq": 19.6,
+        "frontal_der": 34.1,
+        "trasero_izq": -1,
+        "trasero_der": 37.2
+      },
+      "imu": {
+        "gyro": {
+          "x": -0.8702290076335878,
+          "y": -0.8244274809160306,
+          "z": -2.1908396946564888
+        },
+        "accel": {
+          "x": 0.026123046875,
+          "y": -0.0068359375,
+          "z": 0.915771484375
+        },
+        "heading_rate": -1.8091603053435115,
+        "temperature": 27.40058823529412
+      },
+      "obstacles": [
+        {
+          "x": -1.9861630238034849,
+          "y": -22.740597810116462,
+          "distance": 19.6,
+          "sensor": "frontal_izq",
+          "confidence": "medium"
+        },
+        {
+          "x": -14.867477945177367,
+          "y": -51.48641012941596,
+          "distance": 34.1,
+          "sensor": "frontal_der",
+          "confidence": "medium"
+        },
+        {
+          "x": -28.724437066660464,
+          "y": 19.81905717563094,
+          "distance": 37.2,
+          "sensor": "trasero_der",
+          "confidence": "medium"
+        }
+      ],
+      "motors": {
+        "left_speed": 255,
+        "right_speed": 255,
+        "status": {
+          "initialized": true,
+          "left_speed": 255,
+          "right_speed": 255,
+          "moving": true,
+          "direction": "forward"
+        }
+      },
+      "navigation": {
+        "front_min": 19.6,
+        "back_min": 37.2,
+        "left_min": Infinity,
+        "right_min": 37.2,
+        "obstacles_nearby": 1,
+        "potential_blocks": [
+          {
+            "sensor": "frontal_izq",
+            "distance": 19.6,
+            "confidence": "high"
+          },
+          {
+            "sensor": "frontal_der",
+            "distance": 34.1,
+            "confidence": "medium"
+          }
+        ]
+      }
+    },
+    {
+      "timestamp": 1763741969.4073365,
+      "time_str": "11:19:29.407",
+      "session_time": 17.321444272994995,
+      "position": {
+        "x": -8.705080405442777,
+        "y": -18.78553931147889,
+        "heading": -116.08581460901802
+      },
+      "velocity": {
+        "linear": 10.85,
+        "angular": -2.3564885496183208
+      },
+      "sensors": {
+        "frontal_izq": 20.9,
+        "frontal_der": 13.6,
+        "trasero_izq": -1,
+        "trasero_der": 15.9
+      },
+      "imu": {
+        "gyro": {
+          "x": -1.5954198473282444,
+          "y": -0.9083969465648855,
+          "z": -1.702290076335878
+        },
+        "accel": {
+          "x": 0.02197265625,
+          "y": -0.0546875,
+          "z": 0.87548828125
+        },
+        "heading_rate": -2.404580152671756,
+        "temperature": 27.40058823529412
+      },
+      "obstacles": [
+        {
+          "x": -4.897756630118474,
+          "y": -28.60785218102278,
+          "distance": 20.9,
+          "sensor": "frontal_izq",
+          "confidence": "medium"
+        },
+        {
+          "x": -8.993637832165792,
+          "y": -37.40067636775115,
+          "distance": 13.6,
+          "sensor": "frontal_der",
+          "confidence": "medium"
+        },
+        {
+          "x": -23.16769881051578,
+          "y": -4.495168121946904,
+          "distance": 15.9,
+          "sensor": "trasero_der",
+          "confidence": "medium"
+        }
+      ],
+      "motors": {
+        "left_speed": 255,
+        "right_speed": 255,
+        "status": {
+          "initialized": true,
+          "left_speed": 255,
+          "right_speed": 255,
+          "moving": true,
+          "direction": "forward"
+        }
+      },
+      "navigation": {
+        "front_min": 13.6,
+        "back_min": 15.9,
+        "left_min": Infinity,
+        "right_min": 15.9,
+        "obstacles_nearby": 2,
+        "potential_blocks": [
+          {
+            "sensor": "frontal_izq",
+            "distance": 20.9,
+            "confidence": "high"
+          },
+          {
+            "sensor": "frontal_der",
+            "distance": 13.6,
+            "confidence": "high"
+          },
+          {
+            "sensor": "trasero_der",
+            "distance": 15.9,
+            "confidence": "high"
+          }
+        ]
+      }
+    },
+    {
+      "timestamp": 1763741969.8777776,
+      "time_str": "11:19:29.877",
+      "session_time": 17.791885375976562,
+      "position": {
+        "x": -10.979850031740721,
+        "y": -23.354830171795182,
+        "heading": -116.4658968974252
+      },
+      "velocity": {
+        "linear": 10.85,
+        "angular": -0.80793893129771
+      },
+      "sensors": {
+        "frontal_izq": 15.9,
+        "frontal_der": 11.1,
+        "trasero_izq": -1,
+        "trasero_der": 21.5
+      },
+      "imu": {
+        "gyro": {
+          "x": -1.549618320610687,
+          "y": -1.1908396946564885,
+          "z": -0.549618320610687
+        },
+        "accel": {
+          "x": 0.012939453125,
+          "y": -0.04296875,
+          "z": 0.840087890625
+        },
+        "heading_rate": -0.8244274809160306,
+        "temperature": 27.306470588235296
+      },
+      "obstacles": [
+        {
+          "x": -5.222961362972734,
+          "y": -28.729625341580775,
+          "distance": 15.9,
+          "sensor": "frontal_izq",
+          "confidence": "medium"
+        },
+        {
+          "x": -10.587506580521847,
+          "y": -39.68689026531384,
+          "distance": 11.1,
+          "sensor": "frontal_der",
+          "confidence": "medium"
+        },
+        {
+          "x": -27.036742257182503,
+          "y": -3.4609908232872044,
+          "distance": 21.5,
+          "sensor": "trasero_der",
+          "confidence": "medium"
+        }
+      ],
+      "motors": {
+        "left_speed": 255,
+        "right_speed": 255,
+        "status": {
+          "initialized": true,
+          "left_speed": 255,
+          "right_speed": 255,
+          "moving": true,
+          "direction": "forward"
+        }
+      },
+      "navigation": {
+        "front_min": 11.1,
+        "back_min": 21.5,
+        "left_min": Infinity,
+        "right_min": 21.5,
+        "obstacles_nearby": 2,
+        "potential_blocks": [
+          {
+            "sensor": "frontal_izq",
+            "distance": 15.9,
+            "confidence": "high"
+          },
+          {
+            "sensor": "frontal_der",
+            "distance": 11.1,
+            "confidence": "high"
+          },
+          {
+            "sensor": "trasero_der",
+            "distance": 21.5,
+            "confidence": "high"
+          }
+        ]
+      }
+    },
+    {
+      "timestamp": 1763741970.3481119,
+      "time_str": "11:19:30.348",
+      "session_time": 18.262219667434692,
+      "position": {
+        "x": -13.340623551933167,
+        "y": -27.878913959607758,
+        "heading": -117.5566139674005
+      },
+      "velocity": {
+        "linear": 10.85,
+        "angular": -2.319083969465649
+      },
+      "sensors": {
+        "frontal_izq": 12.5,
+        "frontal_der": 10.9,
+        "trasero_izq": -1,
+        "trasero_der": 23.3
+      },
+      "imu": {
+        "gyro": {
+          "x": -1.5954198473282444,
+          "y": -0.9007633587786259,
+          "z": -2.5419847328244276
+        },
+        "accel": {
+          "x": 0.066162109375,
+          "y": -0.05126953125,
+          "z": 0.932861328125
+        },
+        "heading_rate": -2.366412213740458,
+        "temperature": 27.40058823529412
+      },
+      "obstacles": [
+        {
+          "x": -6.048511879308587,
+          "y": -30.278117254270327,
+          "distance": 12.5,
+          "sensor": "frontal_izq",
+          "confidence": "medium"
+        },
+        {
+          "x": -12.911753787074122,
+          "y": -44.064193944739266,
+          "distance": 10.9,
+          "sensor": "frontal_der",
+          "confidence": "medium"
+        },
+        {
+          "x": -29.781615312962384,
+          "y": -6.202370922319965,
+          "distance": 23.3,
+          "sensor": "trasero_der",
+          "confidence": "medium"
+        }
+      ],
+      "motors": {
+        "left_speed": 255,
+        "right_speed": 255,
+        "status": {
+          "initialized": true,
+          "left_speed": 255,
+          "right_speed": 255,
+          "moving": true,
+          "direction": "forward"
+        }
+      },
+      "navigation": {
+        "front_min": 10.9,
+        "back_min": 23.3,
+        "left_min": Infinity,
+        "right_min": 23.3,
+        "obstacles_nearby": 2,
+        "potential_blocks": [
+          {
+            "sensor": "frontal_izq",
+            "distance": 12.5,
+            "confidence": "high"
+          },
+          {
+            "sensor": "frontal_der",
+            "distance": 10.9,
+            "confidence": "high"
+          },
+          {
+            "sensor": "trasero_der",
+            "distance": 23.3,
+            "confidence": "high"
+          }
+        ]
+      }
+    },
+    {
+      "timestamp": 1763741970.8229153,
+      "time_str": "11:19:30.822",
+      "session_time": 18.73702311515808,
+      "position": {
+        "x": -13.340623551933167,
+        "y": -27.878913959607758,
+        "heading": -118.4373477302435
+      },
+      "velocity": {
+        "linear": 0.0,
+        "angular": -1.8552671755725192
+      },
+      "sensors": {
+        "frontal_izq": 60.3,
+        "frontal_der": 36.0,
+        "trasero_izq": -1,
+        "trasero_der": 25.9
+      },
+      "imu": {
+        "gyro": {
+          "x": -1.717557251908397,
+          "y": -3.8473282442748094,
+          "z": -1.5267175572519085
+        },
+        "accel": {
+          "x": 0.051513671875,
+          "y": -0.036865234375,
+          "z": 0.885009765625
+        },
+        "heading_rate": -1.8931297709923665,
+        "temperature": 27.353529411764708
+      },
+      "obstacles": [
+        {
+          "x": -30.65543433205477,
+          "y": -77.27210506575705,
+          "distance": 60.3,
+          "sensor": "frontal_izq",
+          "confidence": "low"
+        },
+        {
+          "x": -27.278272976672252,
+          "y": -70.80025979723347,
+          "distance": 36.0,
+          "sensor": "frontal_der",
+          "confidence": "medium"
+        },
+        {
+          "x": -32.59186181524087,
+          "y": -7.891227039126875,
+          "distance": 25.9,
+          "sensor": "trasero_der",
+          "confidence": "medium"
+        }
+      ],
+      "motors": {
+        "left_speed": 0,
+        "right_speed": 0,
+        "status": {
+          "initialized": true,
+          "left_speed": 0,
+          "right_speed": 0,
+          "moving": false,
+          "direction": "stopped"
+        }
+      },
+      "navigation": {
+        "front_min": 36.0,
+        "back_min": 25.9,
+        "left_min": Infinity,
+        "right_min": 25.9,
+        "obstacles_nearby": 0,
+        "potential_blocks": [
+          {
+            "sensor": "trasero_der",
+            "distance": 25.9,
+            "confidence": "medium"
+          }
+        ]
+      }
+    },
+    {
+      "timestamp": 1763741971.2954173,
+      "time_str": "11:19:31.295",
+      "session_time": 19.209525108337402,
+      "position": {
+        "x": -13.340623551933167,
+        "y": -27.878913959607758,
+        "heading": -119.18686360788712
+      },
+      "velocity": {
+        "linear": 0.0,
+        "angular": -1.5859541984732826
+      },
+      "sensors": {
+        "frontal_izq": 9.5,
+        "frontal_der": 46.0,
+        "trasero_izq": -1,
+        "trasero_der": 26.6
+      },
+      "imu": {
+        "gyro": {
+          "x": -1.618320610687023,
+          "y": -1.534351145038168,
+          "z": -1.717557251908397
+        },
+        "accel": {
+          "x": 0.0390625,
+          "y": -0.021240234375,
+          "z": 0.876708984375
+        },
+        "heading_rate": -1.618320610687023,
+        "temperature": 27.25941176470588
+      },
+      "obstacles": [
+        {
+          "x": -7.221783390438794,
+          "y": -32.32973355582636,
+          "distance": 9.5,
+          "sensor": "frontal_izq",
+          "confidence": "high"
+        },
+        {
+          "x": -32.698349579832055,
+          "y": -79.37433553307199,
+          "distance": 46.0,
+          "sensor": "frontal_der",
+          "confidence": "medium"
+        },
+        {
+          "x": -32.481899265180985,
+          "y": -6.926719732492952,
+          "distance": 26.6,
+          "sensor": "trasero_der",
+          "confidence": "medium"
+        }
+      ],
+      "motors": {
+        "left_speed": 0,
+        "right_speed": 0,
+        "status": {
+          "initialized": true,
+          "left_speed": 0,
+          "right_speed": 0,
+          "moving": false,
+          "direction": "stopped"
+        }
+      },
+      "navigation": {
+        "front_min": 9.5,
+        "back_min": 26.6,
+        "left_min": Infinity,
+        "right_min": 26.6,
+        "obstacles_nearby": 1,
+        "potential_blocks": [
+          {
+            "sensor": "frontal_izq",
+            "distance": 9.5,
+            "confidence": "high"
+          },
+          {
+            "sensor": "trasero_der",
+            "distance": 26.6,
+            "confidence": "medium"
+          }
+        ]
+      }
+    },
+    {
+      "timestamp": 1763741971.767894,
+      "time_str": "11:19:31.767",
+      "session_time": 19.68200182914734,
+      "position": {
+        "x": -13.340623551933167,
+        "y": -27.878913959607758,
+        "heading": -119.94325000377104
+      },
+      "velocity": {
+        "linear": 0.0,
+        "angular": -1.600916030534351
+      },
+      "sensors": {
+        "frontal_izq": 9.7,
+        "frontal_der": 45.6,
+        "trasero_izq": -1,
+        "trasero_der": 26.5
+      },
+      "imu": {
+        "gyro": {
+          "x": -1.717557251908397,
+          "y": -1.6412213740458015,
+          "z": -1.717557251908397
+        },
+        "accel": {
+          "x": 0.04052734375,
+          "y": -0.02685546875,
+          "z": 0.88134765625
+        },
+        "heading_rate": -1.633587786259542,
+        "temperature": 27.353529411764708
+      },
+      "obstacles": [
+        {
+          "x": -7.378060655873955,
+          "y": -32.58400096311131,
+          "distance": 9.7,
+          "sensor": "frontal_izq",
+          "confidence": "high"
+        },
+        {
+          "x": -33.17524866069617,
+          "y": -78.76749467075382,
+          "distance": 45.6,
+          "sensor": "frontal_der",
+          "confidence": "medium"
+        },
+        {
+          "x": -32.17893268918867,
+          "y": -6.774338158496164,
+          "distance": 26.5,
+          "sensor": "trasero_der",
+          "confidence": "medium"
+        }
+      ],
+      "motors": {
+        "left_speed": 0,
+        "right_speed": 0,
+        "status": {
+          "initialized": true,
+          "left_speed": 0,
+          "right_speed": 0,
+          "moving": false,
+          "direction": "stopped"
+        }
+      },
+      "navigation": {
+        "front_min": 9.7,
+        "back_min": 26.5,
+        "left_min": Infinity,
+        "right_min": 26.5,
+        "obstacles_nearby": 1,
+        "potential_blocks": [
+          {
+            "sensor": "frontal_izq",
+            "distance": 9.7,
+            "confidence": "high"
+          },
+          {
+            "sensor": "trasero_der",
+            "distance": 26.5,
+            "confidence": "medium"
+          }
+        ]
+      }
+    },
+    {
+      "timestamp": 1763741972.240329,
+      "time_str": "11:19:32.240",
+      "session_time": 20.154436826705933,
+      "position": {
+        "x": -13.340623551933167,
+        "y": -27.878913959607758,
+        "heading": -120.73137067631004
+      },
+      "velocity": {
+        "linear": 0.0,
+        "angular": -1.6682442748091602
+      },
+      "sensors": {
+        "frontal_izq": 9.7,
+        "frontal_der": 46.5,
+        "trasero_izq": -1,
+        "trasero_der": 26.4
+      },
+      "imu": {
+        "gyro": {
+          "x": -1.5114503816793894,
+          "y": -1.4427480916030535,
+          "z": -1.702290076335878
+        },
+        "accel": {
+          "x": 0.040771484375,
+          "y": -0.031005859375,
+          "z": 0.894287109375
+        },
+        "heading_rate": -1.702290076335878,
+        "temperature": 27.353529411764708
+      },
+      "obstacles": [
+        {
+          "x": -7.440692306393681,
+          "y": -32.662303061270606,
+          "distance": 9.7,
+          "sensor": "frontal_izq",
+          "confidence": "high"
+        },
+        {
+          "x": -34.29453077595391,
+          "y": -79.28109068440348,
+          "distance": 46.5,
+          "sensor": "frontal_der",
+          "confidence": "medium"
+        },
+        {
+          "x": -31.872711047475292,
+          "y": -6.6240586087097775,
+          "distance": 26.4,
+          "sensor": "trasero_der",
+          "confidence": "medium"
+        }
+      ],
+      "motors": {
+        "left_speed": 0,
+        "right_speed": 0,
+        "status": {
+          "initialized": true,
+          "left_speed": 0,
+          "right_speed": 0,
+          "moving": false,
+          "direction": "stopped"
+        }
+      },
+      "navigation": {
+        "front_min": 9.7,
+        "back_min": 26.4,
+        "left_min": Infinity,
+        "right_min": 26.4,
+        "obstacles_nearby": 1,
+        "potential_blocks": [
+          {
+            "sensor": "frontal_izq",
+            "distance": 9.7,
+            "confidence": "high"
+          },
+          {
+            "sensor": "trasero_der",
+            "distance": 26.4,
+            "confidence": "medium"
+          }
+        ]
+      }
+    },
+    {
+      "timestamp": 1763741972.723464,
+      "time_str": "11:19:32.723",
+      "session_time": 20.637571811676025,
+      "position": {
+        "x": -13.340623551933167,
+        "y": -27.878913959607758,
+        "heading": -121.61684737070829
+      },
+      "velocity": {
+        "linear": 0.0,
+        "angular": -1.832824427480916
+      },
+      "sensors": {
+        "frontal_izq": 9.7,
+        "frontal_der": 229.0,
+        "trasero_izq": -1,
+        "trasero_der": 26.5
+      },
+      "imu": {
+        "gyro": {
+          "x": -1.5267175572519085,
+          "y": -1.5572519083969465,
+          "z": -1.7251908396946565
+        },
+        "accel": {
+          "x": 0.0380859375,
+          "y": -0.025634765625,
+          "z": 0.90380859375
+        },
+        "heading_rate": -1.8702290076335877,
+        "temperature": 27.353529411764708
+      },
+      "obstacles": [
+        {
+          "x": -7.507045335858064,
+          "y": -32.74300330880088,
+          "distance": 9.7,
+          "sensor": "frontal_izq",
+          "confidence": "high"
+        },
+        {
+          "x": -128.2595658794057,
+          "y": -235.86001092357475,
+          "distance": 229.0,
+          "sensor": "frontal_der",
+          "confidence": "low"
+        },
+        {
+          "x": -31.60324699887693,
+          "y": -6.274247895749948,
+          "distance": 26.5,
+          "sensor": "trasero_der",
+          "confidence": "medium"
+        }
+      ],
+      "motors": {
+        "left_speed": 0,
+        "right_speed": 0,
+        "status": {
+          "initialized": true,
+          "left_speed": 0,
+          "right_speed": 0,
+          "moving": false,
+          "direction": "stopped"
+        }
+      },
+      "navigation": {
+        "front_min": 9.7,
+        "back_min": 26.5,
+        "left_min": Infinity,
+        "right_min": 26.5,
+        "obstacles_nearby": 1,
+        "potential_blocks": [
+          {
+            "sensor": "frontal_izq",
+            "distance": 9.7,
+            "confidence": "high"
+          },
+          {
+            "sensor": "trasero_der",
+            "distance": 26.5,
+            "confidence": "medium"
+          }
+        ]
+      }
+    },
+    {
+      "timestamp": 1763741973.2064862,
+      "time_str": "11:19:33.206",
+      "session_time": 21.120594024658203,
+      "position": {
+        "x": -13.340623551933167,
+        "y": -27.878913959607758,
+        "heading": -122.46967891114362
+      },
+      "velocity": {
+        "linear": 0.0,
+        "angular": -1.765496183206107
+      },
+      "sensors": {
+        "frontal_izq": 9.7,
+        "frontal_der": 227.3,
+        "trasero_izq": -1,
+        "trasero_der": 26.6
+      },
+      "imu": {
+        "gyro": {
+          "x": -1.5114503816793894,
+          "y": -1.534351145038168,
+          "z": -1.7328244274809161
+        },
+        "accel": {
+          "x": 0.038818359375,
+          "y": -0.021240234375,
+          "z": 0.895263671875
+        },
+        "heading_rate": -1.8015267175572518,
+        "temperature": 27.40058823529412
+      },
+      "obstacles": [
+        {
+          "x": -7.582910968583616,
+          "y": -32.832573799315995,
+          "distance": 9.7,
+          "sensor": "frontal_izq",
+          "confidence": "high"
+        },
+        {
+          "x": -130.5687532549778,
+          "y": -232.61155817231304,
+          "distance": 227.3,
+          "sensor": "frontal_der",
+          "confidence": "low"
+        },
+        {
+          "x": -31.290336625612145,
+          "y": -5.897315304507359,
+          "distance": 26.6,
+          "sensor": "trasero_der",
+          "confidence": "medium"
+        }
+      ],
+      "motors": {
+        "left_speed": 0,
+        "right_speed": 0,
+        "status": {
+          "initialized": true,
+          "left_speed": 0,
+          "right_speed": 0,
+          "moving": false,
+          "direction": "stopped"
+        }
+      },
+      "navigation": {
+        "front_min": 9.7,
+        "back_min": 26.6,
+        "left_min": Infinity,
+        "right_min": 26.6,
+        "obstacles_nearby": 1,
+        "potential_blocks": [
+          {
+            "sensor": "frontal_izq",
+            "distance": 9.7,
+            "confidence": "high"
+          },
+          {
+            "sensor": "trasero_der",
+            "distance": 26.6,
+            "confidence": "medium"
+          }
+        ]
+      }
+    },
+    {
+      "timestamp": 1763741973.6894395,
+      "time_str": "11:19:33.689",
+      "session_time": 21.60354733467102,
+      "position": {
+        "x": -13.340623551933167,
+        "y": -27.878913959607758,
+        "heading": -123.29343743116804
+      },
+      "velocity": {
+        "linear": 0.0,
+        "angular": -1.705648854961832
+      },
+      "sensors": {
+        "frontal_izq": 9.6,
+        "frontal_der": 227.7,
+        "trasero_izq": -1,
+        "trasero_der": 26.5
+      },
+      "imu": {
+        "gyro": {
+          "x": -1.5725190839694656,
+          "y": -1.3893129770992367,
+          "z": -1.5877862595419847
+        },
+        "accel": {
+          "x": 0.034423828125,
+          "y": -0.02783203125,
+          "z": 0.889892578125
+        },
+        "heading_rate": -1.7404580152671756,
+        "temperature": 27.306470588235296
+      },
+      "obstacles": [
+        {
+          "x": -7.6035945693967175,
+          "y": -32.833356254512076,
+          "distance": 9.6,
+          "sensor": "frontal_izq",
+          "confidence": "high"
+        },
+        {
+          "x": -133.81778376738305,
+          "y": -231.1815058427926,
+          "distance": 227.7,
+          "sensor": "frontal_der",
+          "confidence": "low"
+        },
+        {
+          "x": -30.939474792049342,
+          "y": -5.730201899446545,
+          "distance": 26.5,
+          "sensor": "trasero_der",
+          "confidence": "medium"
+        }
+      ],
+      "motors": {
+        "left_speed": 0,
+        "right_speed": 0,
+        "status": {
+          "initialized": true,
+          "left_speed": 0,
+          "right_speed": 0,
+          "moving": false,
+          "direction": "stopped"
+        }
+      },
+      "navigation": {
+        "front_min": 9.6,
+        "back_min": 26.5,
+        "left_min": Infinity,
+        "right_min": 26.5,
+        "obstacles_nearby": 1,
+        "potential_blocks": [
+          {
+            "sensor": "frontal_izq",
+            "distance": 9.6,
+            "confidence": "high"
+          },
+          {
+            "sensor": "trasero_der",
+            "distance": 26.5,
+            "confidence": "medium"
+          }
+        ]
+      }
+    },
+    {
+      "timestamp": 1763741974.1770618,
+      "time_str": "11:19:34.177",
+      "session_time": 22.091169595718384,
+      "position": {
+        "x": -13.340623551933167,
+        "y": -27.878913959607758,
+        "heading": -124.13605504909548
+      },
+      "velocity": {
+        "linear": 0.0,
+        "angular": -1.728091603053435
+      },
+      "sensors": {
+        "frontal_izq": 9.7,
+        "frontal_der": 228.2,
+        "trasero_izq": -1,
+        "trasero_der": 26.5
+      },
+      "imu": {
+        "gyro": {
+          "x": -1.618320610687023,
+          "y": -1.549618320610687,
+          "z": -1.702290076335878
+        },
+        "accel": {
+          "x": 0.0458984375,
+          "y": -0.0224609375,
+          "z": 0.89453125
+        },
+        "heading_rate": -1.7633587786259541,
+        "temperature": 27.40058823529412
+      },
+      "obstacles": [
+        {
+          "x": -7.730309249986782,
+          "y": -32.99891136521021,
+          "distance": 9.7,
+          "sensor": "frontal_izq",
+          "confidence": "high"
+        },
+        {
+          "x": -137.00263713896723,
+          "y": -229.84635290856357,
+          "distance": 228.2,
+          "sensor": "frontal_der",
+          "confidence": "low"
+        },
+        {
+          "x": -30.61922825070301,
+          "y": -5.4794757845258175,
+          "distance": 26.5,
+          "sensor": "trasero_der",
+          "confidence": "medium"
+        }
+      ],
+      "motors": {
+        "left_speed": 0,
+        "right_speed": 0,
+        "status": {
+          "initialized": true,
+          "left_speed": 0,
+          "right_speed": 0,
+          "moving": false,
+          "direction": "stopped"
+        }
+      },
+      "navigation": {
+        "front_min": 9.7,
+        "back_min": 26.5,
+        "left_min": Infinity,
+        "right_min": 26.5,
+        "obstacles_nearby": 1,
+        "potential_blocks": [
+          {
+            "sensor": "frontal_izq",
+            "distance": 9.7,
+            "confidence": "high"
+          },
+          {
+            "sensor": "trasero_der",
+            "distance": 26.5,
+            "confidence": "medium"
+          }
+        ]
+      }
+    },
+    {
+      "timestamp": 1763741974.6662505,
+      "time_str": "11:19:34.666",
+      "session_time": 22.580358266830444,
+      "position": {
+        "x": -13.340623551933167,
+        "y": -27.878913959607758,
+        "heading": -124.9264829710604
+      },
+      "velocity": {
+        "linear": 0.0,
+        "angular": -1.61587786259542
+      },
+      "sensors": {
+        "frontal_izq": 9.9,
+        "frontal_der": 226.7,
+        "trasero_izq": -1,
+        "trasero_der": 26.6
+      },
+      "imu": {
+        "gyro": {
+          "x": -1.5419847328244274,
+          "y": -1.5419847328244274,
+          "z": -1.6564885496183206
+        },
+        "accel": {
+          "x": 0.03564453125,
+          "y": -0.024658203125,
+          "z": 0.886474609375
+        },
+        "heading_rate": -1.6488549618320612,
+        "temperature": 27.44764705882353
+      },
+      "obstacles": [
+        {
+          "x": -7.91844221134463,
+          "y": -33.24640401640092,
+          "distance": 9.9,
+          "sensor": "frontal_izq",
+          "confidence": "high"
+        },
+        {
+          "x": -139.11764197402073,
+          "y": -226.76438762938045,
+          "distance": 226.7,
+          "sensor": "frontal_der",
+          "confidence": "low"
+        },
+        {
+          "x": -30.306803143442252,
+          "y": -5.129592454780973,
+          "distance": 26.6,
+          "sensor": "trasero_der",
+          "confidence": "medium"
+        }
+      ],
+      "motors": {
+        "left_speed": 0,
+        "right_speed": 0,
+        "status": {
+          "initialized": true,
+          "left_speed": 0,
+          "right_speed": 0,
+          "moving": false,
+          "direction": "stopped"
+        }
+      },
+      "navigation": {
+        "front_min": 9.9,
+        "back_min": 26.6,
+        "left_min": Infinity,
+        "right_min": 26.6,
+        "obstacles_nearby": 1,
+        "potential_blocks": [
+          {
+            "sensor": "frontal_izq",
+            "distance": 9.9,
+            "confidence": "high"
+          },
+          {
+            "sensor": "trasero_der",
+            "distance": 26.6,
+            "confidence": "medium"
+          }
+        ]
+      }
+    },
+    {
+      "timestamp": 1763741975.1554155,
+      "time_str": "11:19:35.155",
+      "session_time": 23.069523334503174,
+      "position": {
+        "x": -13.340623551933167,
+        "y": -27.878913959607758,
+        "heading": -125.78281577947489
+      },
+      "velocity": {
+        "linear": 0.0,
+        "angular": -1.7505343511450384
+      },
+      "sensors": {
+        "frontal_izq": 9.6,
+        "frontal_der": 227.6,
+        "trasero_izq": -1,
+        "trasero_der": 26.5
+      },
+      "imu": {
+        "gyro": {
+          "x": -1.7099236641221374,
+          "y": -1.381679389312977,
+          "z": -1.633587786259542
+        },
+        "accel": {
+          "x": 0.043701171875,
+          "y": -0.030517578125,
+          "z": 0.905029296875
+        },
+        "heading_rate": -1.786259541984733,
+        "temperature": 27.306470588235296
+      },
+      "obstacles": [
+        {
+          "x": -7.8212459368258145,
+          "y": -33.07472676819236,
+          "distance": 9.6,
+          "sensor": "frontal_izq",
+          "confidence": "high"
+        },
+        {
+          "x": -142.36459716594385,
+          "y": -225.7482502218267,
+          "distance": 227.6,
+          "sensor": "frontal_der",
+          "confidence": "low"
+        },
+        {
+          "x": -29.97386762448796,
+          "y": -4.996164943842839,
+          "distance": 26.5,
+          "sensor": "trasero_der",
+          "confidence": "medium"
+        }
+      ],
+      "motors": {
+        "left_speed": 0,
+        "right_speed": 0,
+        "status": {
+          "initialized": true,
+          "left_speed": 0,
+          "right_speed": 0,
+          "moving": false,
+          "direction": "stopped"
+        }
+      },
+      "navigation": {
+        "front_min": 9.6,
+        "back_min": 26.5,
+        "left_min": Infinity,
+        "right_min": 26.5,
+        "obstacles_nearby": 1,
+        "potential_blocks": [
+          {
+            "sensor": "frontal_izq",
+            "distance": 9.6,
+            "confidence": "high"
+          },
+          {
+            "sensor": "trasero_der",
+            "distance": 26.5,
+            "confidence": "medium"
+          }
+        ]
+      }
+    },
+    {
+      "timestamp": 1763741975.6388006,
+      "time_str": "11:19:35.638",
+      "session_time": 23.552908420562744,
+      "position": {
+        "x": -13.340623551933167,
+        "y": -27.878913959607758,
+        "heading": -126.66520443501366
+      },
+      "velocity": {
+        "linear": 0.0,
+        "angular": -1.8253435114503815
+      },
+      "sensors": {
+        "frontal_izq": 9.8,
+        "frontal_der": 226.3,
+        "trasero_izq": -1,
+        "trasero_der": 26.6
+      },
+      "imu": {
+        "gyro": {
+          "x": -1.7328244274809161,
+          "y": -1.5648854961832062,
+          "z": -1.6641221374045803
+        },
+        "accel": {
+          "x": 0.033935546875,
+          "y": -0.02490234375,
+          "z": 0.897216796875
+        },
+        "heading_rate": -1.8625954198473282,
+        "temperature": 27.40058823529412
+      },
+      "obstacles": [
+        {
+          "x": -8.016458085396625,
+          "y": -33.318882901149586,
+          "distance": 9.8,
+          "sensor": "frontal_izq",
+          "confidence": "high"
+        },
+        {
+          "x": -144.54726895022162,
+          "y": -222.74324164255694,
+          "distance": 226.3,
+          "sensor": "frontal_der",
+          "confidence": "low"
+        },
+        {
+          "x": -29.64603875953933,
+          "y": -4.651423484550417,
+          "distance": 26.6,
+          "sensor": "trasero_der",
+          "confidence": "medium"
+        }
+      ],
+      "motors": {
+        "left_speed": 0,
+        "right_speed": 0,
+        "status": {
+          "initialized": true,
+          "left_speed": 0,
+          "right_speed": 0,
+          "moving": false,
+          "direction": "stopped"
+        }
+      },
+      "navigation": {
+        "front_min": 9.8,
+        "back_min": 26.6,
+        "left_min": Infinity,
+        "right_min": 26.6,
+        "obstacles_nearby": 1,
+        "potential_blocks": [
+          {
+            "sensor": "frontal_izq",
+            "distance": 9.8,
+            "confidence": "high"
+          },
+          {
+            "sensor": "trasero_der",
+            "distance": 26.6,
+            "confidence": "medium"
+          }
+        ]
+      }
+    },
+    {
+      "timestamp": 1763741976.1217337,
+      "time_str": "11:19:36.121",
+      "session_time": 24.035841464996338,
+      "position": {
+        "x": -13.340623551933167,
+        "y": -27.878913959607758,
+        "heading": -127.55756808699546
+      },
+      "velocity": {
+        "linear": 0.0,
+        "angular": -1.8477862595419847
+      },
+      "sensors": {
+        "frontal_izq": 9.7,
+        "frontal_der": 227.4,
+        "trasero_izq": -1,
+        "trasero_der": 26.5
+      },
+      "imu": {
+        "gyro": {
+          "x": -1.4580152671755726,
+          "y": -1.5801526717557253,
+          "z": -1.7709923664122138
+        },
+        "accel": {
+          "x": 0.029296875,
+          "y": -0.02587890625,
+          "z": 0.89404296875
+        },
+        "heading_rate": -1.8854961832061068,
+        "temperature": 27.353529411764708
+      },
+      "obstacles": [
+        {
+          "x": -8.041151053546567,
+          "y": -33.32001598390799,
+          "distance": 9.7,
+          "sensor": "frontal_izq",
+          "confidence": "high"
+        },
+        {
+          "x": -148.18946798592452,
+          "y": -221.5819060759331,
+          "distance": 227.4,
+          "sensor": "frontal_der",
+          "confidence": "low"
+        },
+        {
+          "x": -29.27190658803791,
+          "y": -4.502018705549947,
+          "distance": 26.5,
+          "sensor": "trasero_der",
+          "confidence": "medium"
+        }
+      ],
+      "motors": {
+        "left_speed": 0,
+        "right_speed": 0,
+        "status": {
+          "initialized": true,
+          "left_speed": 0,
+          "right_speed": 0,
+          "moving": false,
+          "direction": "stopped"
+        }
+      },
+      "navigation": {
+        "front_min": 9.7,
+        "back_min": 26.5,
+        "left_min": Infinity,
+        "right_min": 26.5,
+        "obstacles_nearby": 1,
+        "potential_blocks": [
+          {
+            "sensor": "frontal_izq",
+            "distance": 9.7,
+            "confidence": "high"
+          },
+          {
+            "sensor": "trasero_der",
+            "distance": 26.5,
+            "confidence": "medium"
+          }
+        ]
+      }
+    },
+    {
+      "timestamp": 1763741976.6046407,
+      "time_str": "11:19:36.604",
+      "session_time": 24.51874852180481,
+      "position": {
+        "x": -13.340623551933167,
+        "y": -27.878913959607758,
+        "heading": -128.33789345912353
+      },
+      "velocity": {
+        "linear": 0.0,
+        "angular": -1.61587786259542
+      },
+      "sensors": {
+        "frontal_izq": 9.7,
+        "frontal_der": 227.0,
+        "trasero_izq": -1,
+        "trasero_der": 26.5
+      },
+      "imu": {
+        "gyro": {
+          "x": -1.5114503816793894,
+          "y": -1.3740458015267176,
+          "z": -1.6412213740458015
+        },
+        "accel": {
+          "x": 0.03759765625,
+          "y": -0.028564453125,
+          "z": 0.891357421875
+        },
+        "heading_rate": -1.6488549618320612,
+        "temperature": 27.40058823529412
+      },
+      "obstacles": [
+        {
+          "x": -8.126533806965508,
+          "y": -33.40189034299227,
+          "distance": 9.7,
+          "sensor": "frontal_izq",
+          "confidence": "high"
+        },
+        {
+          "x": -150.9460307216359,
+          "y": -219.14117348212915,
+          "distance": 227.0,
+          "sensor": "frontal_der",
+          "confidence": "low"
+        },
+        {
+          "x": -28.905901361544732,
+          "y": -4.256739258592546,
+          "distance": 26.5,
+          "sensor": "trasero_der",
+          "confidence": "medium"
+        }
+      ],
+      "motors": {
+        "left_speed": 0,
+        "right_speed": 0,
+        "status": {
+          "initialized": true,
+          "left_speed": 0,
+          "right_speed": 0,
+          "moving": false,
+          "direction": "stopped"
+        }
+      },
+      "navigation": {
+        "front_min": 9.7,
+        "back_min": 26.5,
+        "left_min": Infinity,
+        "right_min": 26.5,
+        "obstacles_nearby": 1,
+        "potential_blocks": [
+          {
+            "sensor": "frontal_izq",
+            "distance": 9.7,
+            "confidence": "high"
+          },
+          {
+            "sensor": "trasero_der",
+            "distance": 26.5,
+            "confidence": "medium"
+          }
+        ]
+      }
+    },
+    {
+      "timestamp": 1763741977.0875316,
+      "time_str": "11:19:37.087",
+      "session_time": 25.001639366149902,
+      "position": {
+        "x": -13.340623551933167,
+        "y": -27.878913959607758,
+        "heading": -129.17596112451483
+      },
+      "velocity": {
+        "linear": 0.0,
+        "angular": -1.7355725190839695
+      },
+      "sensors": {
+        "frontal_izq": 9.7,
+        "frontal_der": 227.0,
+        "trasero_izq": -1,
+        "trasero_der": 26.6
+      },
+      "imu": {
+        "gyro": {
+          "x": -1.3206106870229009,
+          "y": -1.534351145038168,
+          "z": -1.6717557251908397
+        },
+        "accel": {
+          "x": 0.035888671875,
+          "y": -0.023681640625,
+          "z": 0.896240234375
+        },
+        "heading_rate": -1.7709923664122138,
+        "temperature": 27.40058823529412
+      },
+      "obstacles": [
+        {
+          "x": -8.20223381845338,
+          "y": -33.47238792011473,
+          "distance": 9.7,
+          "sensor": "frontal_izq",
+          "confidence": "high"
+        },
+        {
+          "x": -153.5380365509147,
+          "y": -217.24941163121713,
+          "distance": 227.0,
+          "sensor": "frontal_der",
+          "confidence": "low"
+        },
+        {
+          "x": -28.59435292997044,
+          "y": -3.9476244222068075,
+          "distance": 26.6,
+          "sensor": "trasero_der",
+          "confidence": "medium"
+        }
+      ],
+      "motors": {
+        "left_speed": 0,
+        "right_speed": 0,
+        "status": {
+          "initialized": true,
+          "left_speed": 0,
+          "right_speed": 0,
+          "moving": false,
+          "direction": "stopped"
+        }
+      },
+      "navigation": {
+        "front_min": 9.7,
+        "back_min": 26.6,
+        "left_min": Infinity,
+        "right_min": 26.6,
+        "obstacles_nearby": 1,
+        "potential_blocks": [
+          {
+            "sensor": "frontal_izq",
+            "distance": 9.7,
+            "confidence": "high"
+          },
+          {
+            "sensor": "trasero_der",
+            "distance": 26.6,
+            "confidence": "medium"
+          }
+        ]
+      }
+    },
+    {
+      "timestamp": 1763741977.5600872,
+      "time_str": "11:19:37.560",
+      "session_time": 25.47419500350952,
+      "position": {
+        "x": -13.340623551933167,
+        "y": -27.878913959607758,
+        "heading": -129.98189458792447
+      },
+      "velocity": {
+        "linear": 0.0,
+        "angular": -1.705648854961832
+      },
+      "sensors": {
+        "frontal_izq": 9.7,
+        "frontal_der": 47.4,
+        "trasero_izq": -1,
+        "trasero_der": 26.5
+      },
+      "imu": {
+        "gyro": {
+          "x": -1.6412213740458015,
+          "y": -1.5038167938931297,
+          "z": -1.916030534351145
+        },
+        "accel": {
+          "x": 0.03076171875,
+          "y": -0.029541015625,
+          "z": 0.904052734375
+        },
+        "heading_rate": -1.7404580152671756,
+        "temperature": 27.40058823529412
+      },
+      "obstacles": [
+        {
+          "x": -8.284596539283942,
+          "y": -33.546946320785786,
+          "distance": 9.7,
+          "sensor": "frontal_izq",
+          "confidence": "high"
+        },
+        {
+          "x": -42.8388115343089,
+          "y": -75.95091106557811,
+          "distance": 47.4,
+          "sensor": "frontal_der",
+          "confidence": "medium"
+        },
+        {
+          "x": -28.232542369045433,
+          "y": -3.826559296494061,
+          "distance": 26.5,
+          "sensor": "trasero_der",
+          "confidence": "medium"
+        }
+      ],
+      "motors": {
+        "left_speed": 0,
+        "right_speed": 0,
+        "status": {
+          "initialized": true,
+          "left_speed": 0,
+          "right_speed": 0,
+          "moving": false,
+          "direction": "stopped"
+        }
+      },
+      "navigation": {
+        "front_min": 9.7,
+        "back_min": 26.5,
+        "left_min": Infinity,
+        "right_min": 26.5,
+        "obstacles_nearby": 1,
+        "potential_blocks": [
+          {
+            "sensor": "frontal_izq",
+            "distance": 9.7,
+            "confidence": "high"
+          },
+          {
+            "sensor": "trasero_der",
+            "distance": 26.5,
+            "confidence": "medium"
+          }
+        ]
+      }
+    },
+    {
+      "timestamp": 1763741978.043175,
+      "time_str": "11:19:38.043",
+      "session_time": 25.957282781600952,
+      "position": {
+        "x": -13.340623551933167,
+        "y": -27.878913959607758,
+        "heading": -130.82039052879537
+      },
+      "velocity": {
+        "linear": 0.0,
+        "angular": -1.7355725190839695
+      },
+      "sensors": {
+        "frontal_izq": 9.6,
+        "frontal_der": 228.1,
+        "trasero_izq": -1,
+        "trasero_der": 26.5
+      },
+      "imu": {
+        "gyro": {
+          "x": -1.618320610687023,
+          "y": -1.6030534351145038,
+          "z": -1.6793893129770991
+        },
+        "accel": {
+          "x": 0.031494140625,
+          "y": -0.026611328125,
+          "z": 0.886474609375
+        },
+        "heading_rate": -1.7709923664122138,
+        "temperature": 27.40058823529412
+      },
+      "obstacles": [
+        {
+          "x": -8.300567172454056,
+          "y": -33.54087754935928,
+          "distance": 9.6,
+          "sensor": "frontal_izq",
+          "confidence": "high"
+        },
+        {
+          "x": -159.62003437215049,
+          "y": -213.99216972095886,
+          "distance": 228.1,
+          "sensor": "frontal_der",
+          "confidence": "low"
+        },
+        {
+          "x": -27.89275525850718,
+          "y": -3.6194730408604165,
+          "distance": 26.5,
+          "sensor": "trasero_der",
+          "confidence": "medium"
+        }
+      ],
+      "motors": {
+        "left_speed": 0,
+        "right_speed": 0,
+        "status": {
+          "initialized": true,
+          "left_speed": 0,
+          "right_speed": 0,
+          "moving": false,
+          "direction": "stopped"
+        }
+      },
+      "navigation": {
+        "front_min": 9.6,
+        "back_min": 26.5,
+        "left_min": Infinity,
+        "right_min": 26.5,
+        "obstacles_nearby": 1,
+        "potential_blocks": [
+          {
+            "sensor": "frontal_izq",
+            "distance": 9.6,
+            "confidence": "high"
+          },
+          {
+            "sensor": "trasero_der",
+            "distance": 26.5,
+            "confidence": "medium"
+          }
+        ]
+      }
+    },
+    {
+      "timestamp": 1763741978.5155723,
+      "time_str": "11:19:38.515",
+      "session_time": 26.429680109024048,
+      "position": {
+        "x": -13.340623551933167,
+        "y": -27.878913959607758,
+        "heading": -131.5660710133123
+      },
+      "velocity": {
+        "linear": 0.0,
+        "angular": -1.5784732824427479
+      },
+      "sensors": {
+        "frontal_izq": 9.6,
+        "frontal_der": 45.9,
+        "trasero_izq": -1,
+        "trasero_der": 26.6
+      },
+      "imu": {
+        "gyro": {
+          "x": -1.6870229007633588,
+          "y": -1.4732824427480915,
+          "z": -1.6030534351145038
+        },
+        "accel": {
+          "x": 0.034912109375,
+          "y": -0.02490234375,
+          "z": 0.89111328125
+        },
+        "heading_rate": -1.6106870229007633,
+        "temperature": 27.40058823529412
+      },
+      "obstacles": [
+        {
+          "x": -8.383964007865252,
+          "y": -33.61402739913103,
+          "distance": 9.6,
+          "sensor": "frontal_izq",
+          "confidence": "high"
+        },
+        {
+          "x": -43.225639057999715,
+          "y": -73.94946689966005,
+          "distance": 45.9,
+          "sensor": "frontal_der",
+          "confidence": "medium"
+        },
+        {
+          "x": -27.54347282705107,
+          "y": -3.309380969955793,
+          "distance": 26.6,
+          "sensor": "trasero_der",
+          "confidence": "medium"
+        }
+      ],
+      "motors": {
+        "left_speed": 0,
+        "right_speed": 0,
+        "status": {
+          "initialized": true,
+          "left_speed": 0,
+          "right_speed": 0,
+          "moving": false,
+          "direction": "stopped"
+        }
+      },
+      "navigation": {
+        "front_min": 9.6,
+        "back_min": 26.6,
+        "left_min": Infinity,
+        "right_min": 26.6,
+        "obstacles_nearby": 1,
+        "potential_blocks": [
+          {
+            "sensor": "frontal_izq",
+            "distance": 9.6,
+            "confidence": "high"
+          },
+          {
+            "sensor": "trasero_der",
+            "distance": 26.6,
+            "confidence": "medium"
+          }
+        ]
+      }
+    },
+    {
+      "timestamp": 1763741978.9879892,
+      "time_str": "11:19:38.987",
+      "session_time": 26.90209698677063,
+      "position": {
+        "x": -13.340623551933167,
+        "y": -27.878913959607758,
+        "heading": -132.36478614428572
+      },
+      "velocity": {
+        "linear": 0.0,
+        "angular": -1.6906870229007633
+      },
+      "sensors": {
+        "frontal_izq": 9.6,
+        "frontal_der": 46.8,
+        "trasero_izq": -1,
+        "trasero_der": 26.6
+      },
+      "imu": {
+        "gyro": {
+          "x": -1.5725190839694656,
+          "y": -1.3893129770992367,
+          "z": -1.8091603053435115
+        },
+        "accel": {
+          "x": 0.037109375,
+          "y": -0.0234375,
+          "z": 0.904541015625
+        },
+        "heading_rate": -1.7251908396946565,
+        "temperature": 27.44764705882353
+      },
+      "obstacles": [
+        {
+          "x": -8.459021763100196,
+          "y": -33.67804872052363,
+          "distance": 9.6,
+          "sensor": "frontal_izq",
+          "confidence": "high"
+        },
+        {
+          "x": -44.41981503950254,
+          "y": -74.23000732836223,
+          "distance": 46.8,
+          "sensor": "frontal_der",
+          "confidence": "medium"
+        },
+        {
+          "x": -27.22251689320183,
+          "y": -3.126622830846479,
+          "distance": 26.6,
+          "sensor": "trasero_der",
+          "confidence": "medium"
+        }
+      ],
+      "motors": {
+        "left_speed": 0,
+        "right_speed": 0,
+        "status": {
+          "initialized": true,
+          "left_speed": 0,
+          "right_speed": 0,
+          "moving": false,
+          "direction": "stopped"
+        }
+      },
+      "navigation": {
+        "front_min": 9.6,
+        "back_min": 26.6,
+        "left_min": Infinity,
+        "right_min": 26.6,
+        "obstacles_nearby": 1,
+        "potential_blocks": [
+          {
+            "sensor": "frontal_izq",
+            "distance": 9.6,
+            "confidence": "high"
+          },
+          {
+            "sensor": "trasero_der",
+            "distance": 26.6,
+            "confidence": "medium"
+          }
+        ]
+      }
+    },
+    {
+      "timestamp": 1763741979.4603493,
+      "time_str": "11:19:39.460",
+      "session_time": 27.374457120895386,
+      "position": {
+        "x": -13.340623551933167,
+        "y": -27.878913959607758,
+        "heading": -133.2058264538714
+      },
+      "velocity": {
+        "linear": 0.0,
+        "angular": -1.7804580152671758
+      },
+      "sensors": {
+        "frontal_izq": 9.7,
+        "frontal_der": 46.4,
+        "trasero_izq": -1,
+        "trasero_der": 26.6
+      },
+      "imu": {
+        "gyro": {
+          "x": -1.4809160305343512,
+          "y": -1.450381679389313,
+          "z": -1.8625954198473282
+        },
+        "accel": {
+          "x": 0.039306640625,
+          "y": -0.023681640625,
+          "z": 0.888671875
+        },
+        "heading_rate": -1.816793893129771,
+        "temperature": 27.353529411764708
+      },
+      "obstacles": [
+        {
+          "x": -8.60771944684615,
+          "y": -33.819420565281256,
+          "distance": 9.7,
+          "sensor": "frontal_izq",
+          "confidence": "high"
+        },
+        {
+          "x": -44.793378918213705,
+          "y": -73.49671947312311,
+          "distance": 46.4,
+          "sensor": "frontal_der",
+          "confidence": "medium"
+        },
+        {
+          "x": -26.876127153278475,
+          "y": -2.9355176167020467,
+          "distance": 26.6,
+          "sensor": "trasero_der",
+          "confidence": "medium"
+        }
+      ],
+      "motors": {
+        "left_speed": 0,
+        "right_speed": 0,
+        "status": {
+          "initialized": true,
+          "left_speed": 0,
+          "right_speed": 0,
+          "moving": false,
+          "direction": "stopped"
+        }
+      },
+      "navigation": {
+        "front_min": 9.7,
+        "back_min": 26.6,
+        "left_min": Infinity,
+        "right_min": 26.6,
+        "obstacles_nearby": 1,
+        "potential_blocks": [
+          {
+            "sensor": "frontal_izq",
+            "distance": 9.7,
+            "confidence": "high"
+          },
+          {
+            "sensor": "trasero_der",
+            "distance": 26.6,
+            "confidence": "medium"
+          }
+        ]
+      }
+    },
+    {
+      "timestamp": 1763741979.9433172,
+      "time_str": "11:19:39.943",
+      "session_time": 27.85742497444153,
+      "position": {
+        "x": -13.340623551933167,
+        "y": -27.878913959607758,
+        "heading": -134.01151253700257
+      },
+      "velocity": {
+        "linear": 0.0,
+        "angular": -1.6682442748091602
+      },
+      "sensors": {
+        "frontal_izq": 9.7,
+        "frontal_der": 227.4,
+        "trasero_izq": -1,
+        "trasero_der": 26.6
+      },
+      "imu": {
+        "gyro": {
+          "x": -1.5801526717557253,
+          "y": -1.4732824427480915,
+          "z": -1.6259541984732824
+        },
+        "accel": {
+          "x": 0.035400390625,
+          "y": -0.025390625,
+          "z": 0.89697265625
+        },
+        "heading_rate": -1.702290076335878,
+        "temperature": 27.353529411764708
+      },
+      "obstacles": [
+        {
+          "x": -8.695426443784585,
+          "y": -33.888252011876745,
+          "distance": 9.7,
+          "sensor": "frontal_izq",
+          "confidence": "high"
+        },
+        {
+          "x": -169.37602954601243,
+          "y": -204.96085001256282,
+          "distance": 227.4,
+          "sensor": "frontal_der",
+          "confidence": "low"
+        },
+        {
+          "x": -26.508539892563576,
+          "y": -2.7395253809753797,
+          "distance": 26.6,
+          "sensor": "trasero_der",
+          "confidence": "medium"
+        }
+      ],
+      "motors": {
+        "left_speed": 0,
+        "right_speed": 0,
+        "status": {
+          "initialized": true,
+          "left_speed": 0,
+          "right_speed": 0,
+          "moving": false,
+          "direction": "stopped"
+        }
+      },
+      "navigation": {
+        "front_min": 9.7,
+        "back_min": 26.6,
+        "left_min": Infinity,
+        "right_min": 26.6,
+        "obstacles_nearby": 1,
+        "potential_blocks": [
+          {
+            "sensor": "frontal_izq",
+            "distance": 9.7,
+            "confidence": "high"
+          },
+          {
+            "sensor": "trasero_der",
+            "distance": 26.6,
+            "confidence": "medium"
+          }
+        ]
+      }
+    },
+    {
+      "timestamp": 1763741980.426212,
+      "time_str": "11:19:40.426",
+      "session_time": 28.340319871902466,
+      "position": {
+        "x": -13.340623551933167,
+        "y": -27.878913959607758,
+        "heading": -134.80988956542416
+      },
+      "velocity": {
+        "linear": 0.0,
+        "angular": -1.6532824427480919
+      },
+      "sensors": {
+        "frontal_izq": 9.7,
+        "frontal_der": 226.4,
+        "trasero_izq": -1,
+        "trasero_der": 26.5
+      },
+      "imu": {
+        "gyro": {
+          "x": -1.8473282442748091,
+          "y": -1.549618320610687,
+          "z": -1.6412213740458015
+        },
+        "accel": {
+          "x": 0.034912109375,
+          "y": -0.02880859375,
+          "z": 0.894287109375
+        },
+        "heading_rate": -1.6870229007633588,
+        "temperature": 27.40058823529412
+      },
+      "obstacles": [
+        {
+          "x": -8.780385473328401,
+          "y": -33.952975917346016,
+          "distance": 9.7,
+          "sensor": "frontal_izq",
+          "confidence": "high"
+        },
+        {
+          "x": -171.15582193825838,
+          "y": -202.03006428105928,
+          "distance": 226.4,
+          "sensor": "frontal_der",
+          "confidence": "low"
+        },
+        {
+          "x": -26.152017588941305,
+          "y": -2.656836453498517,
+          "distance": 26.5,
+          "sensor": "trasero_der",
+          "confidence": "medium"
+        }
+      ],
+      "motors": {
+        "left_speed": 0,
+        "right_speed": 0,
+        "status": {
+          "initialized": true,
+          "left_speed": 0,
+          "right_speed": 0,
+          "moving": false,
+          "direction": "stopped"
+        }
+      },
+      "navigation": {
+        "front_min": 9.7,
+        "back_min": 26.5,
+        "left_min": Infinity,
+        "right_min": 26.5,
+        "obstacles_nearby": 1,
+        "potential_blocks": [
+          {
+            "sensor": "frontal_izq",
+            "distance": 9.7,
+            "confidence": "high"
+          },
+          {
+            "sensor": "trasero_der",
+            "distance": 26.5,
+            "confidence": "medium"
+          }
+        ]
+      }
+    }
+  ]
+}

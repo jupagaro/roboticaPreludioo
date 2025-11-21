@@ -1,0 +1,1644 @@
+{
+  "sequence_name": "1",
+  "playback_timestamp": "2025-11-21T11:37:19.990902",
+  "original_recording_mode": "sensor_fusion_enabled",
+  "steps_executed": [
+    {
+      "step_number": 1,
+      "action": "forward",
+      "speed": 255,
+      "duration": 1.5,
+      "start_time": 0.00019478797912597656,
+      "end_time": 1.6058502197265625,
+      "actual_execution": {
+        "start_position": {
+          "x": 22.82469131769788,
+          "y": 184.20683033211736,
+          "heading": 28.0788707922232
+        },
+        "end_position": {
+          "x": 35.9129586003529,
+          "y": 190.98333575774313,
+          "heading": 27.35996950198484
+        },
+        "distance_traveled": 14.738513026956056,
+        "start_navigation": {
+          "front_min": 97.1,
+          "back_min": 2.7,
+          "left_min": 3.3,
+          "right_min": 2.7,
+          "obstacles_nearby": 2,
+          "potential_blocks": []
+        },
+        "end_navigation": {
+          "front_min": 242.9,
+          "back_min": 37.0,
+          "left_min": Infinity,
+          "right_min": 37.0,
+          "obstacles_nearby": 0,
+          "potential_blocks": []
+        }
+      },
+      "position_error": {
+        "x": 64.13149998381488,
+        "y": 257.9649950232352,
+        "heading": 115.5352204848339
+      }
+    },
+    {
+      "step_number": 2,
+      "action": "spin_right",
+      "speed": 255,
+      "duration": 2.0,
+      "start_time": 1.6061491966247559,
+      "end_time": 3.7065484523773193,
+      "actual_execution": {
+        "start_position": {
+          "x": 35.9129586003529,
+          "y": 190.98333575774313,
+          "heading": 27.35996950198484
+        },
+        "end_position": {
+          "x": 35.9129586003529,
+          "y": 190.98333575774313,
+          "heading": -48.60388382608936
+        },
+        "distance_traveled": 0.0,
+        "start_navigation": {
+          "front_min": 242.9,
+          "back_min": 37.0,
+          "left_min": Infinity,
+          "right_min": 37.0,
+          "obstacles_nearby": 0,
+          "potential_blocks": []
+        },
+        "end_navigation": {
+          "front_min": 49.6,
+          "back_min": 37.9,
+          "left_min": 37.9,
+          "right_min": 216.2,
+          "obstacles_nearby": 0,
+          "potential_blocks": []
+        }
+      },
+      "position_error": {
+        "x": 64.13149998381488,
+        "y": 257.9649950232352,
+        "heading": -223.76784754650447
+      }
+    },
+    {
+      "step_number": 3,
+      "action": "spin_left",
+      "speed": 255,
+      "duration": 0.3,
+      "start_time": 3.7067856788635254,
+      "end_time": 4.11225152015686,
+      "actual_execution": {
+        "start_position": {
+          "x": 35.9129586003529,
+          "y": 190.98333575774313,
+          "heading": -48.60388382608936
+        },
+        "end_position": {
+          "x": 35.9129586003529,
+          "y": 190.98333575774313,
+          "heading": -36.331069339073565
+        },
+        "distance_traveled": 0.0,
+        "start_navigation": {
+          "front_min": 49.6,
+          "back_min": 37.9,
+          "left_min": 37.9,
+          "right_min": 216.2,
+          "obstacles_nearby": 0,
+          "potential_blocks": []
+        },
+        "end_navigation": {
+          "front_min": 47.9,
+          "back_min": 48.1,
+          "left_min": 48.1,
+          "right_min": 58.5,
+          "obstacles_nearby": 0,
+          "potential_blocks": []
+        }
+      },
+      "position_error": {
+        "x": 64.13149998381488,
+        "y": 257.9649950232352,
+        "heading": -169.92809031737175
+      }
+    },
+    {
+      "step_number": 4,
+      "action": "forward",
+      "speed": 255,
+      "duration": 3.0,
+      "start_time": 4.1127378940582275,
+      "end_time": 7.21873927116394,
+      "actual_execution": {
+        "start_position": {
+          "x": 35.9129586003529,
+          "y": 190.98333575774313,
+          "heading": -36.331069339073565
+        },
+        "end_position": {
+          "x": 60.95550652262135,
+          "y": 169.42928391467618,
+          "heading": -43.638758234765
+        },
+        "distance_traveled": 33.04097996871052,
+        "start_navigation": {
+          "front_min": 47.9,
+          "back_min": 48.1,
+          "left_min": 48.1,
+          "right_min": 58.5,
+          "obstacles_nearby": 0,
+          "potential_blocks": []
+        },
+        "end_navigation": {
+          "front_min": 34.9,
+          "back_min": 29.8,
+          "left_min": 53.9,
+          "right_min": 29.8,
+          "obstacles_nearby": 0,
+          "potential_blocks": [
+            {
+              "sensor": "frontal_der",
+              "distance": 34.9,
+              "confidence": "medium"
+            },
+            {
+              "sensor": "trasero_der",
+              "distance": 29.8,
+              "confidence": "medium"
+            }
+          ]
+        }
+      },
+      "position_error": {
+        "x": 105.55250468745632,
+        "y": 212.10034951137874,
+        "heading": -167.04689128864317
+      }
+    },
+    {
+      "step_number": 5,
+      "action": "backward",
+      "speed": 255,
+      "duration": 2.0,
+      "start_time": 7.234019756317139,
+      "end_time": 9.334719896316528,
+      "actual_execution": {
+        "start_position": {
+          "x": 60.95550652262135,
+          "y": 169.42928391467618,
+          "heading": -44.2716039240872
+        },
+        "end_position": {
+          "x": 46.06215510048913,
+          "y": 184.81152319258285,
+          "heading": -46.920996809047814
+        },
+        "distance_traveled": 21.410866441737074,
+        "start_navigation": {
+          "front_min": 42.9,
+          "back_min": 28.0,
+          "left_min": 57.1,
+          "right_min": 28.0,
+          "obstacles_nearby": 0,
+          "potential_blocks": [
+            {
+              "sensor": "trasero_der",
+              "distance": 28.0,
+              "confidence": "medium"
+            }
+          ]
+        },
+        "end_navigation": {
+          "front_min": 41.6,
+          "back_min": 44.9,
+          "left_min": 44.9,
+          "right_min": 220.2,
+          "obstacles_nearby": 0,
+          "potential_blocks": []
+        }
+      },
+      "position_error": {
+        "x": 92.92373411902443,
+        "y": 246.2108258962609,
+        "heading": -128.82607177926798
+      }
+    },
+    {
+      "step_number": 6,
+      "action": "spin_left",
+      "speed": 255,
+      "duration": 2.0,
+      "start_time": 9.335366487503052,
+      "end_time": 11.435792684555054,
+      "actual_execution": {
+        "start_position": {
+          "x": 46.06215510048913,
+          "y": 184.81152319258285,
+          "heading": -46.920996809047814
+        },
+        "end_position": {
+          "x": 46.06215510048913,
+          "y": 184.81152319258285,
+          "heading": 14.90014402493644
+        },
+        "distance_traveled": 0.0,
+        "start_navigation": {
+          "front_min": 41.6,
+          "back_min": 44.9,
+          "left_min": 44.9,
+          "right_min": 220.2,
+          "obstacles_nearby": 0,
+          "potential_blocks": []
+        },
+        "end_navigation": {
+          "front_min": 233.3,
+          "back_min": 23.0,
+          "left_min": 335.7,
+          "right_min": 23.0,
+          "obstacles_nearby": 0,
+          "potential_blocks": [
+            {
+              "sensor": "trasero_der",
+              "distance": 23.0,
+              "confidence": "high"
+            }
+          ]
+        }
+      },
+      "position_error": {
+        "x": 92.92373411902443,
+        "y": 246.2108258962609,
+        "heading": -113.0361505707509
+      }
+    },
+    {
+      "step_number": 7,
+      "action": "forward",
+      "speed": 255,
+      "duration": 5.0,
+      "start_time": 11.436398267745972,
+      "end_time": 16.536948680877686,
+      "actual_execution": {
+        "start_position": {
+          "x": 46.06215510048913,
+          "y": 184.81152319258285,
+          "heading": 14.90014402493644
+        },
+        "end_position": {
+          "x": 97.98341689310597,
+          "y": 195.6643262044675,
+          "heading": 8.338397819235267
+        },
+        "distance_traveled": 53.04338563244456,
+        "start_navigation": {
+          "front_min": 233.3,
+          "back_min": 23.0,
+          "left_min": 335.7,
+          "right_min": 23.0,
+          "obstacles_nearby": 0,
+          "potential_blocks": [
+            {
+              "sensor": "trasero_der",
+              "distance": 23.0,
+              "confidence": "high"
+            }
+          ]
+        },
+        "end_navigation": {
+          "front_min": 199.3,
+          "back_min": 43.8,
+          "left_min": 49.3,
+          "right_min": 43.8,
+          "obstacles_nearby": 0,
+          "potential_blocks": []
+        }
+      },
+      "position_error": {
+        "x": 159.31715160330182,
+        "y": 202.89474882271637,
+        "heading": -83.99923090406753
+      }
+    },
+    {
+      "step_number": 8,
+      "action": "spin_right",
+      "speed": 255,
+      "duration": 7.0,
+      "start_time": 16.53818368911743,
+      "end_time": 23.639002084732056,
+      "actual_execution": {
+        "start_position": {
+          "x": 97.98341689310597,
+          "y": 195.6643262044675,
+          "heading": 8.338397819235267
+        },
+        "end_position": {
+          "x": 97.98341689310597,
+          "y": 195.6643262044675,
+          "heading": 119.78704981840812
+        },
+        "distance_traveled": 0.0,
+        "start_navigation": {
+          "front_min": 199.3,
+          "back_min": 43.8,
+          "left_min": 49.3,
+          "right_min": 43.8,
+          "obstacles_nearby": 0,
+          "potential_blocks": []
+        },
+        "end_navigation": {
+          "front_min": 60.1,
+          "back_min": 45.9,
+          "left_min": 45.9,
+          "right_min": 185.2,
+          "obstacles_nearby": 0,
+          "potential_blocks": []
+        }
+      },
+      "position_error": {
+        "x": 159.31715160330182,
+        "y": 202.89474882271637,
+        "heading": 277.4096252210836
+      }
+    },
+    {
+      "step_number": 9,
+      "action": "spin_right",
+      "speed": 255,
+      "duration": 0.2,
+      "start_time": 23.640199661254883,
+      "end_time": 23.9409761428833,
+      "actual_execution": {
+        "start_position": {
+          "x": 97.98341689310597,
+          "y": 195.6643262044675,
+          "heading": 119.78704981840812
+        },
+        "end_position": {
+          "x": 97.98341689310597,
+          "y": 195.6643262044675,
+          "heading": 119.78704981840812
+        },
+        "distance_traveled": 0.0,
+        "start_navigation": {
+          "front_min": 60.1,
+          "back_min": 45.9,
+          "left_min": 45.9,
+          "right_min": 185.2,
+          "obstacles_nearby": 0,
+          "potential_blocks": []
+        },
+        "end_navigation": {
+          "front_min": 60.1,
+          "back_min": 45.9,
+          "left_min": 45.9,
+          "right_min": 185.2,
+          "obstacles_nearby": 0,
+          "potential_blocks": []
+        }
+      },
+      "position_error": {
+        "x": 159.31715160330182,
+        "y": 202.89474882271637,
+        "heading": -44.56690944576053
+      }
+    },
+    {
+      "step_number": 10,
+      "action": "forward",
+      "speed": 255,
+      "duration": 5.0,
+      "start_time": 23.942161560058594,
+      "end_time": 29.042745351791382,
+      "actual_execution": {
+        "start_position": {
+          "x": 97.98341689310597,
+          "y": 195.6643262044675,
+          "heading": 119.78704981840812
+        },
+        "end_position": {
+          "x": 73.55915889853603,
+          "y": 245.2572532707898,
+          "heading": 111.69867819062232
+        },
+        "distance_traveled": 55.28112511147793,
+        "start_navigation": {
+          "front_min": 60.1,
+          "back_min": 45.9,
+          "left_min": 45.9,
+          "right_min": 185.2,
+          "obstacles_nearby": 0,
+          "potential_blocks": []
+        },
+        "end_navigation": {
+          "front_min": 37.2,
+          "back_min": 59.3,
+          "left_min": 59.3,
+          "right_min": Infinity,
+          "obstacles_nearby": 0,
+          "potential_blocks": []
+        }
+      },
+      "position_error": {
+        "x": 176.68619154179834,
+        "y": 224.1773132767992,
+        "heading": -31.27919296103552
+      }
+    },
+    {
+      "step_number": 11,
+      "action": "forward",
+      "speed": 255,
+      "duration": 3.0,
+      "start_time": 29.0434250831604,
+      "end_time": 32.14398193359375,
+      "actual_execution": {
+        "start_position": {
+          "x": 73.55915889853603,
+          "y": 245.2572532707898,
+          "heading": 111.69867819062232
+        },
+        "end_position": {
+          "x": 62.79693451723972,
+          "y": 275.5980358068805,
+          "heading": 107.55785944607938
+        },
+        "distance_traveled": 32.192989276171836,
+        "start_navigation": {
+          "front_min": 37.2,
+          "back_min": 59.3,
+          "left_min": 59.3,
+          "right_min": Infinity,
+          "obstacles_nearby": 0,
+          "potential_blocks": []
+        },
+        "end_navigation": {
+          "front_min": 15.5,
+          "back_min": 74.7,
+          "left_min": 75.4,
+          "right_min": 74.7,
+          "obstacles_nearby": 1,
+          "potential_blocks": [
+            {
+              "sensor": "frontal_der",
+              "distance": 15.5,
+              "confidence": "high"
+            }
+          ]
+        }
+      },
+      "position_error": {
+        "x": 175.42614505211543,
+        "y": 223.43858928616848,
+        "heading": -3.059356413678927
+      }
+    },
+    {
+      "step_number": 12,
+      "action": "backward",
+      "speed": 255,
+      "duration": 3.0,
+      "start_time": 32.14473557472229,
+      "end_time": 35.24537515640259,
+      "actual_execution": {
+        "start_position": {
+          "x": 62.79693451723972,
+          "y": 275.5980358068805,
+          "heading": 107.55785944607938
+        },
+        "end_position": {
+          "x": 70.39265848548219,
+          "y": 244.1018410258697,
+          "heading": 100.98639227878563
+        },
+        "distance_traveled": 32.399155981060744,
+        "start_navigation": {
+          "front_min": 15.5,
+          "back_min": 74.7,
+          "left_min": 75.4,
+          "right_min": 74.7,
+          "obstacles_nearby": 1,
+          "potential_blocks": [
+            {
+              "sensor": "frontal_der",
+              "distance": 15.5,
+              "confidence": "high"
+            }
+          ]
+        },
+        "end_navigation": {
+          "front_min": 31.4,
+          "back_min": 63.2,
+          "left_min": 63.2,
+          "right_min": Infinity,
+          "obstacles_nearby": 0,
+          "potential_blocks": [
+            {
+              "sensor": "frontal_izq",
+              "distance": 31.4,
+              "confidence": "medium"
+            },
+            {
+              "sensor": "frontal_der",
+              "distance": 34.4,
+              "confidence": "medium"
+            }
+          ]
+        }
+      },
+      "position_error": {
+        "x": 212.56364957462569,
+        "y": 194.5906831570625,
+        "heading": 99.19962961594605
+      }
+    },
+    {
+      "step_number": 13,
+      "action": "spin_right",
+      "speed": 255,
+      "duration": 3.0,
+      "start_time": 35.245895862579346,
+      "end_time": 38.34632396697998,
+      "actual_execution": {
+        "start_position": {
+          "x": 70.39265848548219,
+          "y": 244.1018410258697,
+          "heading": 100.98639227878563
+        },
+        "end_position": {
+          "x": 70.39265848548219,
+          "y": 244.1018410258697,
+          "heading": 2.2334010472090533
+        },
+        "distance_traveled": 0.0,
+        "start_navigation": {
+          "front_min": 31.4,
+          "back_min": 63.2,
+          "left_min": 63.2,
+          "right_min": Infinity,
+          "obstacles_nearby": 0,
+          "potential_blocks": [
+            {
+              "sensor": "frontal_izq",
+              "distance": 31.4,
+              "confidence": "medium"
+            },
+            {
+              "sensor": "frontal_der",
+              "distance": 34.4,
+              "confidence": "medium"
+            }
+          ]
+        },
+        "end_navigation": {
+          "front_min": 34.5,
+          "back_min": 30.8,
+          "left_min": 30.8,
+          "right_min": 57.4,
+          "obstacles_nearby": 0,
+          "potential_blocks": [
+            {
+              "sensor": "frontal_izq",
+              "distance": 34.5,
+              "confidence": "medium"
+            },
+            {
+              "sensor": "trasero_izq",
+              "distance": 30.8,
+              "confidence": "medium"
+            }
+          ]
+        }
+      },
+      "position_error": {
+        "x": 212.56364957462569,
+        "y": 194.5906831570625,
+        "heading": 122.93725315803512
+      }
+    },
+    {
+      "step_number": 14,
+      "action": "forward",
+      "speed": 255,
+      "duration": 2.0,
+      "start_time": 38.346835136413574,
+      "end_time": 40.44752621650696,
+      "actual_execution": {
+        "start_position": {
+          "x": 70.39265848548219,
+          "y": 244.1018410258697,
+          "heading": 2.2334010472090533
+        },
+        "end_position": {
+          "x": 93.38549393884294,
+          "y": 243.56069903893288,
+          "heading": -3.1221678569032605
+        },
+        "distance_traveled": 22.999202526073578,
+        "start_navigation": {
+          "front_min": 34.5,
+          "back_min": 30.8,
+          "left_min": 30.8,
+          "right_min": 57.4,
+          "obstacles_nearby": 0,
+          "potential_blocks": [
+            {
+              "sensor": "frontal_izq",
+              "distance": 34.5,
+              "confidence": "medium"
+            },
+            {
+              "sensor": "trasero_izq",
+              "distance": 30.8,
+              "confidence": "medium"
+            }
+          ]
+        },
+        "end_navigation": {
+          "front_min": 49.1,
+          "back_min": 37.4,
+          "left_min": 37.4,
+          "right_min": 70.9,
+          "obstacles_nearby": 0,
+          "potential_blocks": []
+        }
+      },
+      "position_error": {
+        "x": 253.67605470955976,
+        "y": 210.37478937866956,
+        "heading": 137.12238086336168
+      }
+    },
+    {
+      "step_number": 15,
+      "action": "spin_right",
+      "speed": 255,
+      "duration": 2.5,
+      "start_time": 40.44860911369324,
+      "end_time": 43.054316997528076,
+      "actual_execution": {
+        "start_position": {
+          "x": 93.38549393884294,
+          "y": 243.56069903893288,
+          "heading": -3.1221678569032605
+        },
+        "end_position": {
+          "x": 93.38549393884294,
+          "y": 243.56069903893288,
+          "heading": -91.52433019940392
+        },
+        "distance_traveled": 0.0,
+        "start_navigation": {
+          "front_min": 49.1,
+          "back_min": 37.4,
+          "left_min": 37.4,
+          "right_min": 70.9,
+          "obstacles_nearby": 0,
+          "potential_blocks": []
+        },
+        "end_navigation": {
+          "front_min": 215.8,
+          "back_min": 36.5,
+          "left_min": Infinity,
+          "right_min": 36.5,
+          "obstacles_nearby": 0,
+          "potential_blocks": []
+        }
+      },
+      "position_error": {
+        "x": 253.67605470955976,
+        "y": 210.37478937866956,
+        "heading": -204.54260548803774
+      }
+    },
+    {
+      "step_number": 16,
+      "action": "spin_left",
+      "speed": 255,
+      "duration": 0.5,
+      "start_time": 43.0545334815979,
+      "end_time": 43.66002368927002,
+      "actual_execution": {
+        "start_position": {
+          "x": 93.38549393884294,
+          "y": 243.56069903893288,
+          "heading": -91.52433019940392
+        },
+        "end_position": {
+          "x": 93.38549393884294,
+          "y": 243.56069903893288,
+          "heading": -73.76917575931803
+        },
+        "distance_traveled": 0.0,
+        "start_navigation": {
+          "front_min": 215.8,
+          "back_min": 36.5,
+          "left_min": Infinity,
+          "right_min": 36.5,
+          "obstacles_nearby": 0,
+          "potential_blocks": []
+        },
+        "end_navigation": {
+          "front_min": Infinity,
+          "back_min": 36.6,
+          "left_min": 74.7,
+          "right_min": 36.6,
+          "obstacles_nearby": 0,
+          "potential_blocks": []
+        }
+      },
+      "position_error": {
+        "x": 253.67605470955976,
+        "y": 210.37478937866956,
+        "heading": -177.15644475393367
+      }
+    },
+    {
+      "step_number": 17,
+      "action": "forward",
+      "speed": 255,
+      "duration": 6.0,
+      "start_time": 43.66031861305237,
+      "end_time": 49.760751485824585,
+      "actual_execution": {
+        "start_position": {
+          "x": 93.38549393884294,
+          "y": 243.56069903893288,
+          "heading": -73.76917575931803
+        },
+        "end_position": {
+          "x": 105.72550441121749,
+          "y": 179.4579349174803,
+          "heading": -83.26780759324625
+        },
+        "distance_traveled": 65.27970761629454,
+        "start_navigation": {
+          "front_min": Infinity,
+          "back_min": 36.6,
+          "left_min": 74.7,
+          "right_min": 36.6,
+          "obstacles_nearby": 0,
+          "potential_blocks": []
+        },
+        "end_navigation": {
+          "front_min": 177.8,
+          "back_min": 43.7,
+          "left_min": 43.7,
+          "right_min": 74.6,
+          "obstacles_nearby": 0,
+          "potential_blocks": []
+        }
+      },
+      "position_error": {
+        "x": 263.25914820415915,
+        "y": 76.71401182670472,
+        "heading": -164.75195636395023
+      }
+    },
+    {
+      "step_number": 18,
+      "action": "spin_right",
+      "speed": 255,
+      "duration": 2.0,
+      "start_time": 49.76106786727905,
+      "end_time": 51.86151576042175,
+      "actual_execution": {
+        "start_position": {
+          "x": 105.72550441121749,
+          "y": 179.4579349174803,
+          "heading": -83.26780759324625
+        },
+        "end_position": {
+          "x": 105.72550441121749,
+          "y": 179.4579349174803,
+          "heading": -153.4927626740814
+        },
+        "distance_traveled": 0.0,
+        "start_navigation": {
+          "front_min": 177.8,
+          "back_min": 43.7,
+          "left_min": 43.7,
+          "right_min": 74.6,
+          "obstacles_nearby": 0,
+          "potential_blocks": []
+        },
+        "end_navigation": {
+          "front_min": 62.3,
+          "back_min": 36.3,
+          "left_min": 36.3,
+          "right_min": 47.1,
+          "obstacles_nearby": 0,
+          "potential_blocks": []
+        }
+      },
+      "position_error": {
+        "x": 263.25914820415915,
+        "y": 76.71401182670472,
+        "heading": -142.99444614463707
+      }
+    },
+    {
+      "step_number": 19,
+      "action": "forward",
+      "speed": 255,
+      "duration": 6.0,
+      "start_time": 51.86182475090027,
+      "end_time": 57.962411642074585,
+      "actual_execution": {
+        "start_position": {
+          "x": 105.72550441121749,
+          "y": 179.4579349174803,
+          "heading": -153.4927626740814
+        },
+        "end_position": {
+          "x": 42.94166565241031,
+          "y": 153.99387095249847,
+          "heading": -163.24068408325155
+        },
+        "distance_traveled": 67.75122849738287,
+        "start_navigation": {
+          "front_min": 62.3,
+          "back_min": 36.3,
+          "left_min": 36.3,
+          "right_min": 47.1,
+          "obstacles_nearby": 0,
+          "potential_blocks": []
+        },
+        "end_navigation": {
+          "front_min": 21.4,
+          "back_min": 76.5,
+          "left_min": 76.5,
+          "right_min": 78.7,
+          "obstacles_nearby": 0,
+          "potential_blocks": [
+            {
+              "sensor": "frontal_izq",
+              "distance": 21.4,
+              "confidence": "high"
+            },
+            {
+              "sensor": "frontal_der",
+              "distance": 23.6,
+              "confidence": "high"
+            }
+          ]
+        }
+      },
+      "position_error": {
+        "x": 145.36764873242265,
+        "y": 83.5461722909697,
+        "heading": -129.6011227072521
+      }
+    },
+    {
+      "step_number": 20,
+      "action": "spin_right",
+      "speed": 255,
+      "duration": 3.0,
+      "start_time": 57.96306824684143,
+      "end_time": 61.06372594833374,
+      "actual_execution": {
+        "start_position": {
+          "x": 42.94166565241031,
+          "y": 153.99387095249847,
+          "heading": -163.24068408325155
+        },
+        "end_position": {
+          "x": 42.94166565241031,
+          "y": 153.99387095249847,
+          "heading": 92.50433844161549
+        },
+        "distance_traveled": 0.0,
+        "start_navigation": {
+          "front_min": 21.4,
+          "back_min": 76.5,
+          "left_min": 76.5,
+          "right_min": 78.7,
+          "obstacles_nearby": 0,
+          "potential_blocks": [
+            {
+              "sensor": "frontal_izq",
+              "distance": 21.4,
+              "confidence": "high"
+            },
+            {
+              "sensor": "frontal_der",
+              "distance": 23.6,
+              "confidence": "high"
+            }
+          ]
+        },
+        "end_navigation": {
+          "front_min": 47.2,
+          "back_min": 162.0,
+          "left_min": Infinity,
+          "right_min": 162.0,
+          "obstacles_nearby": 0,
+          "potential_blocks": []
+        }
+      },
+      "position_error": {
+        "x": 145.36764873242265,
+        "y": 83.5461722909697,
+        "heading": -71.78609863021543
+      }
+    },
+    {
+      "step_number": 21,
+      "action": "spin_right",
+      "speed": 255,
+      "duration": 1.5,
+      "start_time": 61.063961029052734,
+      "end_time": 62.664381980895996,
+      "actual_execution": {
+        "start_position": {
+          "x": 42.94166565241031,
+          "y": 153.99387095249847,
+          "heading": 92.50433844161549
+        },
+        "end_position": {
+          "x": 42.94166565241031,
+          "y": 153.99387095249847,
+          "heading": 44.548261977013645
+        },
+        "distance_traveled": 0.0,
+        "start_navigation": {
+          "front_min": 47.2,
+          "back_min": 162.0,
+          "left_min": Infinity,
+          "right_min": 162.0,
+          "obstacles_nearby": 0,
+          "potential_blocks": []
+        },
+        "end_navigation": {
+          "front_min": 107.4,
+          "back_min": 11.3,
+          "left_min": 11.3,
+          "right_min": 160.1,
+          "obstacles_nearby": 1,
+          "potential_blocks": [
+            {
+              "sensor": "trasero_izq",
+              "distance": 11.3,
+              "confidence": "high"
+            }
+          ]
+        }
+      },
+      "position_error": {
+        "x": 145.36764873242265,
+        "y": 83.5461722909697,
+        "heading": -44.323596405940556
+      }
+    },
+    {
+      "step_number": 22,
+      "action": "spin_left",
+      "speed": 255,
+      "duration": 0.5,
+      "start_time": 62.6646671295166,
+      "end_time": 63.27015423774719,
+      "actual_execution": {
+        "start_position": {
+          "x": 42.94166565241031,
+          "y": 153.99387095249847,
+          "heading": 44.548261977013645
+        },
+        "end_position": {
+          "x": 42.94166565241031,
+          "y": 153.99387095249847,
+          "heading": 59.31673365854843
+        },
+        "distance_traveled": 0.0,
+        "start_navigation": {
+          "front_min": 107.4,
+          "back_min": 11.3,
+          "left_min": 11.3,
+          "right_min": 160.1,
+          "obstacles_nearby": 1,
+          "potential_blocks": [
+            {
+              "sensor": "trasero_izq",
+              "distance": 11.3,
+              "confidence": "high"
+            }
+          ]
+        },
+        "end_navigation": {
+          "front_min": 98.2,
+          "back_min": 9.6,
+          "left_min": 9.6,
+          "right_min": Infinity,
+          "obstacles_nearby": 1,
+          "potential_blocks": [
+            {
+              "sensor": "trasero_izq",
+              "distance": 9.6,
+              "confidence": "high"
+            }
+          ]
+        }
+      },
+      "position_error": {
+        "x": 145.36764873242265,
+        "y": 83.5461722909697,
+        "heading": -17.235113488827523
+      }
+    },
+    {
+      "step_number": 23,
+      "action": "forward",
+      "speed": 255,
+      "duration": 6.0,
+      "start_time": 63.27666187286377,
+      "end_time": 69.37709164619446,
+      "actual_execution": {
+        "start_position": {
+          "x": 42.94166565241031,
+          "y": 153.99387095249847,
+          "heading": 59.31673365854843
+        },
+        "end_position": {
+          "x": 81.39229956375132,
+          "y": 208.36512384477635,
+          "heading": 50.875445946989984
+        },
+        "distance_traveled": 66.59342602134241,
+        "start_navigation": {
+          "front_min": 98.2,
+          "back_min": 9.6,
+          "left_min": 9.6,
+          "right_min": Infinity,
+          "obstacles_nearby": 1,
+          "potential_blocks": [
+            {
+              "sensor": "trasero_izq",
+              "distance": 9.6,
+              "confidence": "high"
+            }
+          ]
+        },
+        "end_navigation": {
+          "front_min": 57.4,
+          "back_min": 48.9,
+          "left_min": 48.9,
+          "right_min": 191.2,
+          "obstacles_nearby": 0,
+          "potential_blocks": []
+        }
+      },
+      "position_error": {
+        "x": 156.31944710711787,
+        "y": 79.48189073143197,
+        "heading": -12.220936706721801
+      }
+    },
+    {
+      "step_number": 24,
+      "action": "forward",
+      "speed": 255,
+      "duration": 6.0,
+      "start_time": 69.37770199775696,
+      "end_time": 75.47810053825378,
+      "actual_execution": {
+        "start_position": {
+          "x": 81.39229956375132,
+          "y": 208.36512384477635,
+          "heading": 50.875445946989984
+        },
+        "end_position": {
+          "x": 127.509003591453,
+          "y": 252.8567415834389,
+          "heading": 38.082246093784484
+        },
+        "distance_traveled": 64.08006272922887,
+        "start_navigation": {
+          "front_min": 57.4,
+          "back_min": 48.9,
+          "left_min": 48.9,
+          "right_min": 191.2,
+          "obstacles_nearby": 0,
+          "potential_blocks": []
+        },
+        "end_navigation": {
+          "front_min": 48.1,
+          "back_min": 57.2,
+          "left_min": 57.2,
+          "right_min": 230.4,
+          "obstacles_nearby": 0,
+          "potential_blocks": []
+        }
+      },
+      "position_error": {
+        "x": 162.3438975180182,
+        "y": 75.23831823805486,
+        "heading": -10.66267917554844
+      }
+    },
+    {
+      "step_number": 25,
+      "action": "backward",
+      "speed": 150,
+      "duration": 0.3,
+      "start_time": 75.47868704795837,
+      "end_time": 75.8791196346283,
+      "actual_execution": {
+        "start_position": {
+          "x": 127.509003591453,
+          "y": 252.8567415834389,
+          "heading": 38.082246093784484
+        },
+        "end_position": {
+          "x": 127.509003591453,
+          "y": 252.8567415834389,
+          "heading": 38.082246093784484
+        },
+        "distance_traveled": 0.0,
+        "start_navigation": {
+          "front_min": 48.1,
+          "back_min": 57.2,
+          "left_min": 57.2,
+          "right_min": 230.4,
+          "obstacles_nearby": 0,
+          "potential_blocks": []
+        },
+        "end_navigation": {
+          "front_min": 48.1,
+          "back_min": 57.2,
+          "left_min": 57.2,
+          "right_min": 230.4,
+          "obstacles_nearby": 0,
+          "potential_blocks": []
+        }
+      },
+      "position_error": {
+        "x": 164.8946488615313,
+        "y": 76.06103196119395,
+        "heading": 20.205773073752862
+      }
+    },
+    {
+      "step_number": 26,
+      "action": "spin_right",
+      "speed": 255,
+      "duration": 1.3,
+      "start_time": 75.8796808719635,
+      "end_time": 77.28009343147278,
+      "actual_execution": {
+        "start_position": {
+          "x": 127.509003591453,
+          "y": 252.8567415834389,
+          "heading": 38.082246093784484
+        },
+        "end_position": {
+          "x": 127.509003591453,
+          "y": 252.8567415834389,
+          "heading": -8.924612067911042
+        },
+        "distance_traveled": 0.0,
+        "start_navigation": {
+          "front_min": 48.1,
+          "back_min": 57.2,
+          "left_min": 57.2,
+          "right_min": 230.4,
+          "obstacles_nearby": 0,
+          "potential_blocks": []
+        },
+        "end_navigation": {
+          "front_min": 34.3,
+          "back_min": 47.1,
+          "left_min": 47.1,
+          "right_min": 71.8,
+          "obstacles_nearby": 0,
+          "potential_blocks": [
+            {
+              "sensor": "frontal_der",
+              "distance": 34.3,
+              "confidence": "medium"
+            }
+          ]
+        }
+      },
+      "position_error": {
+        "x": 164.8946488615313,
+        "y": 76.06103196119395,
+        "heading": 31.72036726786724
+      }
+    },
+    {
+      "step_number": 27,
+      "action": "backward",
+      "speed": 255,
+      "duration": 0.3,
+      "start_time": 77.28067469596863,
+      "end_time": 77.68138098716736,
+      "actual_execution": {
+        "start_position": {
+          "x": 127.509003591453,
+          "y": 252.8567415834389,
+          "heading": -8.924612067911042
+        },
+        "end_position": {
+          "x": 127.509003591453,
+          "y": 252.8567415834389,
+          "heading": -9.33685076042035
+        },
+        "distance_traveled": 0.0,
+        "start_navigation": {
+          "front_min": 34.3,
+          "back_min": 47.1,
+          "left_min": 47.1,
+          "right_min": 71.8,
+          "obstacles_nearby": 0,
+          "potential_blocks": [
+            {
+              "sensor": "frontal_der",
+              "distance": 34.3,
+              "confidence": "medium"
+            }
+          ]
+        },
+        "end_navigation": {
+          "front_min": 36.5,
+          "back_min": 45.1,
+          "left_min": 45.1,
+          "right_min": 61.2,
+          "obstacles_nearby": 0,
+          "potential_blocks": []
+        }
+      },
+      "position_error": {
+        "x": 165.35776957907515,
+        "y": 71.51110849647802,
+        "heading": 74.85122951262615
+      }
+    },
+    {
+      "step_number": 28,
+      "action": "spin_right",
+      "speed": 255,
+      "duration": 0.2,
+      "start_time": 77.68238115310669,
+      "end_time": 77.98314571380615,
+      "actual_execution": {
+        "start_position": {
+          "x": 127.509003591453,
+          "y": 252.8567415834389,
+          "heading": -9.33685076042035
+        },
+        "end_position": {
+          "x": 127.509003591453,
+          "y": 252.8567415834389,
+          "heading": -9.33685076042035
+        },
+        "distance_traveled": 0.0,
+        "start_navigation": {
+          "front_min": 36.5,
+          "back_min": 45.1,
+          "left_min": 45.1,
+          "right_min": 61.2,
+          "obstacles_nearby": 0,
+          "potential_blocks": []
+        },
+        "end_navigation": {
+          "front_min": 36.5,
+          "back_min": 45.1,
+          "left_min": 45.1,
+          "right_min": 61.2,
+          "obstacles_nearby": 0,
+          "potential_blocks": []
+        }
+      },
+      "position_error": {
+        "x": 165.35776957907515,
+        "y": 71.51110849647802,
+        "heading": 96.51976731641435
+      }
+    },
+    {
+      "step_number": 29,
+      "action": "spin_right",
+      "speed": 255,
+      "duration": 0.3,
+      "start_time": 77.984445810318,
+      "end_time": 78.38530993461609,
+      "actual_execution": {
+        "start_position": {
+          "x": 127.509003591453,
+          "y": 252.8567415834389,
+          "heading": -9.33685076042035
+        },
+        "end_position": {
+          "x": 127.509003591453,
+          "y": 252.8567415834389,
+          "heading": -23.724815423355693
+        },
+        "distance_traveled": 0.0,
+        "start_navigation": {
+          "front_min": 36.5,
+          "back_min": 45.1,
+          "left_min": 45.1,
+          "right_min": 61.2,
+          "obstacles_nearby": 0,
+          "potential_blocks": []
+        },
+        "end_navigation": {
+          "front_min": 32.4,
+          "back_min": 45.1,
+          "left_min": 45.1,
+          "right_min": 57.6,
+          "obstacles_nearby": 0,
+          "potential_blocks": [
+            {
+              "sensor": "frontal_der",
+              "distance": 32.4,
+              "confidence": "medium"
+            }
+          ]
+        }
+      },
+      "position_error": {
+        "x": 165.35776957907515,
+        "y": 71.51110849647802,
+        "heading": 113.29129701780246
+      }
+    },
+    {
+      "step_number": 30,
+      "action": "forward",
+      "speed": 255,
+      "duration": 2.0,
+      "start_time": 78.3858847618103,
+      "end_time": 80.48662233352661,
+      "actual_execution": {
+        "start_position": {
+          "x": 127.509003591453,
+          "y": 252.8567415834389,
+          "heading": -23.724815423355693
+        },
+        "end_position": {
+          "x": 148.07788351733834,
+          "y": 243.19621078428315,
+          "heading": -26.462685558080608
+        },
+        "distance_traveled": 22.72453908722739,
+        "start_navigation": {
+          "front_min": 32.4,
+          "back_min": 45.1,
+          "left_min": 45.1,
+          "right_min": 57.6,
+          "obstacles_nearby": 0,
+          "potential_blocks": [
+            {
+              "sensor": "frontal_der",
+              "distance": 32.4,
+              "confidence": "medium"
+            }
+          ]
+        },
+        "end_navigation": {
+          "front_min": 29.8,
+          "back_min": 57.2,
+          "left_min": 57.2,
+          "right_min": 66.9,
+          "obstacles_nearby": 0,
+          "potential_blocks": [
+            {
+              "sensor": "frontal_izq",
+              "distance": 29.8,
+              "confidence": "medium"
+            },
+            {
+              "sensor": "frontal_der",
+              "distance": 31.0,
+              "confidence": "medium"
+            }
+          ]
+        }
+      },
+      "position_error": {
+        "x": 206.0169123540278,
+        "y": 72.63604163695882,
+        "heading": 125.74445551830644
+      }
+    },
+    {
+      "step_number": 31,
+      "action": "backward",
+      "speed": 255,
+      "duration": 5.0,
+      "start_time": 80.48754119873047,
+      "end_time": 85.5935308933258,
+      "actual_execution": {
+        "start_position": {
+          "x": 148.07788351733834,
+          "y": 243.19621078428315,
+          "heading": -26.462685558080608
+        },
+        "end_position": {
+          "x": 102.33241937136478,
+          "y": 273.0030011784344,
+          "heading": -37.45953834005342
+        },
+        "distance_traveled": 54.59937951599284,
+        "start_navigation": {
+          "front_min": 29.8,
+          "back_min": 57.2,
+          "left_min": 57.2,
+          "right_min": 66.9,
+          "obstacles_nearby": 0,
+          "potential_blocks": [
+            {
+              "sensor": "frontal_izq",
+              "distance": 29.8,
+              "confidence": "medium"
+            },
+            {
+              "sensor": "frontal_der",
+              "distance": 31.0,
+              "confidence": "medium"
+            }
+          ]
+        },
+        "end_navigation": {
+          "front_min": 57.4,
+          "back_min": 31.4,
+          "left_min": 31.4,
+          "right_min": 38.7,
+          "obstacles_nearby": 0,
+          "potential_blocks": [
+            {
+              "sensor": "trasero_izq",
+              "distance": 31.4,
+              "confidence": "medium"
+            }
+          ]
+        }
+      },
+      "position_error": {
+        "x": 107.38117502448247,
+        "y": 111.94941348328828,
+        "heading": -201.76136258370744
+      }
+    },
+    {
+      "step_number": 32,
+      "action": "spin_right",
+      "speed": 255,
+      "duration": 3.5,
+      "start_time": 85.59416556358337,
+      "end_time": 89.1945972442627,
+      "actual_execution": {
+        "start_position": {
+          "x": 102.33241937136478,
+          "y": 273.0030011784344,
+          "heading": -37.45953834005342
+        },
+        "end_position": {
+          "x": 102.33241937136478,
+          "y": 273.0030011784344,
+          "heading": -161.40402649967504
+        },
+        "distance_traveled": 0.0,
+        "start_navigation": {
+          "front_min": 57.4,
+          "back_min": 31.4,
+          "left_min": 31.4,
+          "right_min": 38.7,
+          "obstacles_nearby": 0,
+          "potential_blocks": [
+            {
+              "sensor": "trasero_izq",
+              "distance": 31.4,
+              "confidence": "medium"
+            }
+          ]
+        },
+        "end_navigation": {
+          "front_min": 88.7,
+          "back_min": 7.0,
+          "left_min": Infinity,
+          "right_min": 7.0,
+          "obstacles_nearby": 1,
+          "potential_blocks": [
+            {
+              "sensor": "trasero_der",
+              "distance": 7.0,
+              "confidence": "medium"
+            }
+          ]
+        }
+      },
+      "position_error": {
+        "x": 107.38117502448247,
+        "y": 111.94941348328828,
+        "heading": -183.43618372549867
+      }
+    },
+    {
+      "step_number": 33,
+      "action": "forward",
+      "speed": 255,
+      "duration": 6.0,
+      "start_time": 89.19516634941101,
+      "end_time": 95.29575157165527,
+      "actual_execution": {
+        "start_position": {
+          "x": 102.33241937136478,
+          "y": 273.0030011784344,
+          "heading": -161.40402649967504
+        },
+        "end_position": {
+          "x": 40.20893992360599,
+          "y": 259.12406811606314,
+          "heading": -172.2308322866523
+        },
+        "distance_traveled": 63.65494074811389,
+        "start_navigation": {
+          "front_min": 88.7,
+          "back_min": 7.0,
+          "left_min": Infinity,
+          "right_min": 7.0,
+          "obstacles_nearby": 1,
+          "potential_blocks": [
+            {
+              "sensor": "trasero_der",
+              "distance": 7.0,
+              "confidence": "medium"
+            }
+          ]
+        },
+        "end_navigation": {
+          "front_min": 46.3,
+          "back_min": 43.0,
+          "left_min": 70.5,
+          "right_min": 43.0,
+          "obstacles_nearby": 0,
+          "potential_blocks": []
+        }
+      },
+      "position_error": {
+        "x": -19.377884037466075,
+        "y": 93.64316113005586,
+        "heading": -170.7566524955185
+      }
+    },
+    {
+      "step_number": 34,
+      "action": "spin_right",
+      "speed": 255,
+      "duration": 3.0,
+      "start_time": 95.29678082466125,
+      "end_time": 98.39749217033386,
+      "actual_execution": {
+        "start_position": {
+          "x": 40.20893992360599,
+          "y": 259.12406811606314,
+          "heading": -172.2308322866523
+        },
+        "end_position": {
+          "x": 40.20893992360599,
+          "y": 259.12406811606314,
+          "heading": 86.86704764829648
+        },
+        "distance_traveled": 0.0,
+        "start_navigation": {
+          "front_min": 46.3,
+          "back_min": 43.0,
+          "left_min": 70.5,
+          "right_min": 43.0,
+          "obstacles_nearby": 0,
+          "potential_blocks": []
+        },
+        "end_navigation": {
+          "front_min": 26.9,
+          "back_min": 71.8,
+          "left_min": Infinity,
+          "right_min": 71.8,
+          "obstacles_nearby": 0,
+          "potential_blocks": [
+            {
+              "sensor": "frontal_der",
+              "distance": 26.9,
+              "confidence": "medium"
+            }
+          ]
+        }
+      },
+      "position_error": {
+        "x": -19.377884037466075,
+        "y": 93.64316113005586,
+        "heading": 203.95963736324472
+      }
+    }
+  ],
+  "interrupted": true,
+  "sensor_fusion_session": "data/sessions/playback_1_20251121_113719.json"
+}
