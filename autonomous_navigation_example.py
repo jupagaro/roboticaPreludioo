@@ -19,6 +19,53 @@ from config import COMPETITION_ZONES, FIELD_DIMENSIONS
 
 
 # ============================================================================
+# HELPER FUNCTIONS
+# ============================================================================
+
+def initialize_sensor_fusion_with_calibration(session_name):
+    """
+    Initialize sensor fusion with automatic gyro calibration
+
+    Args:
+        session_name: Name for the sensor fusion session
+
+    Returns:
+        SensorFusion: Initialized and calibrated sensor fusion object
+    """
+    print("\n" + "="*70)
+    print("INITIALIZING SENSOR FUSION")
+    print("="*70)
+
+    # Create sensor fusion
+    sf = SensorFusion(session_name=session_name)
+
+    # Calibrate gyroscope
+    print("\n⚠️  Gyroscope calibration required")
+    print("   Robot must be COMPLETELY STILL!")
+    input("\nPress Enter when robot is still and ready...")
+
+    print("\n🔧 Calibrating gyroscope bias...")
+    print("   This will take ~10 seconds...")
+
+    calibration_success = sf.imu.calibrate_gyro_z(samples=100)
+
+    if calibration_success:
+        print(f"✅ Gyroscope calibrated! Bias: {sf.imu.gyro_z_offset:.3f} °/s")
+    else:
+        print("⚠️  Calibration failed - heading may drift")
+
+    # Start sensor fusion loop
+    print("\n🚀 Starting sensor fusion loop...")
+    sf.start_sensor_loop(update_rate=10)
+    time.sleep(0.5)
+
+    print("✅ Sensor fusion ready!")
+    print("="*70)
+
+    return sf
+
+
+# ============================================================================
 # EXAMPLE 1: BASIC SENSOR MONITORING
 # ============================================================================
 
@@ -34,11 +81,8 @@ def example_1_basic_monitoring():
     print("Move the robot around manually to see sensor fusion in action")
     print("Press Ctrl+C to stop\n")
 
-    # Initialize sensor fusion
-    sf = SensorFusion(session_name="example1_monitoring")
-    sf.start_sensor_loop(update_rate=10)  # 10Hz update rate
-
-    time.sleep(0.5)  # Let it stabilize
+    # Initialize sensor fusion with calibration
+    sf = initialize_sensor_fusion_with_calibration("example1_monitoring")
 
     try:
         while True:
@@ -91,10 +135,8 @@ def example_2_navigate_to_point():
 
     input("\nPress Enter to start...")
 
-    # Initialize
-    sf = SensorFusion(session_name="example2_navigation")
-    sf.start_sensor_loop(update_rate=10)
-    time.sleep(0.5)
+    # Initialize with calibration
+    sf = initialize_sensor_fusion_with_calibration("example2_navigation")
 
     try:
         iteration = 0
@@ -151,9 +193,8 @@ def example_3_find_and_approach_block():
 
     input("Press Enter to start...")
 
-    sf = SensorFusion(session_name="example3_block_detection")
-    sf.start_sensor_loop(update_rate=10)
-    time.sleep(0.5)
+    # Initialize with calibration
+    sf = initialize_sensor_fusion_with_calibration("example3_block_detection")
 
     try:
         search_mode = True
@@ -237,9 +278,8 @@ def example_4_visit_competition_zones():
 
     input("Press Enter to start tour...")
 
-    sf = SensorFusion(session_name="example4_zone_tour")
-    sf.start_sensor_loop(update_rate=10)
-    time.sleep(0.5)
+    # Initialize with calibration
+    sf = initialize_sensor_fusion_with_calibration("example4_zone_tour")
 
     # Define tour stops
     tour_stops = [
@@ -302,9 +342,8 @@ def example_5_autonomous_mission():
 
     input("Press Enter to start mission...")
 
-    sf = SensorFusion(session_name="example5_full_mission")
-    sf.start_sensor_loop(update_rate=10)
-    time.sleep(0.5)
+    # Initialize with calibration
+    sf = initialize_sensor_fusion_with_calibration("example5_full_mission")
 
     blocks_found = 0
     mission_phases = [

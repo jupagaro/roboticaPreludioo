@@ -567,7 +567,33 @@ class SmartReplay:
 
         input("\nPress Enter to start replay...")
 
+        # Calibrate gyroscope before starting
+        print("\n" + "="*70)
+        print("GYROSCOPE CALIBRATION")
+        print("="*70)
+        print("⚠️  Robot must be COMPLETELY STILL during calibration")
+        print("   Do not touch or move the robot!")
+        print("")
+        input("Press Enter when robot is still and ready...")
+
+        print("\n🔧 Calibrating gyroscope bias...")
+        print("   This will take ~10 seconds...")
+
+        calibration_success = self.sensor_fusion.imu.calibrate_gyro_z(samples=100)
+
+        if calibration_success:
+            print("✅ Gyroscope calibrated successfully!")
+            print(f"   Bias offset: {self.sensor_fusion.imu.gyro_z_offset:.3f} °/s")
+            print("   Heading drift should now be minimal.")
+        else:
+            print("⚠️  Gyroscope calibration failed - continuing anyway")
+            print("   (Heading may drift during replay)")
+
+        print("="*70)
+        time.sleep(0.5)
+
         # Start sensor fusion
+        print("\n🚀 Starting sensor fusion...")
         self.sensor_fusion.start_sensor_loop(update_rate=10)
         time.sleep(0.5)
 
