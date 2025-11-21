@@ -144,7 +144,7 @@ def example_2_navigate_to_point():
 
         while iteration < max_iterations:
             # Navigate toward point
-            status = sf.navigate_to_point(target_x, target_y, speed=120)
+            status = sf.navigate_to_point(target_x, target_y, speed=220)
 
             # Show status
             pos = sf.get_position()
@@ -222,7 +222,7 @@ def example_3_find_and_approach_block():
                     continue
 
                 # Keep wandering
-                sf.reactive_navigation(base_speed=100)
+                sf.reactive_navigation(base_speed=220)
 
             else:
                 # APPROACH MODE: Move toward block
@@ -244,8 +244,8 @@ def example_3_find_and_approach_block():
                     search_mode = True
                     continue
 
-                # Move forward slowly
-                sf.motors.move_forward(60)
+                # Move forward at high power
+                sf.motors.move_forward(200)
 
             time.sleep(0.1)
 
@@ -296,7 +296,7 @@ def example_4_visit_competition_zones():
 
             # Navigate to this zone
             while True:
-                status = sf.navigate_to_point(target_x, target_y, speed=150)
+                status = sf.navigate_to_point(target_x, target_y, speed=230)
                 pos = sf.get_position()
 
                 print(f"\rStatus: {status['status']:20s} | "
@@ -322,113 +322,164 @@ def example_4_visit_competition_zones():
 
 
 # ============================================================================
-# EXAMPLE 5: FULL AUTONOMOUS MISSION
+# EXAMPLE 5: CRASH DETECTION DEMONSTRATION
 # ============================================================================
 
-def example_5_autonomous_mission():
+def example_5_crash_detection_demo():
     """
-    Complete autonomous mission combining all sensor fusion features
-    This is a realistic competition scenario
+    Demonstrate crash detection and recovery
+    Shows how sensor fusion detects obstacles and prevents crashes
     """
     print("\n" + "="*70)
-    print("EXAMPLE 5: FULL AUTONOMOUS RESCUE MISSION")
+    print("EXAMPLE 5: CRASH DETECTION & RECOVERY")
     print("="*70)
-    print("Mission objectives:")
-    print("  1. Navigate to search zone")
-    print("  2. Find and approach blocks")
-    print("  3. Deliver to consultation room")
-    print("  4. Return to parking")
+    print("This demo will:")
+    print("  1. Move forward until obstacle detected")
+    print("  2. Detect crash when movement <50% expected")
+    print("  3. Confirm crash with ultrasonic sensors (<10cm)")
+    print("  4. Back up and try alternate direction")
+    print()
+    print("Place an obstacle in front of the robot to test!")
     print()
 
-    input("Press Enter to start mission...")
+    input("Press Enter to start demo...")
 
     # Initialize with calibration
-    sf = initialize_sensor_fusion_with_calibration("example5_full_mission")
-
-    blocks_found = 0
-    mission_phases = [
-        "NAVIGATE_TO_SEARCH",
-        "SEARCH_FOR_BLOCKS",
-        "APPROACH_BLOCK",
-        "DELIVER",
-        "RETURN_TO_PARKING",
-        "COMPLETE"
-    ]
-    current_phase = 0
+    sf = initialize_sensor_fusion_with_calibration("example5_crash_detection")
 
     try:
-        while current_phase < len(mission_phases) - 1:
-            phase_name = mission_phases[current_phase]
+        print("\n" + "="*70)
+        print("CRASH DETECTION DEMO")
+        print("="*70)
+
+        # Phase 1: Move forward until crash
+        print("\nPhase 1: Moving forward (will crash into obstacle)...")
+        print("Robot will move for 5 seconds or until crash detected\n")
+
+        start_time = time.time()
+        crash_detected = False
+
+        while time.time() - start_time < 5.0:
+            start_pos = sf.get_position()
             nav_data = sf.get_navigation_data()
-            pos = sf.get_position()
 
-            if phase_name == "NAVIGATE_TO_SEARCH":
-                print(f"\n{'='*70}")
-                print("PHASE 1: Navigate to search zone (40, 40)")
-                print('='*70)
+            # Check for imminent crash
+            if nav_data['front_min'] < 15:
+                print(f"\n⚠️  OBSTACLE DETECTED!")
+                print(f"   Front sensor: {nav_data['front_min']:.1f} cm")
+                print(f"   Preventive stop!")
+                sf.motors.stop()
+                crash_detected = True
+                break
 
-                status = sf.navigate_to_point(40, 40, speed=150)
+            # Move forward at high power
+            sf.motors.move_forward(220)
+            time.sleep(0.3)
+            sf.motors.stop()
 
-                if status['status'] == 'arrived':
-                    print("✅ Arrived at search zone!")
-                    current_phase += 1
+            # Check if we actually moved
+            end_pos = sf.get_position()
+            dx = end_pos['x'] - start_pos['x']
+            dy = end_pos['y'] - start_pos['y']
+            from math import sqrt
+            distance_moved = sqrt(dx**2 + dy**2)
 
-            elif phase_name == "SEARCH_FOR_BLOCKS":
-                print(f"\r🔍 Searching for blocks... Pos: ({pos['x']:5.1f}, {pos['y']:5.1f})", end="")
+            # Expected distance at 220 PWM for 0.3s (rough estimate)
+            expected_distance = 6.0  # ~6cm
 
-                if nav_data['potential_blocks']:
-                    print(f"\n🎯 Block detected!")
-                    current_phase += 1
-                else:
-                    sf.reactive_navigation(base_speed=100)
+            movement_ratio = distance_moved / expected_distance if expected_distance > 0 else 0
 
-            elif phase_name == "APPROACH_BLOCK":
-                print(f"\r🚶 Approaching block... Front: {nav_data['front_min']:5.1f}cm", end="")
+            print(f"\rMoving... Front: {nav_data['front_min']:5.1f}cm | "
+                  f"Moved: {distance_moved:4.1f}cm ({movement_ratio*100:.0f}%)", end="")
 
-                if nav_data['front_min'] < 8:
-                    print("\n✅ Block reached! (Gripper would activate)")
-                    blocks_found += 1
-                    current_phase += 1
-                else:
-                    sf.motors.move_forward(60)
-
-            elif phase_name == "DELIVER":
-                print(f"\n{'='*70}")
-                print("PHASE 3: Delivering to consultation room")
-                print('='*70)
-
-                target = COMPETITION_ZONES['hospital']['consultation_room']['center']
-                status = sf.navigate_to_point(target[0], target[1], speed=150)
-
-                if status['status'] == 'arrived':
-                    print("✅ Delivered to consultation room!")
-                    print("(Release block here)")
-                    current_phase += 1
-
-            elif phase_name == "RETURN_TO_PARKING":
-                print(f"\n{'='*70}")
-                print("PHASE 4: Returning to parking")
-                print('='*70)
-
-                target = COMPETITION_ZONES['hospital']['parking']['center']
-                status = sf.navigate_to_point(target[0], target[1], speed=150)
-
-                if status['status'] == 'arrived':
-                    print("✅ Parked!")
-                    current_phase += 1
+            # Crash detection: movement <50% + obstacle close
+            if movement_ratio < 0.5 and nav_data['front_min'] < 10:
+                print(f"\n\n🚨 CRASH DETECTED!")
+                print(f"   Movement: {movement_ratio*100:.0f}% of expected")
+                print(f"   Front sensor: {nav_data['front_min']:.1f} cm (obstacle confirmed)")
+                crash_detected = True
+                break
 
             time.sleep(0.1)
 
-        print(f"\n\n🎉 MISSION COMPLETE!")
-        print(f"Blocks found and delivered: {blocks_found}")
+        if not crash_detected:
+            print("\n\n✅ No obstacle encountered (path was clear)")
+        else:
+            # Phase 2: Recovery
+            print(f"\n{'='*70}")
+            print("Phase 2: Recovery - Backing up and trying alternate direction")
+            print('='*70)
+
+            print("\n⬅️  Backing up 15 cm...")
+            sf.motors.move_backward(220)
+            time.sleep(1.0)
+            sf.motors.stop()
+            time.sleep(0.3)
+
+            backup_pos = sf.get_position()
+            print(f"   New position: ({backup_pos['x']:.1f}, {backup_pos['y']:.1f})")
+
+            # Check left and right
+            nav_data = sf.get_navigation_data()
+            print(f"\n🔍 Checking alternate paths:")
+            print(f"   Left:  {nav_data['left_min']:.1f} cm")
+            print(f"   Right: {nav_data['right_min']:.1f} cm")
+
+            # Choose direction with more space
+            if nav_data['left_min'] > nav_data['right_min']:
+                print(f"\n↪️  Turning left (more space)")
+                sf.motors.spin_left(220)
+                time.sleep(0.8)  # ~90 degree turn
+                sf.motors.stop()
+                direction = "left"
+            else:
+                print(f"\n↩️  Turning right (more space)")
+                sf.motors.spin_right(220)
+                time.sleep(0.8)  # ~90 degree turn
+                sf.motors.stop()
+                direction = "right"
+
+            time.sleep(0.3)
+
+            # Try moving in new direction
+            print(f"\n➡️  Attempting to move {direction}...")
+            start_pos = sf.get_position()
+
+            sf.motors.move_forward(220)
+            time.sleep(1.5)
+            sf.motors.stop()
+
+            end_pos = sf.get_position()
+            dx = end_pos['x'] - start_pos['x']
+            dy = end_pos['y'] - start_pos['y']
+            recovery_distance = sqrt(dx**2 + dy**2)
+
+            nav_data = sf.get_navigation_data()
+
+            if recovery_distance > 10 and nav_data['front_min'] > 15:
+                print(f"   ✅ Recovery successful!")
+                print(f"   Moved {recovery_distance:.1f} cm in new direction")
+                print(f"   Path is clear (front: {nav_data['front_min']:.1f} cm)")
+            else:
+                print(f"   ⚠️  Still blocked - would need different strategy")
+
+        print(f"\n{'='*70}")
+        print("CRASH DETECTION DEMO COMPLETE")
+        print("="*70)
+        print("\nKey features demonstrated:")
+        print("  ✅ Predictive obstacle detection (ultrasonic)")
+        print("  ✅ Movement verification (odometry)")
+        print("  ✅ Combined crash detection (movement + sensors)")
+        print("  ✅ Automated recovery (backup + alternate path)")
+        print("="*70)
 
     except KeyboardInterrupt:
-        print("\n\nMission interrupted")
+        print("\n\nDemo interrupted")
 
     finally:
         sf.motors.stop()
         sf.stop()
-        print("Example 5 complete!")
+        print("\nExample 5 complete!")
 
 
 # ============================================================================
