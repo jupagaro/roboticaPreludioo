@@ -498,7 +498,7 @@ def main():
         print("  2. Navigate to Point - Autonomous point-to-point")
         print("  3. Block Detection - Find and approach blocks")
         print("  4. Visit Zones - Tour competition zones")
-        print("  5. Full Mission - Complete autonomous rescue")
+        print("  5. Crash Detection - Obstacle detection & recovery")
         print()
         print("  0. Exit")
         print("="*70)
@@ -514,7 +514,7 @@ def main():
         elif choice == '4':
             example_4_visit_competition_zones()
         elif choice == '5':
-            example_5_autonomous_mission()
+            example_5_crash_detection_demo()
         elif choice == '0':
             print("Goodbye!")
             break

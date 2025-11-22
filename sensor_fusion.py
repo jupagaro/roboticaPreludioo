@@ -288,10 +288,10 @@ class SensorFusion:
         if nav_data['front_min'] < DETECTION_THRESHOLDS['obstacle_min']:
             # Obstáculo frontal - maniobra evasiva
             if nav_data['left_min'] > nav_data['right_min']:
-                self.motors.spin_left(speed // 2)
+                self.motors.spin_left(max(200, int(speed * 0.9)))
                 return {'status': 'avoiding_left', 'distance': distance_to_target}
             else:
-                self.motors.spin_right(speed // 2)
+                self.motors.spin_right(max(200, int(speed * 0.9)))
                 return {'status': 'avoiding_right', 'distance': distance_to_target}
         
         elif abs(angle_diff) > 15:
@@ -328,23 +328,23 @@ class SensorFusion:
         
         elif front_min > threshold:
             # Obstáculo cerca - reducir velocidad
-            self.motors.move_forward(base_speed // 2)
+            self.motors.move_forward(max(200, int(base_speed * 0.85)))
             return 'slow_forward'
         
         else:
             # Obstáculo bloqueando - decidir escape usando giros diferenciales
             if left_min > right_min and left_min > threshold:
-                self.motors.spin_left(base_speed // 2)
+                self.motors.spin_left(max(200, int(base_speed * 0.9)))
                 return 'escape_left'
             elif right_min > threshold:
-                self.motors.spin_right(base_speed // 2)
+                self.motors.spin_right(max(200, int(base_speed * 0.9)))
                 return 'escape_right'
             elif back_min > threshold * 2:
-                self.motors.move_backward(base_speed // 3)
+                self.motors.move_backward(max(200, int(base_speed * 0.85)))
                 return 'backing_up'
             else:
                 # Totalmente bloqueado - girar en el lugar
-                self.motors.spin_right(base_speed // 3)
+                self.motors.spin_right(max(200, int(base_speed * 0.9)))
                 return 'spinning'
     
     # ========================================================================
