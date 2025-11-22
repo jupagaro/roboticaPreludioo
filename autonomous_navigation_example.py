@@ -185,9 +185,9 @@ def example_3_find_and_approach_block():
     print("EXAMPLE 3: BLOCK DETECTION & APPROACH")
     print("="*70)
     print("Robot will:")
-    print("  1. Wander around using reactive navigation")
+    print("  1. Spin in place to search for blocks")
     print("  2. Detect blocks 5-35cm away")
-    print("  3. Approach detected blocks slowly")
+    print("  3. Approach detected blocks at high power")
     print("  4. Stop when very close (< 8cm)")
     print("\nPlace a block in front of the robot to test!\n")
 
@@ -205,8 +205,8 @@ def example_3_find_and_approach_block():
             pos = sf.get_position()
 
             if search_mode:
-                # SEARCH MODE: Wander until block detected
-                print(f"\r🔍 SEARCHING... Pos: ({pos['x']:5.1f}, {pos['y']:5.1f}) | "
+                # SEARCH MODE: Spin in place until block detected
+                print(f"\r🔍 SEARCHING (spinning)... Heading: {pos['heading']:6.1f}° | "
                       f"Obstacles: {nav_data['obstacles_nearby']}", end="")
 
                 # Check for blocks
@@ -219,10 +219,12 @@ def example_3_find_and_approach_block():
 
                     search_mode = False
                     approach_start = time.time()
+                    sf.motors.stop()
+                    time.sleep(0.2)
                     continue
 
-                # Keep wandering
-                sf.reactive_navigation(base_speed=220)
+                # Spin in place to search for blocks
+                sf.motors.spin_right(210)
 
             else:
                 # APPROACH MODE: Move toward block
