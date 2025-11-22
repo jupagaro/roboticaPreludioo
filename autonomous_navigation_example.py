@@ -272,10 +272,11 @@ def example_4_visit_competition_zones():
     print("\n" + "="*70)
     print("EXAMPLE 4: VISIT COMPETITION ZONES")
     print("="*70)
-    print("Robot will navigate to hospital zones in sequence:")
+    print("Robot will navigate to calibrated zones in sequence:")
     print("  1. Waiting Room")
     print("  2. Consultation Room")
     print("  3. Parking")
+    print("  4. Start Zone")
     print()
 
     input("Press Enter to start tour...")
@@ -283,11 +284,12 @@ def example_4_visit_competition_zones():
     # Initialize with calibration
     sf = initialize_sensor_fusion_with_calibration("example4_zone_tour")
 
-    # Define tour stops
+    # Define tour stops (only calibrated zones)
     tour_stops = [
         ("Waiting Room", COMPETITION_ZONES['hospital']['waiting_room']['center']),
         ("Consultation Room", COMPETITION_ZONES['hospital']['consultation_room']['center']),
-        ("Parking", COMPETITION_ZONES['hospital']['parking']['center'])
+        ("Parking", COMPETITION_ZONES['hospital']['parking']['center']),
+        ("Start Zone", COMPETITION_ZONES['start_zone']['area']['center'])
     ]
 
     try:
