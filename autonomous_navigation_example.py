@@ -266,63 +266,133 @@ def example_3_find_and_approach_block():
 
 def example_4_visit_competition_zones():
     """
-    Navigate to predefined competition zones
-    Demonstrates use of COMPETITION_ZONES from config.py
+    Visit competition zones by replaying a pre-recorded movement sequence
+    Announces when reaching each zone based on sensor fusion position
     """
+    import json
+    from math import sqrt
+
     print("\n" + "="*70)
     print("EXAMPLE 4: VISIT COMPETITION ZONES")
     print("="*70)
-    print("Robot will navigate to calibrated zones in sequence:")
+    print("This example replays a recorded movement sequence")
+    print("and announces when reaching each calibrated zone:")
     print("  1. Waiting Room")
     print("  2. Consultation Room")
     print("  3. Parking")
     print("  4. Start Zone")
     print()
 
-    input("Press Enter to start tour...")
+    # Ask for recording file
+    recording_file = input("Enter recording filename [default: zone_tour.json]: ").strip()
+    if not recording_file:
+        recording_file = "zone_tour.json"
+
+    recording_path = f"data/movements/{recording_file}"
+
+    # Try to load recording
+    try:
+        with open(recording_path, 'r') as f:
+            recording = json.load(f)
+        print(f"✅ Loaded recording: {recording_path}")
+        print(f"   Steps: {len(recording['steps'])}, Duration: {recording['total_duration']:.1f}s")
+    except FileNotFoundError:
+        print(f"\n❌ Recording not found: {recording_path}")
+        print("\nPlease create a recording first:")
+        print("  1. Run main.py → Experimental Mode")
+        print("  2. Drive the robot to visit all 4 zones in order")
+        print("  3. Save the recording as '{}'".format(recording_file))
+        return
+    except Exception as e:
+        print(f"\n❌ Error loading recording: {e}")
+        return
+
+    input("\nPress Enter to start zone tour...")
 
     # Initialize with calibration
     sf = initialize_sensor_fusion_with_calibration("example4_zone_tour")
 
-    # Define tour stops (only calibrated zones)
-    tour_stops = [
+    # Define zones to detect (in order)
+    zones = [
         ("Waiting Room", COMPETITION_ZONES['hospital']['waiting_room']['center']),
         ("Consultation Room", COMPETITION_ZONES['hospital']['consultation_room']['center']),
         ("Parking", COMPETITION_ZONES['hospital']['parking']['center']),
         ("Start Zone", COMPETITION_ZONES['start_zone']['area']['center'])
     ]
 
+    # Track which zones we've announced
+    zones_reached = [False] * len(zones)
+    detection_radius = 15.0  # cm - announce when within this distance
+
     try:
-        for zone_name, (target_x, target_y) in tour_stops:
-            print(f"\n{'='*70}")
-            print(f"Navigating to: {zone_name} ({target_x}, {target_y})")
-            print('='*70)
+        print("\n" + "="*70)
+        print("STARTING ZONE TOUR")
+        print("="*70)
 
-            # Navigate to this zone
-            while True:
-                status = sf.navigate_to_point(target_x, target_y, speed=230)
-                pos = sf.get_position()
+        # Replay each step
+        for i, step in enumerate(recording['steps']):
+            action = step['action']
+            duration = step['duration']
+            speed = step.get('speed', 150)
 
-                print(f"\rStatus: {status['status']:20s} | "
-                      f"Distance: {status['distance']:5.1f}cm", end="")
+            # Execute movement
+            if action == 'forward':
+                sf.motors.move_forward(speed)
+            elif action == 'backward':
+                sf.motors.move_backward(speed)
+            elif action == 'spin_left':
+                sf.motors.spin_left(speed)
+            elif action == 'spin_right':
+                sf.motors.spin_right(speed)
+            elif action == 'stop':
+                sf.motors.stop()
 
-                if status['status'] == 'arrived':
-                    print(f"\n✅ Arrived at {zone_name}!")
-                    print(f"Final position: ({pos['x']:.1f}, {pos['y']:.1f})")
-                    time.sleep(2)  # Pause at zone
-                    break
+            # Wait for duration
+            time.sleep(duration)
+            sf.motors.stop()
 
-                time.sleep(0.1)
+            # Check if we're near any zone
+            pos = sf.get_position()
 
-        print("\n\n🏁 Tour complete!")
+            for zone_idx, (zone_name, (zone_x, zone_y)) in enumerate(zones):
+                if not zones_reached[zone_idx]:
+                    # Calculate distance to zone
+                    dx = pos['x'] - zone_x
+                    dy = pos['y'] - zone_y
+                    distance = sqrt(dx**2 + dy**2)
+
+                    if distance < detection_radius:
+                        print(f"\n\n🎯 REACHED: {zone_name}")
+                        print(f"   Position: ({pos['x']:.1f}, {pos['y']:.1f})")
+                        print(f"   Distance from zone center: {distance:.1f} cm")
+                        zones_reached[zone_idx] = True
+                        time.sleep(1)  # Pause to announce
+                        print()
+
+            # Show progress
+            print(f"\r[{i+1}/{len(recording['steps'])}] "
+                  f"Action: {action:12s} | "
+                  f"Pos: ({pos['x']:6.1f}, {pos['y']:6.1f}) | "
+                  f"Zones: {sum(zones_reached)}/4", end="")
+
+            time.sleep(0.1)
+
+        print("\n\n" + "="*70)
+        print("ZONE TOUR COMPLETE")
+        print("="*70)
+        print(f"\nZones reached: {sum(zones_reached)}/{len(zones)}")
+        for zone_idx, (zone_name, _) in enumerate(zones):
+            status = "✅" if zones_reached[zone_idx] else "❌"
+            print(f"  {status} {zone_name}")
+        print("="*70)
 
     except KeyboardInterrupt:
-        print("\n\nInterrupted by user")
+        print("\n\nTour interrupted by user")
 
     finally:
         sf.motors.stop()
         sf.stop()
-        print("Example 4 complete!")
+        print("\nExample 4 complete!")
 
 
 # ============================================================================
