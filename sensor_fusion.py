@@ -295,8 +295,8 @@ class SensorFusion:
                 return {'status': 'avoiding_right', 'distance': distance_to_target}
         
         elif abs(angle_diff) > 15:
-            # Girar hacia objetivo usando giro diferencial
-            turn_speed = min(speed, abs(angle_diff) * 2)
+            # Girar hacia objetivo (spin en el lugar)
+            turn_speed = max(200, min(speed, int(abs(angle_diff) * 2)))
             if angle_diff > 0:
                 self.motors.spin_left(turn_speed)
                 return {'status': 'turning_left', 'distance': distance_to_target}
@@ -306,7 +306,7 @@ class SensorFusion:
         
         else:
             # Avanzar hacia objetivo
-            actual_speed = min(speed, distance_to_target * 10)  # Reducir velocidad cerca del objetivo
+            actual_speed = max(200, min(speed, int(distance_to_target * 10)))  # Mantener mínimo 200 PWM
             self.motors.move_forward(actual_speed)
             return {'status': 'moving_forward', 'distance': distance_to_target}
     
